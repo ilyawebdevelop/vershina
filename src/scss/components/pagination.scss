@@ -1,0 +1,88 @@
+// pagination
+.pagination {
+  ul {
+    li {
+
+      a {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+        color: var(--grey3);
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+
+        @media (max-width: 991px) {
+          width: 36px;
+          height: 36px;
+        }
+
+
+
+        &:hover {
+          border-color: var(--stroke);
+          color: var(--orange);
+        }
+
+        &:active {
+          background-color: var(--orange);
+          color: #fff;
+        }
+      }
+
+      &.active {
+
+        a {
+          color: var(--orange);
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+.pag-arrow {
+  transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+  width: 44px;
+  gap: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: transparent;
+  fill: var(--grey3);
+  border-radius: 16px;
+  border-width: 1px;
+
+  &:hover {
+    svg {
+      fill: var(--orange);
+    }
+  }
+
+  &:active {
+    background-color: var(--orange);
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  &.pag-arrow-none {
+    fill: var(--grey1);
+    pointer-events: none;
+
+    a {
+      pointer-events: none;
+    }
+  }
+}

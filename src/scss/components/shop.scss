@@ -1,0 +1,96 @@
+.product {
+  &Slider {
+    overflow: visible;
+    height: auto;
+    padding-bottom: 20px;
+    min-height: 410px;
+  }
+
+  &Slide {
+    height: auto;
+  }
+
+  &Card {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+    background: var(--white);
+    position: relative;
+    border-radius: 20px;
+    transition: box-shadow .2s linear;
+
+    &:hover {
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+
+      .productCardBtn {
+        display: flex;
+        -webkit-animation: shows 0.5s;
+        animation: shows 0.5s;
+      }
+    }
+
+    &Content {
+      padding: 12px;
+    }
+
+    &Title {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 138%;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+      display: block;
+      width: fit-content;
+    }
+
+    &Img {
+      height: 195px;
+      display: flex;
+      padding-top: 24px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--stroke);
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 120px;
+
+        width: 100%;
+        object-fit: contain;
+      }
+
+      &--catalog {
+        height: 306px;
+
+        img {
+          max-width: 190px;
+        }
+      }
+    }
+
+    &Price {
+      &W {
+        margin-bottom: 12px;
+      }
+    }
+
+    &Spec {
+      border-radius: 20px 20px 20px 0;
+      padding: 8px 12px;
+      width: fit-content;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 154%;
+      position: absolute;
+      left: 0;
+      font-family: var(--second-family);
+      top: 0;
+
+      &.bg--haki {
+        color: var(--white);
+      }
+
+      &.bg--orange {
+        color: var(--white);
+      }
+    }
+  }
+}

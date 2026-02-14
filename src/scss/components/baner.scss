@@ -1,0 +1,23 @@
+.baner {
+  padding-top: 18px;
+  padding-bottom: 26px;
+  padding-left: 60px;
+  padding-right: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &Title {
+    font-weight: 800;
+    font-size: 120px;
+    line-height: normal;
+    letter-spacing: 0.02em;
+    color: var(--white);
+  }
+  .button {
+    margin-top: auto;
+  }
+}

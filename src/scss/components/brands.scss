@@ -1,0 +1,85 @@
+.brands {
+  &Slider {
+    overflow: visible;
+  }
+
+  &Slide {
+    background: var(--light-bckg);
+    border-radius: 40px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow .2s linear;
+
+    &:hover {
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    img {
+      background: var(--light-bckg);
+      width: 172px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:hover {
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+.brandHeadSlider {
+  .swiper-slide {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--grey3);
+    cursor: pointer;
+    transition: color .2s linear;
+
+    &:hover {
+      color: var(--orange);
+    }
+
+    &.active {
+      color: var(--orange);
+    }
+  }
+}
+
+.brandsItem {
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  &Title {
+    min-width: 70px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.brandSearchContent {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.brandSliderContent {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

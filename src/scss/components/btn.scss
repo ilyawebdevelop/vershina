@@ -1,0 +1,366 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 8px;
+  height: 40px;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+
+  &--lg {
+    height: 52px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media(max-width: 991px) {
+      height: 46px;
+    }
+  }
+
+  &--sm {
+    height: 36px;
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: #000;
+  }
+
+  &--text {
+    padding-left: 0;
+    padding-right: 0;
+    height: fit-content;
+
+    svg {
+      width: 24px;
+      stroke-width: 2px;
+    }
+
+    &-white {
+      color: #fff;
+
+      svg {
+        fill: transparent;
+        stroke: #fff;
+
+      }
+
+      &:hover {
+        color: var(--orange);
+
+        svg {
+          stroke: var(--orange);
+        }
+      }
+    }
+
+    &-black {
+      svg {
+        fill: transparent;
+        stroke: var(--black);
+      }
+
+      &:hover {
+        color: var(--orange);
+
+        svg {
+          stroke: var(--orange);
+        }
+      }
+    }
+
+    &-grey-3 {
+      color: var(--grey3);
+
+      svg {
+        fill: transparent;
+        stroke: var(--grey3);
+      }
+
+      &:hover {
+        color: var(--orange);
+
+        svg {
+          stroke: var(--orange);
+        }
+      }
+    }
+
+  }
+
+  &--orange {
+    background-color: var(--orange);
+    color: #fff;
+
+    &:hover {
+      background-color: #e36a00;
+    }
+  }
+  &--haki {
+    background-color: var(--haki);
+    color: #fff;
+    &:hover {
+      background-color: var(--orange);
+    }
+  }
+
+  &--light-bckg {
+    background-color: var(--light-bckg);
+
+    &:hover {
+      background-color: var(--grey1);
+    }
+  }
+
+  &--transparent-stroke {
+    border: 1px solid var(--stroke);
+
+    &:hover {
+      background-color: var(--orange);
+      color: #fff;
+      border-color: var(--orange);
+    }
+  }
+
+  &--transparent {
+    svg {
+      fill: transparent;
+      stroke: var(--grey3);
+      stroke-width: 2px;
+    }
+
+    &:hover {
+      color: var(--orange);
+
+      svg {
+        stroke: var(--orange);
+        fill: var(--orange);
+      }
+
+    }
+  }
+
+  &.fz-15 {
+    font-size: 15px;
+  }
+
+  &.fz-16 {
+    font-size: 16px;
+  }
+  &--h-48 {
+    height: 48px;
+  }
+
+  .remove-item {
+    svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--grey3);
+      stroke-width: 2px;
+    }
+  }
+}
+
+.headerTBtn {
+  svg {
+    width: 16px;
+  }
+}
+
+.searchFieldClear {
+  margin-right: 13px;
+  height: fit-content;
+  position: relative;
+  width: 16px;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &::after {
+    content: '';
+    height: 53px;
+    width: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    right: -6px;
+    top: -19px;
+    pointer-events: none;
+  }
+
+  &.ml-auto {
+    margin-left: auto;
+  }
+}
+
+.headerBtnCatalog {
+  height: 40px;
+
+  .rect {
+    display: flex;
+
+    svg {
+      stroke: var(--orange);
+      fill: var(--orange);
+    }
+  }
+}
+
+.productCardBtn {
+  border-radius: 20px;
+  font-size: 15px;
+  width: 100%;
+  height: 36px;
+  display: none;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+    stroke-width: 2px;
+    fill: transparent;
+  }
+
+  &--fit {
+    width: fit-content;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 16px;
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+}
+
+.productCardAddToWishlist {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+
+  &:hover {
+    svg {
+      fill: var(--orange);
+      stroke: var(--orange);
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2px;
+    fill: transparent;
+    stroke: var(--haki);
+  }
+
+  &.active {
+    svg {
+      fill: var(--orange);
+      stroke: var(--orange);
+    }
+  }
+}
+
+.catCardMoreBtn {
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.filter-item-selected {
+  padding-right: 10px;
+}
+
+.loadmore {
+  min-width: 320px;
+  height: 44px;
+}
+
+.productMainAddToCart {
+  height: 48px;
+}
+
+.productMainAddToWishlist {
+  &.active {
+    color: var(--orange);
+
+    svg {
+      fill: var(--orange);
+      stroke: var(--orange);
+    }
+  }
+
+  height: 48px;
+}
+.productMainAddToWishlist--h-32 {
+  height: 32px;
+}
+
+.quantity {
+  min-height: 52px;
+}
+
+.quantity.border-grey-1:has(.quantity-input:focus) {
+  border-color: var(--orange);
+  border-width: 2px;
+  padding: 7px !important;
+}
+
+.quantity-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-bckg);
+  border-radius: 50%;
+  transition: background-color .2s linear;
+  flex-shrink: 0;
+
+  &:hover {
+    background-color: var(--grey1);
+  }
+}
+
+.quantity-input {
+  text-align: center;
+  width: 100%;
+}
+
+.productBanerBtn {
+  font-size: 13px;
+}
+
+.cartItemRemove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  margin-top: 15px;
+
+  &:hover {
+    svg {
+      stroke: var(--orange);
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    stroke: var(--grey3);
+    stroke-width: 2px;
+  }
+}

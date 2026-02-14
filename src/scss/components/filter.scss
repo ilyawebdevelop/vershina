@@ -1,0 +1,29 @@
+.filter {
+  &Item {
+    padding: 20px 16px 12px;
+
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+    }
+
+    &Count {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      background-color: var(--haki);
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 138%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

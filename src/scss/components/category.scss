@@ -1,0 +1,61 @@
+.cat {
+  &Card {
+    padding-left: 48px;
+    padding-bottom: 56px;
+
+    &Content {
+      width: 100%;
+      padding-top: 45px;
+      h3 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+
+      ul {
+        margin-bottom: 16px;
+        li {
+          display: none;
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            display: block;
+          }
+          &:not(:last-child){
+            margin-bottom: 5px;
+          }
+          a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: normal;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: var(--grey3);
+            &:hover {
+              color: var(--orange);
+            }
+          }
+        }
+        &.active {
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &Img {
+      width: 134px;
+      height: 244px;
+      object-fit: contain;
+      object-position: center;
+      flex-shrink: 0;
+    }
+  }
+}

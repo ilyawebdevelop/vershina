@@ -1,0 +1,30 @@
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// Containers
+:root {
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --font-family: 'Manrope', sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --main-color: #251F1F;
+  --black: #251F1F;
+  --grey3: #655f5c;
+  --grey2: #a7a09c;
+  --grey1: #dad6d4;
+  --stroke: #e8e4e3;
+  --light-bckg: #f4f3f2;
+  --white: #fff;
+  --orange: #f3930d;
+  --orange16: rgba(232, 78, 27, 0.16);
+  --haki: #666e4f;
+}

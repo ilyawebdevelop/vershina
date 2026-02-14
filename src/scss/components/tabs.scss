@@ -1,0 +1,42 @@
+.tabs {
+  &__nav {
+    display: flex;
+    column-gap: 4px;
+    border-bottom: 1px solid var(--stroke);
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      padding: 16px;
+      border-bottom: 3px solid transparent;
+      transition: color .2s linear, border-color .2s linear;
+
+      &:hover {
+        border-color: var(--orange);
+      }
+
+      &--active {
+        border-color: var(--orange);
+      }
+    }
+  }
+
+  &__panel {
+    display: none;
+    padding-top: 30px;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+.productTabs {
+  .content {
+    color: #333;
+  }
+}

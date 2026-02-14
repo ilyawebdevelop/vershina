@@ -1,0 +1,93 @@
+// Footer
+.footer {
+  color: #fff;
+
+  &T {
+    background: var(--haki);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &B {
+    background: #343b21;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &W {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+    }
+  }
+
+  &Nav {
+    &Title {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 144%;
+      letter-spacing: 0.02em;
+      color: var(--light-bckg);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      li {
+        a {
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 138%;
+          letter-spacing: 0.02em;
+
+          &:hover {
+            color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+
+  &Phone {
+    padding-left: 32px;
+    background: url('@img/icons/phone-white.svg') no-repeat left center / 20px;
+    transition: background .2s linear, color .2s linear;
+
+    &:hover {
+      background: url('@img/icons/phone-orange.svg') no-repeat left center / 20px;
+    }
+
+    &:hover {
+      color: var(--orange);
+    }
+  }
+
+  &Mail {
+    padding-left: 33px;
+    background: url('@img/icons/mail-white.svg') no-repeat left center / 24px;
+    transition: background .2s linear, color .2s linear;
+
+    &:hover {
+      background: url('@img/icons/mail-orange.svg') no-repeat left center / 24px;
+    }
+
+    &:hover {
+      color: var(--orange);
+    }
+  }
+
+  .socials {
+    ul {
+      column-gap: 14px;
+    }
+  }
+  .develop {
+    padding-left: 28px;
+    background: url('@img/icons/settings.svg') no-repeat left center / 20px;
+    transition: background .2s linear, color .2s linear;
+    &:hover {
+      background: url('@img/icons/settings-orange.svg') no-repeat left center / 20px;
+    }
+  }
+}

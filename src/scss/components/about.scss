@@ -1,0 +1,16 @@
+.about {
+  &W {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &Content {
+    background: rgba(255, 255, 255, 0.92);
+    max-width: 600px;
+  }
+  &Logo {
+    width: 230px;
+    margin-bottom: 32px;
+  }
+}

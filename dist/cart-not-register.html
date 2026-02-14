@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Корзина не зарег</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header header--black" id="header">
+  <div class="headerT">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center gap-3">
+
+        <nav class="headerTNav">
+          <ul class="d-flex gap-3 align-items-center">
+            <li><a href="#">О нас</a></li>
+            <li class="has-submenu">
+              <a href="#">Розничным покупателям</a>
+              <ul class="sub-menu">
+                <li><a href="#">Розничным покупателям 1</a></li>
+                <li><a href="#">Меню внутреннее</a></li>
+                <li><a href="#">Меню внутреннее 2</a></li>
+                <li><a href="#">Меню внутреннее 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Оптовым клиентам</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="d-flex gap-2 align-items-center">
+          <a href="tel:8 (3952) 505-511" class="headerTPhone">8 (3952) 505-511</a>
+          <span class="fw-semibold fz-14 color-grey-1">ПН-ПТ с 8:00 - 17:00 (МСК+5)</span>
+        </div>
+
+        <div class="socials">
+          <ul class="d-flex align-items-center">
+            <li>
+              <a href="#" target="_blank" rel="nofollow">
+                <img src="img/admin/socials/whatsapp.svg" alt="image">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow">
+                <img src="img/admin/socials/telegram.svg" alt="image">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="button button--text button--text-white headerTBtn fw-semibold">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#message"></use>
+          </svg>
+          НАПИСАТЬ НАМ
+        </button>
+
+      </div>
+    </div>
+  </div>
+  <div class="headerC">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center gap-3">
+
+        <a href="#" class="headerLogo logo">
+          <img src="img/admin/logo/logo-black.svg" alt="logo">
+        </a>
+
+        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30">
+          <input type="search" class="formInput" placeholder="Поиск">
+          <button class="searchFieldClear" type="button">
+            <img src="img/icons/clear.svg" alt="clear">
+          </button>
+          <button class="button button--orange rounded-30 text-uppercase fw-bold">
+            искать
+          </button>
+        </div>
+
+        <div class="d-flex gap-3 align-items-center">
+          <a href="#" class="header-action-link px-2">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#star"></use>
+            </svg>
+            <div class="count bg--orange">5</div>
+          </a>
+          <a href="#" class="header-action-link px-2">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#cart"></use>
+            </svg>
+            <div class="count bg--haki">
+              0
+            </div>
+          </a>
+          <a href="#" class="header-action-link header-action-link-account px-2">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#account"></use>
+            </svg>
+            <span class="text-uppercase fz-14 fw-bold color-grey-3">МОЙ ПРОФИЛЬ</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="headerB">
+    <div class="container">
+      <div class="headerBNavW">
+        <button class="button button--text button--text-black fz-14 headerBtnCatalog fw-bold">
+          <div class="rect">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
+            </svg>
+          </div>
+          <span>КАТАЛОГ</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+          </svg>
+        </button>
+        <nav class="headerBNav headerBNav--black">
+          <ul>
+            <li><a href="#">Рыбалка</a></li>
+            <li><a href="#">Одежда</a></li>
+            <li><a href="#">Обувь</a></li>
+            <li><a href="#">Спорт</a></li>
+            <li><a href="#">Туризм</a></li>
+            <li><a href="#">Охота</a></li>
+            <li><a href="#">Зоотовары</a></li>
+            <li><a href="#">Банное</a></li>
+            <li class="has-submenu">
+              <a href="#">ЕЩЁ</a>
+              <ul class="sub-menu">
+                <li><a href="#">Прикормка</a></li>
+                <li><a href="#">Летняя</a></li>
+                <li><a href="#">Меню внутреннее 2</a></li>
+                <li><a href="#">Коробочки</a></li>
+              </ul>
+            </li>
+            <li><a href="#">АКЦИИ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+		<main class="main">
+			<section class="breadcrumbsSect py-0" id="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li>
+          <span class="sep">
+            /
+          </span>
+        </li>
+        <li>
+          <a href="#">
+            Каталог
+          </a>
+        </li>
+        <li>
+          <span class="sep">
+            /
+          </span>
+        </li>
+        <li>
+          <a href="#">
+            Рыбалка
+          </a>
+        </li>
+        <li>
+          <span class="sep">
+            /
+          </span>
+        </li>
+        <li>
+          <a href="#">
+            Namazu
+          </a>
+        </li>
+        <li>
+          <span class="sep">
+            /
+          </span>
+        </li>
+        <li>
+          <span>
+            Блесна вертикальная Namazu "Skat", размер 55 мм, вес 10 г
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+			<section class="sect pt-0">
+  <div class="container">
+
+    <div class="pageHead">
+      <h1 class="h1 mb-0">
+        Корзина
+      </h1>
+    </div>
+
+    <ul class="cartList mb-4 pb-2">
+
+      <li class="cartItem d-flex justify-content-between gap-4 py-3">
+        <div class="d-flex gap-4">
+          <a href="#" class="cartItemImg">
+            <img src="img/admin/shop/image-3.png" alt="image">
+            <div class="onsale bg--haki">1+1=3</div>
+          </a>
+          <div class="d-flex gap-1 flex-column">
+            <h4><a class="color-black" href="#">Блесна вертикальная Namazu "Skat", размер 55 мм, вес 10 г</a></h4>
+            <div class="color-grey-2 fz-13 fw-bold">
+              Артикул: N-VST10-222
+            </div>
+            <div class="color-grey-2 fz-13 fw-bold">
+              Размер: 1, Цвет: Золотой
+            </div>
+            <button
+              class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star"></use>
+              </svg>
+              <span class="fw-semibold">В избранное</span>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+
+          <div class="quantity d-flex gap-2 p-2 border-grey-1 rounded-24">
+            <button class="quantity-btn quantity-minus" type="button">
+              <img src="img/icons/minus.svg" alt="minus">
+            </button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn quantity-plus" type="button">
+              <img src="img/icons/plus.svg" alt="plus">
+            </button>
+          </div>
+
+          <div class="d-flex flex-column-reverse flex-lg-column gap-3 pt-2 mt-1">
+            <div class="cartItemPriceW d-flex justify-content-end align-items-center gap-2">
+              <span class="text-lg fw-light color-grey-2 text-decoration-line-through">30 000</span>
+              <span class="text-extra-lg fw-bold">15 000 ₽</span>
+            </div>
+            <div class="available available--green justify-content-end mb-0">В наличии</div>
+          </div>
+
+          <button class="cartItemRemove" type="button">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#trash"></use>
+            </svg>
+          </button>
+
+
+        </div>
+
+      </li>
+
+      <li class="cartItem d-flex justify-content-between gap-4 py-3">
+        <div class="d-flex gap-4">
+          <a href="#" class="cartItemImg">
+            <img src="img/admin/shop/image-1.png" alt="image">
+            <div class="onsale bg--haki">1+1=3</div>
+          </a>
+          <div class="d-flex gap-1 flex-column">
+            <h4><a class="color-black" href="#">Костюм лет. Стрелок цв.Тайгер тк.Смесовая Сорочка р.52-54/182-188</a>
+            </h4>
+            <div class="color-grey-2 fz-13 fw-bold">
+              Артикул: N-VST10-222
+            </div>
+            <div class="color-grey-2 fz-13 fw-bold">
+              Размер: 1, Цвет: Золотой
+            </div>
+            <button
+              class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star"></use>
+              </svg>
+              <span class="fw-semibold">В избранное</span>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+
+          <div class="quantity d-flex gap-2 p-2 border-grey-1 rounded-24">
+            <button class="quantity-btn quantity-minus" type="button">
+              <img src="img/icons/minus.svg" alt="minus">
+            </button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn quantity-plus" type="button">
+              <img src="img/icons/plus.svg" alt="plus">
+            </button>
+          </div>
+
+          <div class="d-flex flex-column-reverse flex-lg-column gap-3 pt-2 mt-1">
+            <div class="cartItemPriceW d-flex justify-content-end align-items-center gap-2">
+              <span class="text-lg fw-light color-grey-2 text-decoration-line-through">30 000</span>
+              <span class="text-extra-lg fw-bold">15 000 ₽</span>
+            </div>
+            <div class="available available--green justify-content-end mb-0">В наличии</div>
+          </div>
+
+          <button class="cartItemRemove" type="button">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#trash"></use>
+            </svg>
+          </button>
+
+
+        </div>
+
+      </li>
+
+      <li class="cartItem d-flex justify-content-between gap-4 py-3">
+        <div class="d-flex gap-4">
+          <a href="#" class="cartItemImg">
+            <img src="img/admin/shop/image-2.png" alt="image">
+            <div class="onsale bg--haki">1+1=3</div>
+          </a>
+          <div class="d-flex gap-1 flex-column">
+            <h4><a class="color-black" href="#">
+                Удочка для зимней рыбалки Сорога
+              </a></h4>
+            <div class="color-grey-2 fz-13 fw-bold">
+              Артикул: N-VST10-222
+            </div>
+            <div class="color-grey-2 fz-13 fw-bold">
+              Размер: 1, Цвет: Золотой
+            </div>
+            <button
+              class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#star"></use>
+              </svg>
+              <span class="fw-semibold">В избранное</span>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+
+          <div class="quantity d-flex gap-2 p-2 border-grey-1 rounded-24">
+            <button class="quantity-btn quantity-minus" type="button">
+              <img src="img/icons/minus.svg" alt="minus">
+            </button>
+            <input type="number" class="quantity-input" value="1" min="1">
+            <button class="quantity-btn quantity-plus" type="button">
+              <img src="img/icons/plus.svg" alt="plus">
+            </button>
+          </div>
+
+          <div class="d-flex flex-column-reverse flex-lg-column gap-3 pt-2 mt-1">
+            <div class="cartItemPriceW d-flex justify-content-end align-items-center gap-2">
+              <span class="text-lg fw-light color-grey-2 text-decoration-line-through">100 000</span>
+              <span class="text-extra-lg fw-bold">155 000 ₽</span>
+            </div>
+            <div class="available available--green justify-content-end mb-0">В наличии</div>
+          </div>
+
+          <button class="cartItemRemove" type="button">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#trash"></use>
+            </svg>
+          </button>
+
+
+        </div>
+
+      </li>
+
+    </ul>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="bg--light-bckg rounded-20 cartBlock mb-4">
+          <h3 class="fw-semibold mb-3">Доставка</h3>
+          <div class="mb-3">
+            <div class="py-2">
+              <div class="radioW">
+                <input type="radio" name="type_del" id="type_del_1" checked>
+                <label for="type_del_1">
+                  <div class="d-flex gap-3">
+                    <div class="rect mt-1"></div>
+                    <div class="d-flex flex-column gap-1">
+                      <div class="h4 mb-0 fw-semibold">
+                        Самовывоз
+                      </div>
+                      <div class="color-grey-3">
+                        г. Иркутск, Рабочего Штаба, 66а
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="radioW">
+                <input type="radio" name="type_del" id="type_del_2">
+                <label for="type_del_2">
+                  <div class="d-flex gap-3">
+                    <div class="rect mt-1"></div>
+                    <div class="d-flex flex-column gap-1">
+                      <div class="h4 mb-0 fw-semibold">
+                        Курьером по Иркутску
+                      </div>
+                      <div class="color-grey-3">
+                        Доставим в течение 2 дней, стоимость доставки 300 руб.
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="radioW">
+                <input type="radio" name="type_del" id="type_del_3">
+                <label for="type_del_3">
+                  <div class="d-flex gap-3">
+                    <div class="rect mt-1"></div>
+                    <div class="d-flex flex-column gap-1">
+                      <div class="h4 mb-0 fw-semibold">
+                        Транспортной компанией СДЭК до двери
+                      </div>
+                      <div class="color-grey-3">
+                        Срок доставки 2-5 дней, стоимость доставки 1 300 руб.
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="radioW">
+                <input type="radio" name="type_del" id="type_del_4">
+                <label for="type_del_4">
+                  <div class="d-flex gap-3">
+                    <div class="rect mt-1"></div>
+                    <div class="d-flex flex-column gap-1">
+                      <div class="h4 mb-0 fw-semibold">
+                        Транспортной компанией СДЭК до пункта выдачи
+                      </div>
+                      <div class="color-grey-3">
+                        Срок доставки 2-5 дней, стоимость доставки 800 руб.
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="radioW">
+                <input type="radio" name="type_del" id="type_del_5">
+                <label for="type_del_5">
+                  <div class="d-flex gap-3">
+                    <div class="rect mt-1"></div>
+                    <div class="d-flex flex-column gap-1">
+                      <div class="h4 mb-0 fw-semibold">
+                        Почтой России
+                      </div>
+                      <div class="color-grey-3">
+                        Срок доставки 5-7 дней, стоимость доставки 600 руб.
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="py-2">
+              <div class="radioW">
+                <input type="radio" name="type_del" id="type_del_6">
+                <label for="type_del_6">
+                  <div class="d-flex gap-3">
+                    <div class="rect mt-1"></div>
+                    <div class="d-flex flex-column gap-1">
+                      <div class="h4 mb-0 fw-semibold">
+                        ПВЗ OZON
+                      </div>
+                      <div class="color-grey-3">
+                        Стоимость и сроки доставки рассчитываются менеджером после оформления заказа
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="bg--light-bckg rounded-20 cartBlock mb-4">
+          <h3 class="fw-semibold mb-3">Способ оплаты</h3>
+          <div class="py-2">
+            <div class="radioW">
+              <input type="radio" name="type_payment" id="type_payment_1" checked>
+              <label for="type_payment_1">
+                <div class="d-flex gap-3">
+                  <div class="rect mt-1"></div>
+                  <div class="d-flex flex-column gap-1">
+                    <div class="h4 mb-0 fw-semibold">
+                      Онлайн-картой (Мир, Visa, Mastercard, Maestro)
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>         
+  
+
+        </div>
+
+        <div class="bg--light-bckg rounded-20 cartBlock mb-4">
+          <h3 class="fw-semibold mb-3">Личные данные</h3>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="inputW">
+                <div class="mb-2 h5">
+                  ФИО
+                </div>
+                <input type="text" class="formInput border-grey-2" placeholder="ФИО">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="inputW">
+                <div class="mb-2 h5">
+                  Email
+                </div>
+                <input type="email" class="formInput border-grey-2" placeholder="+7(___)___ __-__">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="inputW">
+                <div class="mb-2 h5">
+                  Телефон
+                </div>
+                <input type="tel" class="formInput border-grey-2" placeholder="Email">
+              </div>
+            </div>
+          </div>
+          <div class="agreement py-3">
+            <input id="personal-agree" type="checkbox">
+            <label for="personal-agree">
+              <div class="rect"></div>
+              <div class="agreement-text fz-14 fw-semibold">
+                Запомнить мои данные
+              </div>
+
+            </label>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-lg-4">
+        <div class="bg--light-bckg p-4 rounded-20">
+  <h3 class="fw-semibold mb-4">Стоимость заказа</h3>
+  <div class="d-flex gap-4 pb-3 border-b-stroke cartOrderRow mb-4">
+    <span class="fz-20 fw-bold cartOrderCol">Итого:</span>
+    <span class="fz-20 fw-bold cartOrderCol">180 000 ₽</span>
+  </div>
+  <div class="d-flex gap-4 cartOrderRow mb-4">
+    <span class="fz-20 fw-medium cartOrderCol color-grey-3">Доставка:</span>
+    <span class="fz-20 fw-medium cartOrderCol color-grey-3">1 300 ₽</span>
+  </div>
+  <div class="d-flex gap-4 cartOrderRow mb-4">
+    <span class="fz-20 fw-medium cartOrderCol color-grey-3">Скидка:</span>
+    <span class="fz-20 fw-medium cartOrderCol color-grey-3">120 000 ₽</span>
+  </div>
+  <div class="d-flex gap-4 cartOrderRow mb-4 pb-3 border-b-stroke">
+    <span class="text-extra-lg fw-bold cartOrderCol">Итого к оплате:</span>
+    <span class="text-extra-lg fw-bold cartOrderCol">61 300 ₽</span>
+  </div>
+  <div class="agreement py-2 mb-4">
+    <input type="checkbox" id="orderAgree">
+    <label for="orderAgree" class="align-items-start">
+      <div class="rect"></div>
+      <div class="agreementText fz-13">
+        Я ознакомился с условиями <a class="color-orange" href="#">Публичной оферты</a> и соглашаюсь на обработку персональных данных в соответствии с
+        <a class="color-orange" href="#">Пользовательским соглашением</a>, и <a class="color-orange" href="#">Политикой в отношении обработки персональных данных</a>
+      </div>
+    </label>
+  </div>
+  <button class="button button--orange button--h-48 w-100 rounded-20 fw-bold fz-16">
+    Оформить заказ
+  </button>
+
+</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+			<section class="popular sect sliderW overflow-hidden pb-0 pt-0">
+  <div class="container">
+
+    <div class="sectHead d-flex align-items-center justify-content-between gap-3">
+      <h2 class="h2">
+        Похожие товары
+      </h2>
+      <div class="navArrowW d-flex gap-2">
+        <button class="navArrow navArrowPrev" type="button">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext" type="button">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper productSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide productSlide">
+          <div class="productCard">
+  <a href="#" class="productCardImg">
+    <img src="img/admin/shop/image-1.png" alt="image">
+  </a>
+  <div class="productCardContent">
+    <a href="#" class="productCardTitle">
+      Костюм лет. Стрелок цв.Тайгер тк.Смесовая Сорочка р.52-54/182-188
+    </a>
+    <div class="d-flex align-items-center gap-2 productCardPriceW">
+      <span class="fw-bold">15 000 ₽</span>
+      <span class="fw-light color-grey-2 text-decoration-line-through">30 000</span>
+    </div>
+    <button class="button button--orange productCardBtn">
+      <img src="img/icons/product-cart.svg" alt="cart">
+      <span class="fw-bold">В корзину</span>
+    </button>
+  </div>
+
+  <div class="productCardSpec bg--haki">
+    -50%
+  </div>
+  <button class="productCardAddToWishlist">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#star"></use>
+    </svg>
+  </button>
+</div>
+        </div>
+        <div class="swiper-slide productSlide">
+          <div class="productCard">
+  <a href="#" class="productCardImg">
+    <img src="img/admin/shop/image-2.png" alt="image">
+  </a>
+  <div class="productCardContent">
+    <a href="#" class="productCardTitle">
+      Удочка для зимней рыбалки Сорога
+    </a>
+    <div class="d-flex align-items-center gap-2 productCardPriceW">
+      <span class="fw-bold">4 000 ₽</span>
+      <span class="fw-light color-grey-2 text-decoration-line-through">7 000</span>
+    </div>
+    <button class="button button--orange productCardBtn">
+      <img src="img/icons/product-cart.svg" alt="cart">
+      <span class="fw-bold">В корзину</span>
+    </button>
+  </div>
+
+  <div class="productCardSpec bg--orange">
+    Хит
+  </div>
+  <button class="productCardAddToWishlist active">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#star"></use>
+    </svg>
+  </button>
+</div>
+        </div>
+        <div class="swiper-slide productSlide">
+          <div class="productCard">
+  <a href="#" class="productCardImg">
+    <img src="img/admin/shop/image-3.png" alt="image">
+  </a>
+  <div class="productCardContent">
+    <a href="#" class="productCardTitle">
+      Блесна вертикальная Namazu "Skat", размер 55 мм, вес 10 г
+    </a>
+    <div class="d-flex align-items-center gap-2 productCardPriceW">
+      <span class="fw-bold">4 000 ₽</span>
+      <span class="fw-light color-grey-2 text-decoration-line-through">7 000</span>
+    </div>
+    <button class="button button--orange productCardBtn">
+      <img src="img/icons/product-cart.svg" alt="cart">
+      <span class="fw-bold">В корзину</span>
+    </button>
+  </div>
+
+  <div class="productCardSpec bg--haki">
+    1+1=3
+  </div>
+  <button class="productCardAddToWishlist active">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#star"></use>
+    </svg>
+  </button>
+</div>
+        </div>
+        <div class="swiper-slide productSlide">
+          <div class="productCard">
+  <a href="#" class="productCardImg">
+    <img src="img/admin/shop/image-4.png" alt="image">
+  </a>
+  <div class="productCardContent">
+    <a href="#" class="productCardTitle">
+      FORREST Палатка Halt Evo 4-х местная
+    </a>
+    <div class="d-flex align-items-center gap-2 productCardPriceW">
+      <span class="fw-bold">4 000 ₽</span>
+      <span class="fw-light color-grey-2 text-decoration-line-through">7 000</span>
+    </div>
+    <button class="button button--orange productCardBtn">
+      <img src="img/icons/product-cart.svg" alt="cart">
+      <span class="fw-bold">В корзину</span>
+    </button>
+  </div>
+
+  <div class="productCardSpec bg--haki">
+    Новинка
+  </div>
+  <button class="productCardAddToWishlist active">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#star"></use>
+    </svg>
+  </button>
+</div>
+        </div>
+        <div class="swiper-slide productSlide">
+          <div class="productCard">
+  <a href="#" class="productCardImg">
+    <img src="img/admin/shop/image-1.png" alt="image">
+  </a>
+  <div class="productCardContent">
+    <a href="#" class="productCardTitle">
+      Костюм лет. Стрелок цв.Тайгер тк.Смесовая Сорочка р.52-54/182-188
+    </a>
+    <div class="d-flex align-items-center gap-2 productCardPriceW">
+      <span class="fw-bold">15 000 ₽</span>
+      <span class="fw-light color-grey-2 text-decoration-line-through">30 000</span>
+    </div>
+    <button class="button button--orange productCardBtn">
+      <img src="img/icons/product-cart.svg" alt="cart">
+      <span class="fw-bold">В корзину</span>
+    </button>
+  </div>
+
+  <div class="productCardSpec bg--haki">
+    -50%
+  </div>
+  <button class="productCardAddToWishlist">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#star"></use>
+    </svg>
+  </button>
+</div>
+        </div>
+        <div class="swiper-slide productSlide">
+          <div class="productCard">
+  <a href="#" class="productCardImg">
+    <img src="img/admin/shop/image-2.png" alt="image">
+  </a>
+  <div class="productCardContent">
+    <a href="#" class="productCardTitle">
+      Удочка для зимней рыбалки Сорога
+    </a>
+    <div class="d-flex align-items-center gap-2 productCardPriceW">
+      <span class="fw-bold">4 000 ₽</span>
+      <span class="fw-light color-grey-2 text-decoration-line-through">7 000</span>
+    </div>
+    <button class="button button--orange productCardBtn">
+      <img src="img/icons/product-cart.svg" alt="cart">
+      <span class="fw-bold">В корзину</span>
+    </button>
+  </div>
+
+  <div class="productCardSpec bg--orange">
+    Хит
+  </div>
+  <button class="productCardAddToWishlist active">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#star"></use>
+    </svg>
+  </button>
+</div>
+        </div>
+        <div class="swiper-slide productSlide">
+          <div class="productCard">
+  <a href="#" class="productCardImg">
+    <img src="img/admin/shop/image-3.png" alt="image">
+  </a>
+  <div class="productCardContent">
+    <a href="#" class="productCardTitle">
+      Блесна вертикальная Namazu "Skat", размер 55 мм, вес 10 г
+    </a>
+    <div class="d-flex align-items-center gap-2 productCardPriceW">
+      <span class="fw-bold">4 000 ₽</span>
+      <span class="fw-light color-grey-2 text-decoration-line-through">7 000</span>
+    </div>
+    <button class="button button--orange productCardBtn">
+      <img src="img/icons/product-cart.svg" alt="cart">
+      <span class="fw-bold">В корзину</span>
+    </button>
+  </div>
+
+  <div class="productCardSpec bg--haki">
+    1+1=3
+  </div>
+  <button class="productCardAddToWishlist active">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#star"></use>
+    </svg>
+  </button>
+</div>
+        </div>
+        <div class="swiper-slide productSlide">
+          <div class="productCard">
+  <a href="#" class="productCardImg">
+    <img src="img/admin/shop/image-4.png" alt="image">
+  </a>
+  <div class="productCardContent">
+    <a href="#" class="productCardTitle">
+      FORREST Палатка Halt Evo 4-х местная
+    </a>
+    <div class="d-flex align-items-center gap-2 productCardPriceW">
+      <span class="fw-bold">4 000 ₽</span>
+      <span class="fw-light color-grey-2 text-decoration-line-through">7 000</span>
+    </div>
+    <button class="button button--orange productCardBtn">
+      <img src="img/icons/product-cart.svg" alt="cart">
+      <span class="fw-bold">В корзину</span>
+    </button>
+  </div>
+
+  <div class="productCardSpec bg--haki">
+    Новинка
+  </div>
+  <button class="productCardAddToWishlist active">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#star"></use>
+    </svg>
+  </button>
+</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="footerT">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-xl-4">
+          <nav class="footerNav">
+            <h3 class="footerNavTitle">
+              Компания
+            </h3>
+            <ul>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Сертификаты и дипломы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+          <nav class="footerNav">
+            <h3 class="footerNavTitle">
+              Покупателям
+            </h3>
+            <ul>
+              <li><a href="#">Где купить?</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Обмен и возврат</a></li>
+              <li><a href="#">Оптовым клиентам</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+          <h3 class="footerNavTitle">
+            Свяжитесь с нами
+          </h3>
+          <div class="d-flex gap-2 align-items-center mb-3 pb-2">
+            <a href="tel:8 (3952) 505-511" class="footerPhone fw-bold fz-13">8 (3952) 505-511</a>
+            <span class="fw-semibold fz-13 color-grey-2">ПН-ПТ с 8:00 - 17:00</span>
+          </div>
+          <a href="mailto:info1@vershina38.ru" class="footerMail fw-bold fz-13">info1@vershina38.ru</a>
+          <div class="socials my-3 py-1">
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="img/admin/socials/whatsapp.svg" alt="image">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="nofollow">
+                  <img src="img/admin/socials/telegram.svg" alt="image">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="button button--sm  button--orange px-3 rounded-20 fw-bold">
+            Заказать обратный звонок
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footerB">
+    <div class="container">
+      <div class="footerBW">
+        <div class="footerCol">
+          <div class="fz-14">
+            2025 © ООО ТК Вершина
+          </div>
+        </div>
+        <div class="footerCol">
+          <div class="d-flex flex-column gap-2">
+            <a class="fz-14 color-white" href="#">Соглашение на обработку персональных данных</a>
+            <a class="fz-14 color-white" href="#">Пользовательское соглашение</a>
+            <a class="fz-14 color-white" href="#">Договор-оферты</a>
+          </div>
+        </div>
+        <div class="footerCol">
+          <a href="#" class="footerLogo logo">
+            <img src="img/admin/logo/logo-white.svg" alt="logo">
+          </a>
+        </div>
+        <div class="footerCol">
+          <a class="fz-14 color-white" href="#">Реквизиты организации</a>
+        </div>
+        <div class="footerCol">
+          <a href="#" class="develop fz-14 color-white d-flex gap-2">
+             Разработка сайта – Вангер.рф
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+		<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+    <h2 class="h2">Оставьте заявку</h2>
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <p class="modalDescr">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <div class="modalForm">
+      <div class="inputW">
+        <input type="text" class="formInput" placeholder="Как вас зовут?">
+      </div>
+      <div class="inputW">
+        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+      </div>
+      <button class="button button--blue formBtn">
+        Отправить заявку
+      </button>
+      <div class="agreement">
+        <p>
+          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>
