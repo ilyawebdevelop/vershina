@@ -1,0 +1,248 @@
+<section class="sect pt-0">
+  <div class="container">
+
+
+    <h1 class="h1 mb-4">
+      Поиск
+    </h1>
+
+    <div class="searchW position-relative d-flex align-items-center rounded-30 justify-content-between mb-3">
+      <input type="search" class="formInput w-100" placeholder="Поиск" value="Палатка">
+      <button class="searchFieldClear ml-auto" type="button">
+        <img src="@img/icons/clear.svg" alt="clear">
+      </button>
+      <button class="button button--orange rounded-30 text-uppercase fw-bold">
+        искать
+      </button>
+    </div>
+
+    <div class="tabs searchTabs" data-tabs="popup">
+      <ul class="tabs__nav">
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Все</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Товары</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Новости</button></li>
+        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Прочее</button></li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__panel">
+
+          <div class="mb-5">
+            <h1 class="h3 mb-4 pb-2">
+              Товары из каталога
+            </h1>
+            <div class="row mb-4">
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-1.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-2.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-1.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-2.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-1.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-2.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-1.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-2.html',{})
+              </div>
+            </div>
+            <button class="button button--transparent-stroke fw-bold color-grey-3 fz-16 rounded-16 loadmore mx-auto">
+              Загрузить ещё
+            </button>
+          </div>
+          <div class="mb-5">
+            <h1 class="h3 mb-4 pb-2">
+              Новости
+            </h1>
+            <div class="row mb-4">
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2.html',{})
+              </div>
+            </div>
+            <button class="button button--transparent-stroke fw-bold color-grey-3 fz-16 rounded-16 loadmore mx-auto">
+              Загрузить ещё
+            </button>
+          </div>
+          <div class="mb-5">
+            <h1 class="h3 mb-4 pb-2">
+              Прочее
+            </h1>
+            <div class="row mb-4">
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+            </div>
+            <button class="button button--transparent-stroke fw-bold color-grey-3 fz-16 rounded-16 loadmore mx-auto">
+              Загрузить ещё
+            </button>
+          </div>
+
+        </div>
+        <div class="tabs__panel">
+          <div class="mb-5">
+            <div class="row mb-4">
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-1.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-2.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-1.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-2.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-1.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-2.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-1.html',{})
+              </div>
+              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+                @@include('../shop/catalog-card-2.html',{})
+              </div>
+            </div>
+            <button class="button button--transparent-stroke fw-bold color-grey-3 fz-16 rounded-16 loadmore mx-auto">
+              Загрузить ещё
+            </button>
+          </div>
+        </div>
+        <div class="tabs__panel">
+          <div class="mb-5">
+            <div class="row mb-4">
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2.html',{})
+              </div>
+            </div>
+            <button class="button button--transparent-stroke fw-bold color-grey-3 fz-16 rounded-16 loadmore mx-auto">
+              Загрузить ещё
+            </button>
+          </div>
+        </div>
+        <div class="tabs__panel">
+          <div class="mb-5">     
+            <div class="row mb-4">
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-1-prochee.html',{})
+              </div>
+              <div class="col-12 mb-4">
+                @@include('../news/card-sm-2-prochee.html',{})
+              </div>
+            </div>
+            <button class="button button--transparent-stroke fw-bold color-grey-3 fz-16 rounded-16 loadmore mx-auto">
+              Загрузить ещё
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,19 @@
+.order {
+  &Item {
+    padding: 20px;
+    display: flex;
+
+    span {
+      display: block;
+      flex-grow: 1;
+      flex-basis: 0;
+
+      &:nth-child(4) {
+        width: 70px;
+        flex-shrink: 0;
+        text-align: end;
+        max-width: 70px;
+      }
+    }
+  }
+}

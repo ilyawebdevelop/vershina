@@ -34,7 +34,8 @@ html {
 }
 
 body.hidden {
-  overflow: hidden
+  overflow: hidden;
+  padding-right: 15px;
 }
 
 body.modal-open {
@@ -88,6 +89,10 @@ section {
     background-color: #fff;
   }
 
+  &--h-90 {
+    height: 90px;
+  }
+
   &--h-140 {
     height: 140px;
   }
@@ -125,7 +130,7 @@ section {
 .formSelect {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url('@img/icons/arrow-down-black.svg') no-repeat right center / 20px;
+  background: url('@img/icons/arrow-down-black.svg') no-repeat right 10px center / 20px;
   padding-right: 24px;
   cursor: pointer;
 
@@ -147,6 +152,10 @@ section {
 
   &--240 {
     width: 240px;
+  }
+
+  &.pl-10 {
+    padding-left: 10px;
   }
 }
 
@@ -290,6 +299,7 @@ h3,
 .h3 {
   font-size: 28px;
   line-height: 40px;
+  font-weight: 600;
 
   @media (max-width: 991px) {
     font-size: 18px;
@@ -301,12 +311,18 @@ h4,
 .h4 {
   font-size: 18px;
   line-height: 28px;
+  font-weight: 600;
 }
 
 h5,
 .h5 {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 600;
+}
+h6,.h6 {
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 600;
 }
 
@@ -349,15 +365,18 @@ h5,
     list-style-type: disc;
     padding-left: 20px;
   }
- &>ol {
+
+  &>ol {
     margin-bottom: 15px;
     list-style-type: decimalF;
     padding-left: 20px;
   }
+
   &>a {
     display: inline;
     border-bottom: 1px solid #000;
   }
+
   h4 {
     font-weight: 600;
     margin-bottom: 0;
@@ -379,6 +398,7 @@ h5,
 .fz-15 {
   font-size: 15px;
 }
+
 .fz-20 {
   font-size: 20px;
 }
@@ -506,6 +526,10 @@ a.color-white {
   background-color: var(--haki);
 }
 
+.bg--white {
+  background-color: #fff;
+}
+
 .searchW {
   display: flex;
   padding: 6px 6px 6px 0;
@@ -524,6 +548,9 @@ a.color-white {
 
     &::placeholder {
       color: var(--grey3);
+    }
+    &--bg-white {
+      background-color: #fff;
     }
   }
 
@@ -773,7 +800,9 @@ a.color-white {
     }
   }
 }
-
+.pl-26 {
+  padding-left: 26px;
+}
 .pl-36 {
   padding-left: 36px;
 }
@@ -781,6 +810,7 @@ a.color-white {
 .agreement {
   input {
     display: none;
+
     &:checked {
       &+label {
         .rect {
@@ -796,6 +826,7 @@ a.color-white {
     display: flex;
     column-gap: 10px;
     align-items: center;
+
     .rect {
       width: 20px;
       height: 20px;
@@ -805,4 +836,46 @@ a.color-white {
       background-color: #fff;
     }
   }
+}
+
+.max-w-480 {
+  max-width: 480px;
+}
+
+.max-w-910 {
+  max-width: 910px;
+}
+
+.togglePasswordBtn {
+  position: absolute;
+  right: 11px;
+  top: 42px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.d-grid .g-col-3 {
+  grid-column: 3 span;
+}
+
+.d-grid .g-col-6 {
+  grid-column: 6 span;
+}
+.errorTitle {
+  margin-bottom: 12px;
+}
+.errorDescr{
+  max-width: 420px;
+  margin-bottom: 35px;
+}
+.errorSect{
+  // margin-top: -90px;
+}
+.errorImg {
+  margin-top: -80px;
 }

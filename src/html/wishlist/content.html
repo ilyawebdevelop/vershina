@@ -1,0 +1,47 @@
+<section class="sect pt-0">
+  <div class="container">
+
+    <div class="pageHead mb-4">
+      <h1 class="h1 mb-0">
+        Личный кабинет
+      </h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        @@include('../profile/sidebar-clean.html',{})
+      </div>
+      <div class="col-lg-9">
+        <div class="pl-26">
+          <h2 class="mb-4 pb-2 fw-semibold">Избранное</h2>
+          <div class="row mb-4">
+            <div class="col-lg-6 col-xl-4 mb-4">
+              @@include('../shop/catalog-card-1.html',{})
+            </div>
+            <div class="col-lg-6 col-xl-4 mb-4">
+              @@include('../shop/catalog-card-2.html',{})
+            </div>
+            <div class="col-lg-6 col-xl-4 mb-4">
+              @@include('../shop/catalog-card-1.html',{})
+            </div>
+            <div class="col-lg-6 col-xl-4 mb-4">
+              @@include('../shop/catalog-card-2.html',{})
+            </div>
+            <div class="col-lg-6 col-xl-4 mb-4">
+              @@include('../shop/catalog-card-1.html',{})
+            </div>
+            <div class="col-lg-6 col-xl-4 mb-4">
+              @@include('../shop/catalog-card-2.html',{})
+            </div>
+          </div>
+                  <button class="button button--transparent-stroke fw-bold color-grey-3 fz-16 rounded-16 loadmore mx-auto">
+          Загрузить ещё
+        </button>
+        @@include('../shop/pagination.html',{})
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

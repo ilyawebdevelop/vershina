@@ -1,7 +1,7 @@
 // Header
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   &T {
     background: var(--haki);
@@ -51,6 +51,8 @@
   &B {
     padding-top: 16px;
     padding-bottom: 16px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 
     &--blur {
       backdrop-filter: blur(12px);
@@ -199,6 +201,10 @@
 
       .has-submenu>a {
         background: url('@img/icons/arrow-down-black.svg') no-repeat right top 0 / 20px;
+
+        &:hover {
+          background: url('@img/icons/arrow-up.svg') no-repeat right top 0 / 20px;
+        }
       }
     }
   }
@@ -213,5 +219,98 @@
         // background-position: left 16px center;
       }
     }
+  }
+}
+
+.headerMenu {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh + 50px);
+  overflow-y: scroll;
+  background-color: #fff;
+  top: 147px;
+  border-top: 1px solid var(--stroke);
+  display: none;
+
+  .container {
+    height: 100%;
+  }
+
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.5s;
+    animation: shows 0.5s;
+  }
+
+  &Nav {
+    ul {
+      li {
+        a {
+          padding-top: 8px;
+          padding-bottom: 8px;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 700;
+          display: flex;
+          text-transform: uppercase;
+          padding-left: 28px;
+          transition: background-color .2s linear, color .2s linear, border-color .2s linear;
+          border-left: 4px solid transparent;
+
+          &:hover {
+            background-color: #fff;
+            color: var(--orange);
+            border-color: var(--orange)
+          }
+        }
+
+        &.active {
+          a {
+            background-color: #fff;
+            color: var(--orange);
+            border-color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+
+  &Sidebar {
+    background-color: var(--light-bckg);
+    width: 200px;
+    flex-shrink: 0;
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 200px;
+    padding-left: 8px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 100%;
+      top: 0;
+      width: calc((100vw - 1300px) / 2);
+      height: 100%;
+      background-color: var(--light-bckg);
+    }
+  }
+
+  &Content {
+    width: 100%;
+    padding: 32px;
+    padding-bottom: 200px;
+  }
+
+  &W {
+    display: flex;
+    min-height: 100%;
+  }
+}
+
+.headerMenuTabContent {
+  display: none;
+
+  &.active {
+    display: block;
   }
 }

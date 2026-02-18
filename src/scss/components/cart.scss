@@ -5,6 +5,9 @@
     &Price {
       &W {
         min-width: 200px;
+        &--sm {
+          min-width: 100px;
+        }
       }
     }
 
@@ -19,6 +22,8 @@
     &Img {
       position: relative;
       flex-shrink: 0;
+      background-color: #fff;
+      border-radius: 20px;
 
       &:hover {
         opacity: .85;
@@ -33,6 +38,12 @@
         padding-top: 10px;
         padding-bottom: 10px;
 
+      }
+      &--sm {
+        img {
+          width: 80px;
+          height: 80px;
+        }
       }
     }
 

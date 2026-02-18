@@ -1,0 +1,31 @@
+.sidebar {
+  padding: 24px 32px;
+  border-radius: 20px;
+  background-color: var(--light-bckg);
+  margin-bottom: 70px;
+
+  ul {
+
+    li {
+
+      a {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        width: fit-content;
+        &:hover {
+          color: var(--orange);
+        }
+      }
+
+      &.active {
+        a {
+          color: var(--orange);
+        }
+      }
+    }
+  }
+}

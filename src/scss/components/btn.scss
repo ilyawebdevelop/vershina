@@ -106,9 +106,11 @@
       background-color: #e36a00;
     }
   }
+
   &--haki {
     background-color: var(--haki);
     color: #fff;
+
     &:hover {
       background-color: var(--orange);
     }
@@ -157,6 +159,7 @@
   &.fz-16 {
     font-size: 16px;
   }
+
   &--h-48 {
     height: 48px;
   }
@@ -168,6 +171,14 @@
       stroke: var(--grey3);
       stroke-width: 2px;
     }
+  }
+
+  &.ml-auto {
+    margin-left: auto;
+  }
+
+  &.min-w-240 {
+    min-width: 240px;
   }
 }
 
@@ -206,8 +217,14 @@
   }
 }
 
-.headerBtnCatalog {
+.headerBtnCatalog,
+.headerBtnCatalogMenu {
   height: 40px;
+
+  &>svg {
+    width: 20px;
+    height: 20px;
+  }
 
   .rect {
     display: flex;
@@ -304,6 +321,7 @@
 
   height: 48px;
 }
+
 .productMainAddToWishlist--h-32 {
   height: 32px;
 }
@@ -362,5 +380,12 @@
     fill: transparent;
     stroke: var(--grey3);
     stroke-width: 2px;
+  }
+}
+
+.add-address {
+  svg {
+    width: 20px;
+    height: 20px;
   }
 }

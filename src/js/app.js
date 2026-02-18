@@ -195,9 +195,84 @@ let mapItemBuyArray = document.querySelectorAll('.map-item-buy');
 mapItemBuyArray.forEach(el => {
   el.addEventListener('click', () => {
     mapItemBuyArray.forEach(elem => {
-    elem.classList.remove('active');
+      elem.classList.remove('active');
     });
     mapBuyIframe.src = el.dataset.src;
     el.classList.add('active')
   });
+});
+
+const togglePassword = document.querySelectorAll('.togglePasswordBtn');
+togglePassword.forEach(el => {
+  let password = el.closest('.inputW').querySelector('.formInput--password');
+  el.addEventListener('click', () => {
+    // Toggle the type attribute using
+    // getAttribure() method
+    const type = password.getAttribute('type') === 'password' ?
+      'text' : 'password';
+    password.setAttribute('type', type);
+  });
+});
+
+
+// Burger
+const btnMenu = document.querySelector('#toggle');
+const menu = document.querySelector('.headerNavMobile');
+const bodyEl = document.querySelector('body');
+const searchClose = document.querySelector('.headerSearchMobileClose');
+
+// const toggleMenu = function () {
+//   menu.classList.toggle('active');
+// }
+// const toggleBurger = function () {
+//   btnMenu.classList.toggle('active');
+// }
+const bodyOverflow = function () {
+  bodyEl.classList.toggle('hidden');
+}
+const menuClose = function () {
+  toggleBurger();
+  bodyOverflow();
+  toggleMenu();
+}
+
+btnMenu?.addEventListener('click', function (e) {
+  e.stopPropagation();
+  toggleMenu();
+  toggleBurger();
+  bodyOverflow();
+});
+
+
+let headerMenu = document.querySelector('.headerMenu');
+let headerBtnCatalog = document.querySelector('.headerBtnCatalog');
+let headerBtnCatalogMenu = document.querySelector('.headerBtnCatalogMenu');
+
+headerBtnCatalog?.addEventListener('click', () => {
+  headerMenu.classList.add('active');
+  bodyOverflow();
+});
+headerBtnCatalogMenu?.addEventListener('click', () => {
+  headerMenu.classList.remove('active');
+  bodyOverflow();
+});
+let headerMenuLiArray = document.querySelectorAll('.headerMenuNav ul li');
+let headerMenuNavArray = document.querySelectorAll('.headerMenuNav ul li a');
+let headerMenuTabContentArray = document.querySelectorAll('.headerMenuTabContent');
+headerMenuNavArray.forEach(el => {
+  el.addEventListener('click', (event) => {
+    event.preventDefault();
+    headerMenuLiArray.forEach(menuItem => {
+    menuItem.classList.remove('active');
+    });
+    let li = el.closest('li');
+    li.classList.add('active');
+    console.log('Переход отменен');
+    headerMenuTabContentArray.forEach(tabContent => {
+      tabContent.classList.remove('active');
+      if (el.dataset.id == tabContent.dataset.id) {
+        tabContent.classList.add('active');
+      }
+    });
+  })
 });

@@ -35,8 +35,44 @@
     }
   }
 }
+
 .productTabs {
   .content {
     color: #333;
+  }
+}
+
+.searchTabs {
+  .tabs__panel {
+    padding-top: 40px;
+  }
+  .tabs__nav {
+    border: none;
+    column-gap: 8px;
+
+    &-btn {
+      background-color: var(--light-bckg);
+      border-radius: 26px;
+      border: 1px solid var(--light-bckg);
+      padding-left: 24px;
+      padding-right: 24px;
+      height: 40px;
+      padding-top: 0;
+      padding-bottom: 0;
+      color: var(--grey3);
+      transition: background-color .2s linear, color .2s linear, borrder-color .2s linear;
+
+      &:hover {
+        background-color: var(--orange);
+        color: #fff;
+        border-color: var(--orange);
+      }
+
+      &--active {
+        border-color: var(--orange);
+        background-color: var(--orange);
+        color: #fff;
+      }
+    }
   }
 }

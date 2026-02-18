@@ -1,0 +1,166 @@
+<section class="sect pt-0">
+  <div class="container">
+
+    <div class="pageHead mb-4">
+      <h1 class="h1 mb-0">
+        Личный кабинет
+      </h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        @@include('../profile/sidebar-clean.html',{})
+      </div>
+      <div class="col-lg-9">
+        <div class="bg--light-bckg rounded-20 p-4 mb-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="mb-0 fw-semibold">Заказ #123456789</h3>
+            <span class="color-grey-3">14/12/2025, 13:21</span>
+          </div>
+        </div>
+
+        <div class="d-grid grid-cols-12 gap-2 mb-4">
+          <div class="bg--light-bckg p-4 rounded-20 g-col-3">
+            <h4 class="mb-3">Личные данные</h4>
+            <h6 class="mb-2">Иванов Иван Ианович</h6>
+            <a class="color-black d-block mb-2 fz-13" href="mailto:ivanov@mail.ru">ivanov@mail.ru</a>
+            <a class="color-black d-block mb-2 fz-13" href="tel:+71234567890">+7 (123) 456 78-90</a>
+          </div>
+          <div class="bg--light-bckg p-4 rounded-20 g-col-3">
+            <h4 class="mb-3">Доставка</h4>
+            <h6 class="mb-2">Транспортной компанией СДЭК до двери</h6>
+            <span class="d-block mb-2 fz-13" href="mailto:ivanov@mail.ru">г. Иркутск, ул. Улица, 1,
+              23</span>
+          </div>
+          <div class="bg--light-bckg p-4 rounded-20 g-col-6">
+            <h4 class="mb-3">Способ оплаты</h4>
+            <h6 class="mb-2">Оплата по счету</h6>
+            <span class="fz-13 d-block mb-2">
+              ООО «Компания #1» ЮРИДИЧЕСКИЙ АДРЕС 123456, г. Москва, ул. Подвойского, д. 14, стр. 7 Почтовый адрес
+              123456, г. Москва, ул. Подвойского, д. 14, стр. 7 ИНН 7712345678 КПП 779101001 БИК 044521234 Р/С
+              40702810123450101230 в Московский банк ПАО Сбербанк г. Москва К/С 30101234500000000225 ОКПО 12345678 ОКАТО
+              87654321000 ОКВЭД (основной) 18.15 ОГРН 1047712345678
+            </span>
+          </div>
+        </div>
+
+        <div class="bg--light-bckg p-4 rounded-20 mb-4">
+          <h4 class="mb-3">Информация о товарах</h4>
+
+          <div class="cartItem d-flex justify-content-between gap-4 py-2">
+            <div class="d-flex gap-4">
+              <a href="#" class="cartItemImg cartItemImg--sm">
+                <img src="@img/admin/shop/image-3.png" alt="image">
+              </a>
+              <div class="d-flex gap-1 flex-column">
+                <h5 class="mb-1"><a class="color-black" href="#">Блесна вертикальная Namazu "Skat", размер 55 мм, вес 10
+                    г</a></h5>
+                <div class="color-grey-2 fz-13 fw-bold">
+                  Артикул: N-VST10-222
+                </div>
+                <div class="color-grey-2 fz-13 fw-bold">
+                  Размер: 1, Цвет: Золотой
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-4 align-items-start">
+              <span>1 шт.</span>
+              <div
+                class="cartItemPriceW cartItemPriceW--sm d-flex flex-column-reverse justify-content-end align-items-end gap-2">
+                <span class="fz-13 fw-light color-grey-2 text-decoration-line-through">30 000</span>
+                <span class="fw-bold">15 000 ₽</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartItem d-flex justify-content-between gap-4 py-2">
+            <div class="d-flex gap-4">
+              <a href="#" class="cartItemImg cartItemImg--sm">
+                <img src="@img/admin/shop/image-2.png" alt="image">
+              </a>
+              <div class="d-flex gap-1 flex-column">
+                <h5 class="mb-1"><a class="color-black" href="#">Блесна вертикальная Namazu "Skat", размер 55 мм, вес 10
+                    г</a></h5>
+                <div class="color-grey-2 fz-13 fw-bold">
+                  Артикул: N-VST10-222
+                </div>
+                <div class="color-grey-2 fz-13 fw-bold">
+                  Размер: 1, Цвет: Золотой
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-4 align-items-start">
+              <span>1 шт.</span>
+              <div
+                class="cartItemPriceW cartItemPriceW--sm d-flex flex-column-reverse justify-content-end align-items-end gap-2">
+                <span class="fz-13 fw-light color-grey-2 text-decoration-line-through">60 000</span>
+                <span class="fw-bold">30 000 ₽</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartItem d-flex justify-content-between gap-4 py-2 border-0">
+            <div class="d-flex gap-4">
+              <a href="#" class="cartItemImg cartItemImg--sm">
+                <img src="@img/admin/shop/image-1.png" alt="image">
+              </a>
+              <div class="d-flex gap-1 flex-column">
+                <h5 class="mb-1"><a class="color-black" href="#">Блесна вертикальная
+                  </a></h5>
+                <div class="color-grey-2 fz-13 fw-bold">
+                  Артикул: N-VST10-222
+                </div>
+                <div class="color-grey-2 fz-13 fw-bold">
+                  Размер: 1, Цвет: Золотой
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-4 align-items-start">
+              <span>12 шт.</span>
+              <div
+                class="cartItemPriceW cartItemPriceW--sm d-flex flex-column-reverse justify-content-end align-items-end gap-2">
+                <span class="fz-13 fw-light color-grey-2 text-decoration-line-through">260 000</span>
+                <span class="fw-bold">130 000 ₽</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bg--light-bckg p-4 rounded-20">
+          <h4 class="mb-4">Стоимость заказа</h4>
+          <div class="pb-2 border-b-stroke d-flex justify-content-between align-items-center mb-2 gap-2">
+            <span class="fw-bold">Сумма:</span>
+            <span class="fw-bold">180 000 ₽</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-2 gap-2">
+            <div class="color-grey-3">
+              Доставка:
+            </div>
+            <div class="color-grey-3">
+              1 300 ₽
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-2 gap-2">
+            <div class="color-grey-3">
+              Скидка:
+            </div>
+            <div class="color-grey-3">
+              120 000 ₽
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-2 gap-2 pb-3 border-b-stroke">
+            <div class="text-extra-lg fw-bold">
+              Итого к оплате:
+            </div>
+            <div class="fw-bold">
+              120 000 ₽
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

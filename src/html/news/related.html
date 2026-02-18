@@ -1,0 +1,44 @@
+<section class="news sect pt-0 sliderW">
+  <div class="container">
+
+    <div class="sectHead d-flex align-items-center justify-content-between gap-3">
+      <h2 class="h2">
+        Также вам будет интересно
+      </h2>
+      <div class="d-flex gap-4 align-items-center">     
+        <div class="navArrowW d-flex gap-2">
+          <button class="navArrow navArrowPrev" type="button">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="navArrow navArrowNext" type="button">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper newsSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide newsSlide">
+          @@include('../news/card-1.html',{})
+        </div>
+        <div class="swiper-slide newsSlide">
+          @@include('../news/card-2.html',{})
+        </div>
+        <div class="swiper-slide newsSlide">
+          @@include('../news/card-1.html',{})
+        </div>
+        <div class="swiper-slide newsSlide">
+          @@include('../news/card-2.html',{})
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

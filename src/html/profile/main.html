@@ -1,0 +1,102 @@
+<section class="sect pt-0">
+  <div class="container">
+
+    <div class="pageHead mb-4">
+      <h1 class="h1 mb-0">
+        Личный кабинет
+      </h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        @@include('sidebar.html',{})
+      </div>
+      <div class="col-lg-9">
+        <div class="bg--light-bckg rounded-20 cartBlock">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">Профиль</h2>
+            <button class="button button--white pe-none fz-16 rounded-20 px-3 color-grey-3">
+              Розничный покупатель
+            </button>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <div class="inputW">
+                <div class="h5 mb-2">ФИО</div>
+                <input type="text" class="formInput border-grey-2" value="Иванов Иван Ианович">
+              </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <div class="inputW">
+                <div class="h5 mb-2">Email</div>
+                <input type="email" class="formInput border-grey-2" value="ivanov@mail.ru">
+              </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <div class="inputW">
+                <div class="h5 mb-2">Телефон</div>
+                <input type="tel" class="formInput border-grey-2" value="+7 (123) 456 78-90">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="h5 mb-2">Адрес доставки</div>
+            </div>
+            <div class="col-lg-4 mb-2">
+              <div class="selectW">
+
+                <select name="adress_1" id="adress_1"
+                  class="formSelect formSelect--bg-white border-grey-2 w-100 rounded-8 pl-10 h-40">
+                  <option value="1">
+                    г. Иркутск
+                  </option>
+                  <option value="2">
+                    г. Ангарск
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-8 mb-2">
+              <div class="inputW">
+                <input type="email" class="formInput border-grey-2" value="ул. Улица, 1, 23">
+              </div>
+            </div>
+            <div class="col-lg-4 mb-2">
+              <div class="selectW">
+
+                <select name="adress_1" id="adress_1"
+                  class="formSelect formSelect--bg-white border-grey-2 w-100 rounded-8 pl-10 h-40">
+                  <option value="1">
+                    г. Ангарск
+                  </option>
+                  <option value="2">
+                    г. Иркутск
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-8 mb-2">
+              <div class="inputW">
+                <input type="email" class="formInput border-grey-2" value="ул. Длинная Улица, 123, оф.456">
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <button class="button button--text button--text-black fz-16 fw-bold add-address">
+                <svg>
+                  <use xlink:href="img/icons/icons.svg#plus"></use>
+                </svg>
+                <span class="color-black">Добавить ещё адрес</span>
+              </button>
+            </div>
+            <div class="col-12">
+              <button class="button button--orange button--h-48 fz-16 fw-bold rounded-20 px-4 ml-auto">
+                Сохранить изменения
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
