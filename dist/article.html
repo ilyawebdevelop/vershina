@@ -21,101 +21,703 @@
 	<div class="wrapper">
 		<!-- Header -->
 <header class="header header--black" id="header">
-  <div class="headerT">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center gap-3">
-
-        <nav class="headerTNav">
-          <ul class="d-flex gap-3 align-items-center">
-            <li><a href="#">О нас</a></li>
-            <li class="has-submenu">
-              <a href="#">Розничным покупателям</a>
-              <ul class="sub-menu">
-                <li><a href="#">Розничным покупателям 1</a></li>
-                <li><a href="#">Меню внутреннее</a></li>
-                <li><a href="#">Меню внутреннее 2</a></li>
-                <li><a href="#">Меню внутреннее 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Оптовым клиентам</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-
-        <div class="d-flex gap-2 align-items-center">
-          <a href="tel:8 (3952) 505-511" class="headerTPhone">8 (3952) 505-511</a>
-          <span class="fw-semibold fz-14 color-grey-1">ПН-ПТ с 8:00 - 17:00 (МСК+5)</span>
-        </div>
-
-        <div class="socials">
-          <ul class="d-flex align-items-center">
-            <li>
-              <a href="#" target="_blank" rel="nofollow">
-                <img src="img/admin/socials/whatsapp.svg" alt="image">
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="nofollow">
-                <img src="img/admin/socials/telegram.svg" alt="image">
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <button class="button button--text button--text-white headerTBtn fw-semibold">
-          <svg>
-            <use xlink:href="img/icons/icons.svg#message"></use>
-          </svg>
-          НАПИСАТЬ НАМ
-        </button>
-
+  <div class="headerTMobile d-block d-xl-none">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="#" class="headerLogo logo">
+        <img src="img/admin/logo/logo-black.svg" alt="logo">
+      </a>
+      <div class="socials">
+        <ul>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="img/admin/socials/wh-color.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="img/admin/socials/tg-color.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="tel:">
+              <img src="img/admin/socials/tel-color.svg" alt="">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="headerC">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center gap-3">
+</div>
+  <div class="headerT">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center gap-3">
 
-        <a href="#" class="headerLogo logo">
+      <nav class="headerTNav">
+        <ul class="d-flex gap-3 align-items-center">
+          <li><a href="#">О нас</a></li>
+          <li class="has-submenu">
+            <a href="#">Розничным покупателям</a>
+            <ul class="sub-menu">
+              <li><a href="#">Розничным покупателям 1</a></li>
+              <li><a href="#">Меню внутреннее</a></li>
+              <li><a href="#">Меню внутреннее 2</a></li>
+              <li><a href="#">Меню внутреннее 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Оптовым клиентам</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-flex gap-2 align-items-center">
+        <a href="tel:8 (3952) 505-511" class="headerTPhone">8 (3952) 505-511</a>
+        <span class="fw-semibold fz-14 color-grey-1">ПН-ПТ с 8:00 - 17:00 (МСК+5)</span>
+      </div>
+
+      <div class="socials">
+        <ul class="d-flex align-items-center">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="img/admin/socials/whatsapp.svg" alt="image">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="img/admin/socials/telegram.svg" alt="image">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="button button--text button--text-white headerTBtn fw-semibold">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#message"></use>
+        </svg>
+        НАПИСАТЬ НАМ
+      </button>
+
+    </div>
+  </div>
+</div>
+  <div class="headerC">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center gap-3">
+
+      <div class="d-none align-items-center gap-3 d-xl-flex">
+        <a href="#" class="headerLogo logo headerLogo--active-hide">
           <img src="img/admin/logo/logo-black.svg" alt="logo">
         </a>
+        <a href="#" class="headerLogo headerLogo--active-show logo">
+          <img src="img/admin/logo/logo-white-header.svg" alt="logo">
+        </a>
+      </div>
 
-        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30">
+      <button class="fz-14 headerBtnCatalog headerBtnCatalog--mobile d-flex d-xl-none">
+        <div class="rect">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
+          </svg>
+        </div>
+      </button>
+
+      <div class="d-flex align-items-center w-xl-100">
+        <button
+          class="button button--text button--text-white fz-14 headerBtnCatalog headerBtnCatalog--active-show fw-bold">
+          <div class="rect">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
+            </svg>
+          </div>
+          <span>КАТАЛОГ</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+          </svg>
+        </button>
+        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
           <input type="search" class="formInput" placeholder="Поиск">
           <button class="searchFieldClear" type="button">
             <img src="img/icons/clear.svg" alt="clear">
           </button>
-          <button class="button button--orange rounded-30 text-uppercase fw-bold">
+          <button class="button button--orange rounded-30 text-uppercase fw-bold d-none d-xl-flex">
             искать
           </button>
         </div>
+      </div>
 
-        <div class="d-flex gap-3 align-items-center">
-          <a href="#" class="header-action-link px-2">
+      <div class="d-none d-xl-flex gap-3 align-items-center">
+        <a href="#" class="header-action-link px-2">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#star"></use>
+          </svg>
+          <div class="count bg--orange">5</div>
+        </a>
+        <a href="#" class="header-action-link px-2">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#cart"></use>
+          </svg>
+          <div class="count bg--haki">
+            0
+          </div>
+        </a>
+        <a href="#" class="header-action-link header-action-link-account">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#account"></use>
+          </svg>
+          <span class="text-uppercase fz-14 fw-bold color-grey-3">Войти</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <div class="headerMenu">
+  <div class="container d-none d-xl-block">
+    <div class="headerMenuW">
+      <div class="headerMenuSidebar">
+
+        <button class="button button--text button--text-black fz-14 headerBtnCatalogMenu fw-bold mb-3">
+          <div class="rect">
             <svg>
-              <use xlink:href="img/icons/icons.svg#star"></use>
+              <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
             </svg>
-            <div class="count bg--orange">5</div>
-          </a>
-          <a href="#" class="header-action-link px-2">
-            <svg>
-              <use xlink:href="img/icons/icons.svg#cart"></use>
-            </svg>
-            <div class="count bg--haki">
-              0
+          </div>
+          <span>КАТАЛОГ</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+          </svg>
+        </button>
+
+        <nav class="headerMenuNav">
+          <ul>
+            <li class="active"><a href="#" data-id="cat_1">Рыбалка</a></li>
+            <li><a href="#" data-id="cat_2">Одежда</a></li>
+            <li><a href="#" data-id="cat_3">Обувь</a></li>
+            <li><a href="#" data-id="cat_4">Спорт</a></li>
+            <li><a href="#" data-id="cat_5">Туризм</a></li>
+            <li><a href="#" data-id="cat_6">Охота</a></li>
+            <li><a href="#" data-id="cat_7">Зоотовары</a></li>
+            <li><a href="#" data-id="cat_8">Банное</a></li>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="headerMenuContent">
+        <div class="headerMenuTabContent active" data-id="cat_1">
+          <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
+            <h2 class="mb-0">Рыбалка</h2>
+            <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
             </div>
-          </a>
-          <a href="#" class="header-action-link header-action-link-account px-2">
-            <svg>
-              <use xlink:href="img/icons/icons.svg#account"></use>
-            </svg>
-            <span class="text-uppercase fz-14 fw-bold color-grey-3">МОЙ ПРОФИЛЬ</span>
-          </a>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+          </div>
         </div>
-
+        <div class="headerMenuTabContent" data-id="cat_2">
+          <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
+            <h2 class="mb-0">Одежда</h2>
+            <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела Одежда</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+          </div>
+        </div>
+        <div class="headerMenuTabContent" data-id="cat_3">
+          <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
+            <h2 class="mb-0">Обувь</h2>
+            <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела Обувь</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+          </div>
+        </div>
+        <div class="headerMenuTabContent" data-id="cat_4">
+          <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
+            <h2 class="mb-0">Спорт</h2>
+            <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+          </div>
+        </div>
+        <div class="headerMenuTabContent" data-id="cat_5">
+          <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
+            <h2 class="mb-0">Туризм</h2>
+            <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+          </div>
+        </div>
+        <div class="headerMenuTabContent" data-id="cat_6">
+          <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
+            <h2 class="mb-0">Охота</h2>
+            <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+          </div>
+        </div>
+        <div class="headerMenuTabContent" data-id="cat_7">
+          <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
+            <h2 class="mb-0">Зоотовары</h2>
+            <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+          </div>
+        </div>
+        <div class="headerMenuTabContent" data-id="cat_8">
+          <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
+            <h2 class="mb-0">Банное</h2>
+            <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела Банное</a>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="d-block d-xl-none headerMenuMobile">
+
+    <div class="container">
+      <div class="d-flex justify-content-between headerMenuCatalogHead">
+        <div class="d-flex headerMenuCatalogBtn headerBtnCatalog">
+          <div class="rect">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
+            </svg>
+          </div>
+          <span>КАТАЛОГ</span>
+        </div>
+        <button class="headerMenuMobileClose" type="button">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="headerMenuMobileNav">
+        <ul>
+          <li class="active">
+            <a href="#">Рыбалка</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Зимняя</a>
+              </li>
+              <li>
+                <a href="#">Летняя</a>
+              </li>
+              <li>
+                <a href="#">Прикормка</a>
+              </li>
+              <li>
+                <a href="#">Коробочки</a>
+              </li>
+              <li>
+                <a href="#">Леска</a>
+              </li>
+              <li>
+                <a href="#">Груза, отцепы</a>
+              </li>
+              <li>
+                <a class="color-orange" href="#">Все товары раздела</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Одежда</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Зимняя</a>
+              </li>
+              <li>
+                <a href="#">Летняя</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Обувь</a>
+            <ul class="submenu">
+              <li>
+                <a href="#">Зимняя</a>
+              </li>
+              <li>
+                <a href="#">Летняя</a>
+              </li>
+              <li>
+                <a href="#">Прикормка</a>
+              </li>
+              <li>
+                <a href="#">Коробочки</a>
+              </li>
+              <li>
+                <a href="#">Леска</a>
+              </li>
+              <li>
+                <a href="#">Груза, отцепы</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+</div>
+</div>
   <div class="headerB">
     <div class="container">
       <div class="headerBNavW">
@@ -132,486 +734,29 @@
         </button>
         <nav class="headerBNav headerBNav--black">
           <ul>
-            <li><a href="#">Рыбалка</a></li>
-            <li><a href="#">Одежда</a></li>
-            <li><a href="#">Обувь</a></li>
-            <li><a href="#">Спорт</a></li>
-            <li><a href="#">Туризм</a></li>
-            <li><a href="#">Охота</a></li>
-            <li><a href="#">Зоотовары</a></li>
-            <li><a href="#">Банное</a></li>
-            <li class="has-submenu">
-              <a href="#">ЕЩЁ</a>
-              <ul class="sub-menu">
-                <li><a href="#">Прикормка</a></li>
-                <li><a href="#">Летняя</a></li>
-                <li><a href="#">Меню внутреннее 2</a></li>
-                <li><a href="#">Коробочки</a></li>
-              </ul>
-            </li>
-            <li><a href="#">АКЦИИ</a></li>
-          </ul>
+  <li><a href="#">Рыбалка</a></li>
+  <li><a href="#">Одежда</a></li>
+  <li><a href="#">Обувь</a></li>
+  <li><a href="#">Спорт</a></li>
+  <li><a href="#">Туризм</a></li>
+  <li><a href="#">Охота</a></li>
+  <li><a href="#">Зоотовары</a></li>
+  <li><a href="#">Банное</a></li>
+  <li><a href="#">Банное 2</a></li>
+  <li><a href="#">Банное 4 asdasdsda</a></li>
+  <li><a href="#">Банное 5 asdasdsda</a></li>
+  <li><a href="#">Банное 6 asdasdsda</a></li>
+  <li><a href="#">Банное 7 asdasdsda</a></li>
+  <li class="no-wrap"><a href="#">АКЦИИ</a></li>
+  <li class="has-submenu no-wrap">
+    <a href="#">ЕЩЁ</a>
+    <ul class="sub-menu sub-menu-items-no-wrap">
+
+    </ul>
+  </li>
+
+</ul>
         </nav>
-      </div>
-    </div>
-  </div>
-    <div class="headerMenu">
-    <div class="container">
-      <div class="headerMenuW">
-        <div class="headerMenuSidebar">
-
-          <button class="button button--text button--text-black fz-14 headerBtnCatalogMenu fw-bold mb-3">
-            <div class="rect">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
-              </svg>
-            </div>
-            <span>КАТАЛОГ</span>
-            <svg>
-              <use xlink:href="img/icons/icons.svg#arrow-down"></use>
-            </svg>
-          </button>
-
-          <nav class="headerMenuNav">
-            <ul>
-              <li class="active"><a href="#" data-id="cat_1">Рыбалка</a></li>
-              <li><a href="#" data-id="cat_2">Одежда</a></li>
-              <li><a href="#" data-id="cat_3">Обувь</a></li>
-              <li><a href="#" data-id="cat_4">Спорт</a></li>
-              <li><a href="#" data-id="cat_5">Туризм</a></li>
-              <li><a href="#" data-id="cat_6">Охота</a></li>
-              <li><a href="#" data-id="cat_7">Зоотовары</a></li>
-              <li><a href="#" data-id="cat_8">Банное</a></li>
-            </ul>
-          </nav>
-
-        </div>
-        <div class="headerMenuContent">
-          <div class="headerMenuTabContent active" data-id="cat_1">
-            <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
-              <h2 class="mb-0">Рыбалка</h2>
-              <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-            </div>
-          </div>
-          <div class="headerMenuTabContent" data-id="cat_2">
-            <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
-              <h2 class="mb-0">Одежда</h2>
-              <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела Одежда</a>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-            </div>
-          </div>
-          <div class="headerMenuTabContent" data-id="cat_3">
-            <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
-              <h2 class="mb-0">Обувь</h2>
-              <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела Обувь</a>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-            </div>
-          </div>
-          <div class="headerMenuTabContent" data-id="cat_4">
-            <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
-              <h2 class="mb-0">Спорт</h2>
-              <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-            </div>
-          </div>
-          <div class="headerMenuTabContent" data-id="cat_5">
-            <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
-              <h2 class="mb-0">Туризм</h2>
-              <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-            </div>
-          </div>
-          <div class="headerMenuTabContent" data-id="cat_6">
-            <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
-              <h2 class="mb-0">Охота</h2>
-              <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-            </div>
-          </div>
-          <div class="headerMenuTabContent" data-id="cat_7">
-            <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
-              <h2 class="mb-0">Зоотовары</h2>
-              <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела</a>
-            </div>
-            <div class="row">            
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-            </div>
-          </div>
-          <div class="headerMenuTabContent" data-id="cat_8">
-            <div class="d-flex gap-3 align-items-center justify-content-between mb-4">
-              <h2 class="mb-0">Банное</h2>
-              <a href="#" class="color-orange fz-14 fw-bold text-uppercase">Все товары раздела Банное</a>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Зимняя</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Груза, отцепы</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Все для вязки мух</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Инструменты рыболовные</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Джигги</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Прикормка</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Крючки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Карабины,вертлюги, бусины</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Коробочки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-              <div class="col-lg-4 mb-3">
-                <a class="fz-14 fw-bold color-black text-uppercase" href="#">Приманки</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -1113,7 +1258,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-lg-6 col-xl-4">
+        <div class="col-lg-6 col-xl-4 mt-4 pt-3 mt-lg-0 pt-lg-0">
           <nav class="footerNav">
             <h3 class="footerNavTitle">
               Покупателям
@@ -1126,30 +1271,33 @@
             </ul>
           </nav>
         </div>
-        <div class="col-lg-6 col-xl-4">
+        <div class="col-lg-6 col-xl-4 mt-4 pt-3 mt-xl-0 pt-xl-0">
           <h3 class="footerNavTitle">
             Свяжитесь с нами
           </h3>
-          <div class="d-flex gap-2 align-items-center mb-3 pb-2">
+          <div class="d-flex gap-2 align-items-center mb-2 mb-xl-3 pb-2">
             <a href="tel:8 (3952) 505-511" class="footerPhone fw-bold fz-13">8 (3952) 505-511</a>
             <span class="fw-semibold fz-13 color-grey-2">ПН-ПТ с 8:00 - 17:00</span>
           </div>
-          <a href="mailto:info1@vershina38.ru" class="footerMail fw-bold fz-13">info1@vershina38.ru</a>
-          <div class="socials my-3 py-1">
-            <ul class="d-flex align-items-center">
-              <li>
-                <a href="#" target="_blank" rel="nofollow">
-                  <img src="img/admin/socials/whatsapp.svg" alt="image">
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" rel="nofollow">
-                  <img src="img/admin/socials/telegram.svg" alt="image">
-                </a>
-              </li>
-            </ul>
+          <div class="d-flex align-items-center align-items-xl-start flex-row flex-xl-column gap-4 gap-xl-0">
+            <a href="mailto:info1@vershina38.ru" class="footerMail fw-bold fz-13">info1@vershina38.ru</a>
+            <div class="socials my-0 my-xl-3 py-1">
+              <ul class="d-flex align-items-center">
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/whatsapp.svg" alt="image">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="nofollow">
+                    <img src="img/admin/socials/telegram.svg" alt="image">
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <button class="button button--sm  button--orange px-3 rounded-20 fw-bold">
+
+          <button class="button button--sm footerBtnOrder button--orange px-4 px-xl-3 rounded-20 fw-bold mt-3 mt-xl-0">
             Заказать обратный звонок
           </button>
         </div>
@@ -1164,31 +1312,108 @@
           <div class="fz-14">
             2025 © ООО ТК Вершина
           </div>
+          <a href="#" class="footerLogo logo d-block d-xl-none mt-4 pt-3">
+            <img src="img/admin/logo/logo-white.svg" alt="logo">
+          </a>
+          <a class="fz-14 color-white d-flex d-xl-none mt-3 pt-1 mb-4 pb-3" href="#">Реквизиты организации</a>
         </div>
-        <div class="footerCol">
+        <div class="footerCol mb-4 pb-3 mb-xl-0 pb-xl-0">
           <div class="d-flex flex-column gap-2">
             <a class="fz-14 color-white" href="#">Соглашение на обработку персональных данных</a>
             <a class="fz-14 color-white" href="#">Пользовательское соглашение</a>
             <a class="fz-14 color-white" href="#">Договор-оферты</a>
           </div>
         </div>
-        <div class="footerCol">
+        <div class="footerCol d-none d-xl-block">
           <a href="#" class="footerLogo logo">
             <img src="img/admin/logo/logo-white.svg" alt="logo">
           </a>
         </div>
-        <div class="footerCol">
+        <div class="footerCol d-none d-xl-block">
           <a class="fz-14 color-white" href="#">Реквизиты организации</a>
         </div>
         <div class="footerCol">
           <a href="#" class="develop fz-14 color-white d-flex gap-2">
-             Разработка сайта – Вангер.рф
+            Разработка сайта – Вангер.рф
           </a>
         </div>
       </div>
     </div>
   </div>
 </footer>
+
+<div class="mobileNav d-block d-xl-none">
+  <ul>
+
+    <li>
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#main"></use>
+        </svg>
+        <span>Главная</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
+        </svg>
+        <span>Каталог</span>
+      </a>
+    </li>
+
+    <li class="account-item">
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#account"></use>
+        </svg>
+        <span>Профиль</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#star"></use>
+        </svg>
+        <span>Избранное</span>
+        <div class="count bg--orange">5</div>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#cart"></use>
+        </svg>
+        <span>Корзина</span>
+        <div class="count bg--haki">5</div>
+      </a>
+    </li>
+
+  </ul>
+</div>
+
+<button class="button-top" id="scrollTopBtn" type="button">
+  <svg>
+    <use xlink:href="img/icons/icons.svg#arrow-up"></use>
+  </svg>
+</button>
+
+<div class="modal-cookie">
+  <div class="fz-18 fz-xl-16 fw-semibold mb-3" style="max-width: 367px;">
+    На сайте применяются cookie-файлы. Нажмите «Принять», чтобы продолжить.
+  </div>
+  <button class="modal-cookie-success button button--orange fz-16 fw-bold text-uppercase button--h-48 rounded-30 w-100">
+    Принять
+  </button>
+  <button type="button" class="modal-cookie-close">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#remove"></use>
+    </svg>
+  </button>
+</div>
 		<!-- modal -->
 <!-- order -->
 <div class="modal" id="modalOrder">

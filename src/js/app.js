@@ -22,7 +22,6 @@ searchClearBtn.forEach(el => {
   let input = el.closest('.searchW').querySelector('input');
 
   input.addEventListener("focus", (event) => {
-    console.log("Input field received focus!");
     el.classList.add('active');
   });
 
@@ -245,13 +244,17 @@ btnMenu?.addEventListener('click', function (e) {
 
 
 let headerMenu = document.querySelector('.headerMenu');
-let headerBtnCatalog = document.querySelector('.headerBtnCatalog');
+let headerBtnCatalogArray = document.querySelectorAll('.headerBtnCatalog');
 let headerBtnCatalogMenu = document.querySelector('.headerBtnCatalogMenu');
+let headerMenuMobileClose = document.querySelector('.headerMenuMobileClose');
 
-headerBtnCatalog?.addEventListener('click', () => {
-  headerMenu.classList.add('active');
-  bodyOverflow();
+headerBtnCatalogArray.forEach(el => {
+  el.addEventListener('click', () => {
+    headerMenu.classList.toggle('active');
+    bodyOverflow();
+  });
 });
+
 headerBtnCatalogMenu?.addEventListener('click', () => {
   headerMenu.classList.remove('active');
   bodyOverflow();
@@ -263,11 +266,10 @@ headerMenuNavArray.forEach(el => {
   el.addEventListener('click', (event) => {
     event.preventDefault();
     headerMenuLiArray.forEach(menuItem => {
-    menuItem.classList.remove('active');
+      menuItem.classList.remove('active');
     });
     let li = el.closest('li');
     li.classList.add('active');
-    console.log('Переход отменен');
     headerMenuTabContentArray.forEach(tabContent => {
       tabContent.classList.remove('active');
       if (el.dataset.id == tabContent.dataset.id) {
@@ -276,3 +278,106 @@ headerMenuNavArray.forEach(el => {
     });
   })
 });
+
+headerMenuMobileClose?.addEventListener('click', () => {
+  headerMenu.classList.remove('active');
+  bodyOverflow();
+});
+
+const scrollButton = document.getElementById('scrollTopBtn');
+const scrollThreshold = 500; // Порог в пикселях
+
+// --- 1. Логика показа/скрытия кнопки ---
+
+window.addEventListener('scroll', function () {
+  // Получаем текущую позицию скролла
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollPosition > scrollThreshold) {
+    // Если прокручено более 500px, показываем кнопку с классом 'show'
+    scrollButton.classList.add('show');
+  } else {
+    // Если меньше 500px, скрываем кнопку
+    scrollButton.classList.remove('show');
+  }
+});
+
+// --- 2. Логика плавного скролла при клике ---
+
+scrollButton.addEventListener('click', function (e) {
+  e.preventDefault(); // Предотвращаем стандартное поведение (если тег <a>)
+
+  window.scrollTo({
+    top: 0, // Цель: начало страницы
+    behavior: 'smooth' // Обеспечивает плавный скролл
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('.headerC');
+  // const mainEl = document.querySelector('.main');
+
+  const headerFixed = () => {
+    let scrollTop = window.scrollY;
+    let heroCenter = 1000;
+
+    if (scrollTop >= heroCenter) {
+      header.classList.add('active')
+      // mainEl.style.marginTop = `${header.offsetHeight}px`;
+    } else {
+      header.classList.remove('active')
+      // mainEl.style.marginTop = `0px`;
+    }
+  };
+
+  headerFixed();
+
+  window.addEventListener('scroll', () => {
+    headerFixed();
+  });
+});
+
+let modalCookie = document.querySelector('.modal-cookie');
+let modalCookieClose = document.querySelector('.modal-cookie-close');
+let modalCookieSuccess = document.querySelector('.modal-cookie-success');
+modalCookieClose?.addEventListener('click', () => {
+  modalCookie.classList.add('d-none');
+});
+modalCookieSuccess?.addEventListener('click', () => {
+  modalCookie.classList.add('d-none');
+});
+
+let mainNav = document.querySelector('.headerBNav');
+let mainNavList = document.querySelectorAll('.headerBNav>ul>li:not(.no-wrap)');
+let subMenuItemsNoWrap = document.querySelector('.sub-menu-items-no-wrap');
+
+const containerTop = mainNav.offsetTop;
+const hiddenItems = Array.from(mainNavList).filter(item => {
+  // Сравниваем верхнюю границу элемента с верхней границей первой строки
+  return item.offsetTop > containerTop;
+});
+hiddenItems.forEach(el => {
+  subMenuItemsNoWrap.appendChild(el);
+});
+
+let headerMenuMobileItems = document.querySelectorAll('.headerMenuMobileNav>ul>li');
+headerMenuMobileItems.forEach(el => {
+  if (el.classList.contains('active')) {
+    el.querySelector('.submenu').style.display = 'block';
+  }
+});
+
+
+$('.headerMenuMobileNav>ul>li').click(function () {
+  const $currentContent = $(this).find('ul');
+  const $currentParent = $(this);
+  $('.headerMenuMobileNav>ul>li>ul').not($currentContent).slideUp(300);
+  $('.headerMenuMobileNav>ul>li').not($currentParent).removeClass('active');
+  $(this).toggleClass('active');
+  $(this).find('ul').slideToggle();
+});
+
+
+
+// console.log('Элементы, не влезшие в строку:', hiddenItems);
