@@ -14280,7 +14280,7 @@ body {
 
 @media (max-width: 1199px) {
   main {
-    padding-top: 74px;
+    padding-top: 148px;
   }
 }
 
@@ -14888,6 +14888,10 @@ a.color-white:hover {
 
 .border-b-stroke {
   border-bottom: 1px solid var(--stroke);
+}
+
+.border-b-grey-1 {
+  border-bottom: 1px solid var(--grey1);
 }
 
 .mb-30 {
@@ -15820,9 +15824,10 @@ a.color-white:hover {
     width: 100%;
   }
 }
-.headerC.at-top {
-  opacity: 1;
-  transform: translateY(0);
+.headerC.header-fixed-hide {
+  opacity: 0;
+  /* Убираем ее за пределы видимости (можно использовать top: -100px, но opacity более плавно работает в сочетании с transform) */
+  transform: translateY(-100%);
 }
 .headerC.active {
   position: fixed;
@@ -16226,7 +16231,7 @@ a.color-white:hover {
   padding-bottom: 12px;
   border-bottom: 1px solid var(--stroke);
   background-color: #fff;
-  transition: opacity 0.2s linear, visibility 0.2s linear;
+  transition: transform 0.2s linear;
 }
 .headerTMobile .socials ul {
   display: flex;
@@ -16337,15 +16342,8 @@ a.color-white:hover {
   background-color: var(--orange);
 }
 
-.header-fixed-hide {
-  opacity: 0;
-  /* Убираем ее за пределы видимости (можно использовать top: -100px, но opacity более плавно работает в сочетании с transform) */
-  transform: translateY(-100%);
-}
-
 .header:has(.headerC.active) .headerTMobile {
-  opacity: 0;
-  visibility: hidden;
+  transform: translateY(-200px);
 }
 
 .intro {
@@ -16359,6 +16357,16 @@ a.color-white:hover {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 0;
+}
+@media (max-width: 1500px) {
+  .intro {
+    padding-top: 120px;
+  }
+}
+@media (max-width: 991px) {
+  .intro {
+    padding-top: 45px;
+  }
 }
 .intro::before {
   content: "";
@@ -16376,12 +16384,34 @@ a.color-white:hover {
   letter-spacing: 0.01em;
   color: var(--white);
 }
+@media (max-width: 1500px) {
+  .introTitle {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1199px) {
+  .introTitle {
+    font-size: 40px;
+    line-height: 120%;
+  }
+}
 .introDescr {
   font-weight: 500;
   font-size: 24px;
   line-height: 200%;
   letter-spacing: 0.01em;
   color: var(--white);
+}
+@media (max-width: 1500px) {
+  .introDescr {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .introDescr {
+    font-size: 20px;
+    line-height: 160%;
+  }
 }
 .intro .container {
   position: relative;
@@ -16398,8 +16428,38 @@ a.color-white:hover {
   max-width: 420px;
   margin-left: auto;
 }
+@media (max-width: 1500px) {
+  .introAdv ul li {
+    padding: 16px;
+  }
+}
+@media (max-width: 1199px) {
+  .introAdv ul li {
+    column-gap: 8px;
+    padding: 8px;
+    border-radius: 16px;
+    max-width: 288px;
+  }
+}
+@media (max-width: 991px) {
+  .introAdv ul li {
+    width: fit-content;
+    margin-left: unset;
+    padding-right: 20px;
+  }
+}
 .introAdv ul li:not(:last-child) {
   margin-bottom: 16px;
+}
+@media (max-width: 1500px) {
+  .introAdv ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .introAdv ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 .introAdv ul li > img {
   width: 64px;
@@ -16407,13 +16467,41 @@ a.color-white:hover {
   background: var(--orange);
   border-radius: 24px;
 }
+@media (max-width: 1500px) {
+  .introAdv ul li > img {
+    width: 50px;
+    border-radius: 17px;
+  }
+}
+@media (max-width: 1199px) {
+  .introAdv ul li > img {
+    width: 40px;
+    padding: 8px;
+    border-radius: 12px;
+  }
+}
 .introAdv ul li span {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--white);
 }
+@media (max-width: 1199px) {
+  .introAdv ul li span {
+    font-size: 12px;
+  }
+}
 .introContent {
   margin-bottom: 130px;
+}
+@media (max-width: 1500px) {
+  .introContent {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .introContent {
+    margin-bottom: 35px;
+  }
 }
 
 .introCat {
@@ -16421,6 +16509,11 @@ a.color-white:hover {
   background: rgba(102, 110, 79, 0.5);
   padding: 24px 0px;
   overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .introCat {
+    padding: 12px 0;
+  }
 }
 
 .introCatSlider {
@@ -16443,6 +16536,13 @@ a.color-white:hover {
   padding-right: 5px;
   padding-left: 5px;
 }
+@media (max-width: 1199px) {
+  .introCatSlide {
+    width: 88px;
+    min-height: 88px;
+    border-radius: 12px;
+  }
+}
 .introCatSlide:hover {
   transform: scale(1.1);
 }
@@ -16454,12 +16554,22 @@ a.color-white:hover {
   padding-bottom: 6px;
   object-position: center;
 }
+@media (max-width: 1500px) {
+  .introCatSlideImg {
+    height: 50px;
+  }
+}
 .introCatSlideTitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 143%;
   letter-spacing: 0.02em;
   text-align: center;
+}
+@media (max-width: 1199px) {
+  .introCatSlideTitle {
+    font-size: 10px;
+  }
 }
 
 .productSlider {
@@ -17213,15 +17323,16 @@ a.color-white:hover {
   width: 100%;
   background-color: #fff;
   border-top: 1px solid var(--stroke);
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.08);
 }
-.mobileNav ul {
+.mobileNav > ul {
   display: flex;
   justify-content: center;
 }
-.mobileNav ul li {
+.mobileNav > ul > li {
   position: relative;
 }
-.mobileNav ul li a {
+.mobileNav > ul > li > a {
   width: 75px;
   height: 72px;
   display: flex;
@@ -17231,16 +17342,16 @@ a.color-white:hover {
   justify-content: center;
   transition: background-color 0.2s linear;
 }
-.mobileNav ul li a:active, .mobileNav ul li a:hover {
+.mobileNav > ul > li > a:active, .mobileNav > ul > li > a:hover {
   background-color: var(--light-bckg);
 }
-.mobileNav ul li a:active span, .mobileNav ul li a:hover span {
+.mobileNav > ul > li > a:active span, .mobileNav > ul > li > a:hover span {
   color: var(--orange);
 }
-.mobileNav ul li a:active svg, .mobileNav ul li a:hover svg {
+.mobileNav > ul > li > a:active svg, .mobileNav > ul > li > a:hover svg {
   stroke: var(--orange);
 }
-.mobileNav ul li a span {
+.mobileNav > ul > li > a > span {
   font-weight: 500;
   font-size: 9px;
   line-height: 111%;
@@ -17248,14 +17359,14 @@ a.color-white:hover {
   color: var(--black);
   transition: color 0.2s linear;
 }
-.mobileNav ul li a svg {
+.mobileNav > ul > li > a svg {
   width: 24px;
   height: 24px;
   fill: transparent;
   stroke: var(--grey3);
   stroke-width: 2px;
 }
-.mobileNav ul li a .count {
+.mobileNav > ul > li > a .count {
   font-weight: 600;
   font-size: 12px;
   line-height: 167%;
@@ -17271,14 +17382,42 @@ a.color-white:hover {
   top: 8px;
   right: 18px;
 }
-.mobileNav ul li.account-item a:hover svg, .mobileNav ul li.account-item a:active svg {
+.mobileNav > ul > li.account-item > a:hover svg, .mobileNav > ul > li.account-item > a:active svg {
   fill: var(--orange);
   stroke: transparent;
 }
-.mobileNav ul li.account-item svg {
+.mobileNav > ul > li.account-item svg {
   width: 24px;
   height: 24px;
   fill: var(--grey3);
   stroke: transparent;
   stroke-width: 2px;
+}
+
+.profile-menu {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100vw;
+  bottom: 73px;
+  background-color: #fff;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-left: 1px solid var(--stroke);
+  border-right: 1px solid var(--stroke);
+  border-top: 1px solid var(--stroke);
+}
+.profile-menu.active {
+  visibility: visible;
+  opacity: 1;
+}
+.profile-menu ul li a:hover {
+  color: var(--orange);
+}
+.profile-menu ul li:not(:last-child) {
+  margin-bottom: 20px;
 }

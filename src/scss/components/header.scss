@@ -125,8 +125,14 @@
     }
 
     &.at-top {
-      opacity: 1;
-      transform: translateY(0);
+      // opacity: 1;
+      // transform: translateY(0);
+    }
+
+    &.header-fixed-hide {
+      opacity: 0;
+      /* Убираем ее за пределы видимости (можно использовать top: -100px, но opacity более плавно работает в сочетании с transform) */
+      transform: translateY(-100%);
     }
 
     &.active {
@@ -646,7 +652,7 @@
   padding-bottom: 12px;
   border-bottom: 1px solid var(--stroke);
   background-color: #fff;
-  transition: opacity .2s linear, visibility .2s linear;
+  transition: transform .2s linear;
 
   .socials {
     ul {
@@ -784,13 +790,8 @@
   }
 }
 
-.header-fixed-hide {
-  opacity: 0;
-  /* Убираем ее за пределы видимости (можно использовать top: -100px, но opacity более плавно работает в сочетании с transform) */
-  transform: translateY(-100%);
-}
+
 
 .header:has(.headerC.active) .headerTMobile {
-  opacity: 0;
-  visibility: hidden;
+  transform: translateY(-200px);
 }

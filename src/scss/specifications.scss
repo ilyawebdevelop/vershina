@@ -30,7 +30,7 @@ body {
 }
 main {
   @media(max-width: 1199px){
-    padding-top: 74px;
+    padding-top: 148px;
   }
 }
 html {
@@ -693,7 +693,9 @@ a.color-white {
 .border-b-stroke {
   border-bottom: 1px solid var(--stroke);
 }
-
+.border-b-grey-1 {
+  border-bottom: 1px solid var(--grey1);
+}
 .mb-30 {
   margin-bottom: 30px;
 }

@@ -6,7 +6,8 @@
     background: var(--haki);
     padding-top: 60px;
     padding-bottom: 60px;
-    @media(max-width: 1199px){
+
+    @media(max-width: 1199px) {
       padding-top: 40px;
       padding-bottom: 40px;
     }
@@ -16,7 +17,8 @@
     background: #343b21;
     padding-top: 30px;
     padding-bottom: 30px;
-    @media(max-width: 1199px){
+
+    @media(max-width: 1199px) {
       padding-bottom: 40px;
       padding-top: 40px;
     }
@@ -25,10 +27,12 @@
       display: flex;
       justify-content: space-between;
       column-gap: 30px;
-      @media(max-width: 1400px){
+
+      @media(max-width: 1400px) {
         column-gap: 20px;
       }
-      @media(max-width: 1199px){
+
+      @media(max-width: 1199px) {
         flex-direction: column;
       }
     }
@@ -117,14 +121,16 @@
   width: 100%;
   background-color: #fff;
   border-top: 1px solid var(--stroke);
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.08);
 
-  ul {
+  &>ul {
     display: flex;
     justify-content: center;
 
-    li {
+    &>li {
       position: relative;
-      a {
+
+      &>a {
         width: 75px;
         height: 72px;
         display: flex;
@@ -147,7 +153,7 @@
           }
         }
 
-        span {
+        &>span {
           font-weight: 500;
           font-size: 9px;
           line-height: 111%;
@@ -170,7 +176,7 @@
           line-height: 167%;
           text-align: center;
           color: var(--white);
-          border-radius: 10px;     
+          border-radius: 10px;
           width: 18px;
           height: 18px;
           display: flex;
@@ -183,7 +189,7 @@
       }
 
       &.account-item {
-        a {
+        &>a {
 
           &:hover,
           &:active {
@@ -201,6 +207,43 @@
           stroke: transparent;
           stroke-width: 2px;
         }
+      }
+    }
+  }
+}
+
+.profile-menu {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100vw;
+  bottom: 73px;
+  background-color: #fff;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s linear, visibility .2s linear;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-left: 1px solid var(--stroke);
+  border-right: 1px solid var(--stroke);
+  border-top: 1px solid var(--stroke);
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  ul {
+    li {
+      a {
+        &:hover {
+          color: var(--orange);
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
       }
     }
   }

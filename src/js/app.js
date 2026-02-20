@@ -426,3 +426,12 @@ $('.headerMenuMobileNav>ul>li').click(function () {
 
 
 // console.log('Элементы, не влезшие в строку:', hiddenItems);
+let profileBtnMobile = document.querySelector('#profile-btn-mobile>a');
+profileBtnMobile.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  let menu = profileBtnMobile.nextElementSibling;
+  console.log(menu);
+  menu.classList.toggle('active');
+
+})

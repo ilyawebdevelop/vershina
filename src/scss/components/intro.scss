@@ -10,6 +10,13 @@
   justify-content: space-between;
   padding-bottom: 0;
 
+  @media(max-width: 1500px) {
+    padding-top: 120px;
+  }
+  @media(max-width: 991px){
+    padding-top: 45px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -26,6 +33,15 @@
     line-height: 110%;
     letter-spacing: 0.01em;
     color: var(--white);
+
+    @media(max-width: 1500px) {
+      font-size: 60px;
+    }
+
+    @media(max-width: 1199px) {
+      font-size: 40px;
+      line-height: 120%;
+    }
   }
 
   &Descr {
@@ -34,6 +50,15 @@
     line-height: 200%;
     letter-spacing: 0.01em;
     color: var(--white);
+
+    @media(max-width: 1500px) {
+      font-size: 20px;
+    }
+
+    @media(max-width: 1199px) {
+      font-size: 20px;
+      line-height: 160%;
+    }
   }
 
   .container {
@@ -54,8 +79,33 @@
         max-width: 420px;
         margin-left: auto;
 
+        @media(max-width: 1500px) {
+          padding: 16px;
+        }
+
+        @media(max-width: 1199px) {
+          column-gap: 8px;
+          padding: 8px;
+          border-radius: 16px;
+          max-width: 288px;
+        }
+
+        @media(max-width: 991px) {
+          width: fit-content;
+          margin-left: unset;
+          padding-right: 20px;
+        }
+
         &:not(:last-child) {
           margin-bottom: 16px;
+
+          @media(max-width: 1500px) {
+            margin-bottom: 10px;
+          }
+
+          @media(max-width: 991px) {
+            margin-bottom: 8px;
+          }
         }
 
         &>img {
@@ -63,12 +113,27 @@
           padding: 12px;
           background: var(--orange);
           border-radius: 24px;
+
+          @media(max-width: 1500px) {
+            width: 50px;
+            border-radius: 17px;
+          }
+
+          @media(max-width: 1199px) {
+            width: 40px;
+            padding: 8px;
+            border-radius: 12px;
+          }
         }
 
         span {
           line-height: 150%;
           letter-spacing: 0.02em;
           color: var(--white);
+
+          @media(max-width: 1199px) {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -76,6 +141,13 @@
 
   &Content {
     margin-bottom: 130px;
+
+    @media(max-width: 1500px) {
+      margin-bottom: 80px;
+    }
+    @media(max-width: 991px){
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -84,10 +156,16 @@
   background: rgba(102, 110, 79, 0.5);
   padding: 24px 0px;
   overflow: hidden;
+
+  @media(max-width: 1199px) {
+    padding: 12px 0;
+  }
 }
+
 .introCatSlider {
   overflow: visible;
 }
+
 .introCatSlide {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
   background: var(--white);
@@ -103,8 +181,16 @@
   padding-bottom: 12px;
   padding-right: 5px;
   padding-left: 5px;
+
+  @media(max-width: 1199px) {
+    width: 88px;
+    min-height: 88px;
+    border-radius: 12px;
+
+  }
+
   &:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   &Img {
@@ -114,6 +200,10 @@
     padding-top: 6px;
     padding-bottom: 6px;
     object-position: center;
+
+    @media(max-width: 1500px) {
+      height: 50px;
+    }
   }
 
   &Title {
@@ -122,5 +212,9 @@
     line-height: 143%;
     letter-spacing: 0.02em;
     text-align: center;
+
+    @media(max-width: 1199px) {
+      font-size: 10px;
+    }
   }
 }
