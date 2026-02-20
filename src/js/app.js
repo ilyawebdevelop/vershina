@@ -57,13 +57,23 @@ document.querySelectorAll('.productSlider').forEach(n => {
     },
     breakpoints: {
       0: {
-        slidesPerView: 3,
+        slidesPerView: 2,
+        spaceBetween: 12,
       },
       576: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
+      768: {
         slidesPerView: 4,
+        spaceBetween: 12,
       },
       992: {
         slidesPerView: 5,
+        spaceBetween: 12,
+      },
+      1200: {
+        spaceBetween: 24,
       },
       1400: {
         slidesPerView: 6,
@@ -84,16 +94,24 @@ document.querySelectorAll('.brandsSlider').forEach(n => {
     },
     breakpoints: {
       0: {
-        slidesPerView: 3,
+        slidesPerView: 2,
+        spaceBetween: 12,
       },
       576: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
+      768: {
         slidesPerView: 4,
+        spaceBetween: 12,
       },
       992: {
         slidesPerView: 5,
+        spaceBetween: 12,
       },
       1400: {
         slidesPerView: 6,
+        spaceBetween: 20,
       },
     },
   });
@@ -112,26 +130,34 @@ document.querySelectorAll('.brandHeadSlider').forEach(n => {
   });
 });
 
-// Инициализация слайдера newsSlider
-document.querySelectorAll('.newsSlider').forEach(n => {
-  const newsSlider = new Swiper(n, {
-    slidesPerView: 4,
-    spaceBetween: 24,
-    speed: 600,
-    navigation: {
-      prevEl: n.closest('.sliderW').querySelector('.navArrowPrev'),
-      nextEl: n.closest('.sliderW').querySelector('.navArrowNext'),
-    },
-    breakpoints: {
-      992: {
-        slidesPerView: 2,
+const mediaQueryMin992 = window.matchMedia('(min-width: 992px)');
+
+
+
+
+if (mediaQueryMin992.matches) {
+  // Инициализация слайдера newsSlider
+  document.querySelectorAll('.newsSlider').forEach(n => {
+    const newsSlider = new Swiper(n, {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      speed: 600,
+      navigation: {
+        prevEl: n.closest('.sliderW').querySelector('.navArrowPrev'),
+        nextEl: n.closest('.sliderW').querySelector('.navArrowNext'),
       },
-      1400: {
-        slidesPerView: 3,
+      breakpoints: {
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
       },
-    },
+    });
   });
-});
+}
+
 
 // Инициализация слайдера productMainSlider
 const productMainSlider = document.querySelector('.productMainSlider');
@@ -313,6 +339,7 @@ scrollButton.addEventListener('click', function (e) {
   });
 });
 
+
 const mediaQueryMin1200 = window.matchMedia('(min-width: 1200px)');
 const mediaQueryMax1199 = window.matchMedia('(max-width: 1199px)');
 
@@ -323,7 +350,7 @@ if (mediaQueryMin1200.matches) {
 
     const headerFixed = () => {
       let scrollTop = window.scrollY;
-      let heroCenter = 1000;
+      let heroCenter = 800;
 
       if (scrollTop >= heroCenter) {
         header.classList.add('active')

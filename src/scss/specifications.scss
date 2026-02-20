@@ -75,7 +75,7 @@ section {
     padding-bottom: 60px;
   }
 
-  @media(max-width: 991px) {
+  @media(max-width: 1199px) {
     padding-bottom: 40px;
     padding-top: 40px;
   }
@@ -193,7 +193,7 @@ section {
 .sectHead {
   margin-bottom: 32px;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     margin-bottom: 24px;
   }
 }
@@ -312,7 +312,7 @@ h2,
   line-height: 48px;
   font-weight: 600;
 
-  @media(max-width: 991px) {
+  @media(max-width: 1199px) {
     font-size: 28px;
     line-height: 40px;
   }
@@ -444,6 +444,9 @@ h6,
 .text-lg {
   font-size: 18px;
   line-height: 156%;
+  @media(max-width: 991px){
+    font-size: 16px;
+  }
 }
 
 .text-md {

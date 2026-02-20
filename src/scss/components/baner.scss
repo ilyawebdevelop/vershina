@@ -9,6 +9,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 200px;
+  @media(max-width: 1199px){
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &:hover {
+    @media(max-width: 1199px){
+      opacity: .85;
+    }
+  }
 
   &Title {
     font-weight: 800;
@@ -16,7 +29,15 @@
     line-height: normal;
     letter-spacing: 0.02em;
     color: var(--white);
+    @media(max-width: 1500px){
+      font-size: 80px;
+    }
+    @media(max-width: 1199px){
+      text-align: center;
+      font-size: 64px;
+    }
   }
+
   .button {
     margin-top: auto;
   }

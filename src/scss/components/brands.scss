@@ -1,6 +1,9 @@
 .brands {
   &Slider {
     overflow: visible;
+    @media(max-width: 575px){
+      padding-right: 10px;
+    }
   }
 
   &Slide {
@@ -11,6 +14,10 @@
     align-items: center;
     justify-content: center;
     transition: box-shadow .2s linear;
+    @media(max-width: 1199px){
+      border-radius: 20px;
+      height: 95px;
+    }
 
     &:hover {
       box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
@@ -21,6 +28,12 @@
       width: 172px;
       margin-left: auto;
       margin-right: auto;
+      @media(max-width: 1199px){
+        width: 150px;
+      }
+      @media(max-width: 375px){
+        width: 100%;
+      }
     }
 
     &:hover {

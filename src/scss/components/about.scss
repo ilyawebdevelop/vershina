@@ -3,14 +3,47 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media(max-width: 991px) {
+      background-image: none !important;
+
+    }
   }
 
   &Content {
     background: rgba(255, 255, 255, 0.92);
     max-width: 600px;
+    position: relative;
+    z-index: 1;
+
+    @media(max-width: 991px) {
+      max-width: 100%;
+      background: var(--light-bckg);
+    }
   }
+
   &Logo {
     width: 230px;
     margin-bottom: 32px;
+    @media(max-width: 991px){
+      margin-bottom: 24px;
+    }
+    @media(max-width: 575px){
+      width: 140px;
+    }
+  }
+}
+.aboutImage {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 620px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: -20px;
+  @media(max-width: 767px){
+    height: 420px;
+  }
+  @media(max-width: 575px){
+    height: 390px;
   }
 }

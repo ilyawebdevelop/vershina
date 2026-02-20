@@ -4,10 +4,23 @@
     height: auto;
     padding-bottom: 20px;
     min-height: 410px;
+    @media(max-width: 1199px){
+      min-height: unset;
+      padding-bottom: 0;
+    }
+    @media(max-width: 575px){
+      padding-right: 10px;
+    }
   }
 
   &Slide {
     height: auto;
+
+    .productCard {
+      @media(max-width: 1199px) {
+        height: 100%;
+      }
+    }
   }
 
   &Card {
@@ -17,6 +30,11 @@
     border-radius: 20px;
     transition: box-shadow .2s linear;
 
+    @media(max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     &:hover {
       box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
 
@@ -24,11 +42,20 @@
         display: flex;
         -webkit-animation: shows 0.5s;
         animation: shows 0.5s;
+        @media(max-width: 1199px){
+          animation: none;
+        }
       }
     }
 
     &Content {
       padding: 12px;
+
+      @media(max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
     }
 
     &Title {
@@ -39,6 +66,13 @@
       margin-bottom: 10px;
       display: block;
       width: fit-content;
+
+      @media(max-width: 1199px) {     
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
     }
 
     &Img {
@@ -47,6 +81,9 @@
       padding-top: 24px;
       padding-bottom: 10px;
       border-bottom: 1px solid var(--stroke);
+      @media(max-width: 1199px){
+        height: 165px;
+      }
 
       img {
         margin-left: auto;
@@ -83,6 +120,10 @@
       left: 0;
       font-family: var(--second-family);
       top: 0;
+
+      @media(max-width: 991px) {
+        font-size: 11px;
+      }
 
       &.bg--haki {
         color: var(--white);
