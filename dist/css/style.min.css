@@ -14278,6 +14278,12 @@ body {
   }
 }
 
+@media (max-width: 1199px) {
+  main {
+    padding-top: 74px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -14294,6 +14300,11 @@ body.hidden {
 
 body.hidden .headerC.active {
   padding-right: 15px;
+}
+@media (max-width: 1199px) {
+  body.hidden .headerC.active {
+    padding-right: 0;
+  }
 }
 
 body.modal-open {
@@ -15711,6 +15722,12 @@ a.color-white:hover {
   position: relative;
   z-index: 12;
 }
+@media (max-width: 1199px) {
+  .header {
+    position: fixed;
+    width: 100%;
+  }
+}
 .header .header-action-link {
   display: flex;
   align-items: center;
@@ -15795,6 +15812,18 @@ a.color-white:hover {
   padding-top: 17px;
   padding-bottom: 17px;
 }
+@media (max-width: 1199px) {
+  .headerC {
+    border-bottom: 1px solid var(--stroke);
+    transition: top 0.3s ease, opacity 0.3s ease, transform 0.2s linear;
+    background-color: #fff;
+    width: 100%;
+  }
+}
+.headerC.at-top {
+  opacity: 1;
+  transform: translateY(0);
+}
 .headerC.active {
   position: fixed;
   width: 100%;
@@ -15810,8 +15839,20 @@ a.color-white:hover {
   padding-top: 12px;
   padding-bottom: 12px;
 }
+@media (max-width: 1199px) {
+  .headerC.active {
+    background-color: #fff;
+    position: fixed;
+    opacity: 1;
+  }
+}
 .headerC.active .headerLogo--active-show {
   display: block;
+}
+@media (max-width: 1199px) {
+  .headerC.active .headerLogo--active-show {
+    display: none;
+  }
 }
 .headerC.active .headerLogo--active-hide {
   display: none;
@@ -15856,8 +15897,19 @@ a.color-white:hover {
   display: flex;
   margin-right: 24px;
 }
+@media (max-width: 1199px) {
+  .headerC.active .headerBtnCatalog--active-show {
+    display: none;
+  }
+}
 .headerC.active .headerMenu {
   top: 88px;
+}
+@media (max-width: 1199px) {
+  .headerC.active .headerMenu {
+    top: 0;
+    height: 100vh;
+  }
 }
 @media (max-width: 1199px) {
   .headerC {
@@ -16045,6 +16097,8 @@ a.color-white:hover {
   .headerMenu {
     top: 74px;
     background-color: var(--light-bckg);
+    height: calc(100vh - 74px);
+    padding-bottom: 50px;
   }
 }
 .headerMenu .container {
@@ -16171,6 +16225,8 @@ a.color-white:hover {
   padding-top: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--stroke);
+  background-color: #fff;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
 }
 .headerTMobile .socials ul {
   display: flex;
@@ -16220,7 +16276,8 @@ a.color-white:hover {
 .headerMenuMobileNav > ul > li {
   position: relative;
 }
-.headerMenuMobileNav > ul > li > a {
+.headerMenuMobileNav > ul > li > a, .headerMenuMobileNav > ul > li > button {
+  width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   display: flex;
@@ -16230,15 +16287,16 @@ a.color-white:hover {
   transition: background-color 0.2s linear, color 0.2s linear, background-image 0.2s linear;
 }
 @media (max-width: 575px) {
-  .headerMenuMobileNav > ul > li > a {
+  .headerMenuMobileNav > ul > li > a, .headerMenuMobileNav > ul > li > button {
     padding-left: 15px;
     background: url("../img/icons/arrow-next-black.svg") no-repeat right 15px center/20px;
   }
 }
-.headerMenuMobileNav > ul > li > a:hover {
+.headerMenuMobileNav > ul > li > a:hover, .headerMenuMobileNav > ul > li > button:hover {
   background-color: #fff;
 }
-.headerMenuMobileNav > ul > li a {
+.headerMenuMobileNav > ul > li a,
+.headerMenuMobileNav > ul > li button {
   font-weight: 700;
   font-size: 14px;
   line-height: 171%;
@@ -16258,18 +16316,18 @@ a.color-white:hover {
   display: flex;
   width: 100%;
 }
-.headerMenuMobileNav > ul > li.active > a {
+.headerMenuMobileNav > ul > li.active > a, .headerMenuMobileNav > ul > li.active > button {
   background-color: #fff;
   color: var(--orange);
   background: #fff url("../img/icons/arrow-down-orange.svg") no-repeat right 3px center/20px;
   position: relative;
 }
 @media (max-width: 575px) {
-  .headerMenuMobileNav > ul > li.active > a {
+  .headerMenuMobileNav > ul > li.active > a, .headerMenuMobileNav > ul > li.active > button {
     background: #fff url("../img/icons/arrow-down-orange.svg") no-repeat right 15px center/20px;
   }
 }
-.headerMenuMobileNav > ul > li.active > a::before {
+.headerMenuMobileNav > ul > li.active > a::before, .headerMenuMobileNav > ul > li.active > button::before {
   content: "";
   position: absolute;
   left: 0;
@@ -16277,6 +16335,17 @@ a.color-white:hover {
   width: 4px;
   height: 100%;
   background-color: var(--orange);
+}
+
+.header-fixed-hide {
+  opacity: 0;
+  /* Убираем ее за пределы видимости (можно использовать top: -100px, но opacity более плавно работает в сочетании с transform) */
+  transform: translateY(-100%);
+}
+
+.header:has(.headerC.active) .headerTMobile {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .intro {

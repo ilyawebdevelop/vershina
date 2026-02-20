@@ -3,6 +3,11 @@
   position: relative;
   z-index: 12;
 
+  @media(max-width: 1199px) {
+    position: fixed;
+    width: 100%;
+  }
+
   .header-action-link {
     display: flex;
     align-items: center;
@@ -112,6 +117,18 @@
     padding-top: 17px;
     padding-bottom: 17px;
 
+    @media(max-width: 1199px) {
+      border-bottom: 1px solid var(--stroke);
+      transition: top 0.3s ease, opacity 0.3s ease, transform .2s linear;
+      background-color: #fff;
+      width: 100%;
+    }
+
+    &.at-top {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     &.active {
       position: fixed;
       width: 100%;
@@ -127,8 +144,18 @@
       padding-top: 12px;
       padding-bottom: 12px;
 
+      @media(max-width: 1199px) {
+        background-color: #fff;
+        position: fixed;
+        opacity: 1;
+      }
+
       .headerLogo--active-show {
         display: block;
+
+        @media(max-width: 1199px) {
+          display: none;
+        }
       }
 
       .headerLogo--active-hide {
@@ -192,10 +219,19 @@
       .headerBtnCatalog--active-show {
         display: flex;
         margin-right: 24px;
+
+        @media(max-width: 1199px) {
+          display: none;
+        }
       }
 
       .headerMenu {
         top: 88px;
+
+        @media(max-width: 1199px) {
+          top: 0;
+          height: 100vh;
+        }
       }
 
     }
@@ -451,6 +487,8 @@
   @media(max-width: 1199px) {
     top: 74px;
     background-color: var(--light-bckg);
+    height: calc(100vh - 74px);
+    padding-bottom: 50px;
   }
 
   .container {
@@ -607,6 +645,8 @@
   padding-top: 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--stroke);
+  background-color: #fff;
+  transition: opacity .2s linear, visibility .2s linear;
 
   .socials {
     ul {
@@ -668,7 +708,9 @@
     &>li {
       position: relative;
 
-      &>a {
+      &>a,
+      &>button {
+        width: 100%;
         padding-top: 12px;
         padding-bottom: 12px;
         display: flex;
@@ -687,7 +729,8 @@
         }
       }
 
-      a {
+      a,
+      button {
         font-weight: 700;
         font-size: 14px;
         line-height: 171%;
@@ -714,7 +757,9 @@
       }
 
       &.active {
-        &>a {
+
+        &>a,
+        &>button {
           background-color: #fff;
           color: var(--orange);
           background: #fff url('@img/icons/arrow-down-orange.svg') no-repeat right 3px center / 20px;
@@ -737,4 +782,15 @@
       }
     }
   }
+}
+
+.header-fixed-hide {
+  opacity: 0;
+  /* Убираем ее за пределы видимости (можно использовать top: -100px, но opacity более плавно работает в сочетании с transform) */
+  transform: translateY(-100%);
+}
+
+.header:has(.headerC.active) .headerTMobile {
+  opacity: 0;
+  visibility: hidden;
 }

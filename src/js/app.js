@@ -313,30 +313,75 @@ scrollButton.addEventListener('click', function (e) {
   });
 });
 
+const mediaQueryMin1200 = window.matchMedia('(min-width: 1200px)');
+const mediaQueryMax1199 = window.matchMedia('(max-width: 1199px)');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('.headerC');
-  // const mainEl = document.querySelector('.main');
+if (mediaQueryMin1200.matches) {
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.headerC');
+    // const mainEl = document.querySelector('.main');
 
-  const headerFixed = () => {
-    let scrollTop = window.scrollY;
-    let heroCenter = 1000;
+    const headerFixed = () => {
+      let scrollTop = window.scrollY;
+      let heroCenter = 1000;
 
-    if (scrollTop >= heroCenter) {
-      header.classList.add('active')
-      // mainEl.style.marginTop = `${header.offsetHeight}px`;
-    } else {
-      header.classList.remove('active')
-      // mainEl.style.marginTop = `0px`;
-    }
-  };
+      if (scrollTop >= heroCenter) {
+        header.classList.add('active')
+        // mainEl.style.marginTop = `${header.offsetHeight}px`;
+      } else {
+        header.classList.remove('active')
+        // mainEl.style.marginTop = `0px`;
+      }
+    };
 
-  headerFixed();
-
-  window.addEventListener('scroll', () => {
     headerFixed();
+
+    window.addEventListener('scroll', () => {
+      headerFixed();
+    });
   });
-});
+}
+
+if (mediaQueryMax1199.matches) {
+  const header = document.querySelector('.headerC');
+
+  let lastScrollTop = 0;
+  const headerHeight = header.offsetHeight;
+
+  window.addEventListener('scroll', function () {
+    const currentScrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    // --- Условие 1: Проверка, находимся ли мы в самом верху ---
+
+    if (currentScrollTop <= headerHeight) {
+      // Если прокрутили до самого верха (или чуть ниже высоты шапки)
+      header.classList.remove('header-fixed-hide');
+      header.classList.remove('active');
+      header.classList.add('at-top'); // Добавляем класс, чтобы сбросить стили
+    } else {
+      // Если мы не в самом верху
+      header.classList.add('active');
+      header.classList.remove('at-top'); // Убираем класс "вверху"
+
+      // --- Условие 2: Определение направления скролла ---
+
+      if (currentScrollTop > lastScrollTop) {
+        // Скролл ВНИЗ: Скрываем шапку
+        header.classList.add('header-fixed-hide');
+      } else {
+        // Скролл ВВЕРХ (и currentScrollTop > headerHeight): Показываем шапку
+        header.classList.remove('header-fixed-hide');
+      }
+    }
+
+    // Обновляем предыдущую позицию скролла
+    lastScrollTop = currentScrollTop;
+  });
+
+  // Инициализация: Убедимся, что при загрузке, если мы уже не вверху, 
+  // шапка сразу находится в правильном состоянии (скрыта или активна)
+  window.dispatchEvent(new Event('scroll'));
+}
 
 let modalCookie = document.querySelector('.modal-cookie');
 let modalCookieClose = document.querySelector('.modal-cookie-close');
