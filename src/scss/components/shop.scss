@@ -28,6 +28,9 @@
     background: var(--white);
     position: relative;
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
     transition: box-shadow .2s linear;
 
     @media(max-width: 1199px) {
@@ -50,6 +53,9 @@
 
     &Content {
       padding: 12px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
 
       @media(max-width: 1199px) {
         display: flex;
@@ -96,9 +102,12 @@
 
       &--catalog {
         height: 306px;
+        @media(max-width: 575px){
+          height: 160px;
+        }
 
         img {
-          max-width: 190px;
+          max-width: 190px;     
         }
       }
     }
@@ -106,6 +115,7 @@
     &Price {
       &W {
         margin-bottom: 12px;
+        margin-top: auto;
       }
     }
 
@@ -134,4 +144,7 @@
       }
     }
   }
+}
+.catalogList .productCard {
+  height: 100%;
 }

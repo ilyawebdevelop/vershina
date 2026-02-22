@@ -252,7 +252,6 @@
   display: none;
   @media(max-width: 1199px){
     display: flex;
-    margin-top: auto;
   }
 
   svg {
@@ -270,6 +269,12 @@
     border-radius: 16px;
     animation: none !important;
     -webkit-animation: none !important;
+    @media(max-width: 991px){
+      height: 36px;
+      width: 100%;
+      border-radius: 20px;
+      font-size: 15px;
+    }
   }
 }
 

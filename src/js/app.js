@@ -462,3 +462,15 @@ profileBtnMobile.addEventListener('click', (event) => {
   menu.classList.toggle('active');
 
 })
+
+let filterMobileAction = document.querySelector('.filterMobileAction');
+let catalogFilter = document.getElementById('catalog-filter');
+let catalogFilterClose = document.querySelector('.catalog-filter-close');
+
+filterMobileAction?.addEventListener('click', () => {
+  catalogFilter.classList.add('active');
+});
+
+catalogFilterClose?.addEventListener('click', () => {
+  catalogFilter.classList.remove('active');
+});

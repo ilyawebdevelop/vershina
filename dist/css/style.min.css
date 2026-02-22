@@ -14441,6 +14441,11 @@ section {
 .pageHead {
   margin-bottom: 42px;
 }
+@media (max-width: 1199px) {
+  .pageHead {
+    margin-bottom: 40px;
+  }
+}
 .pageHead h1 {
   margin-bottom: 0;
 }
@@ -14532,11 +14537,12 @@ h1,
   font-size: 40px;
   line-height: 56px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   h1,
 .h1 {
     font-size: 32px;
     line-height: 48px;
+    font-weight: 600;
   }
 }
 
@@ -15277,7 +15283,6 @@ a.color-white:hover {
 @media (max-width: 1199px) {
   .productCardBtn {
     display: flex;
-    margin-top: auto;
   }
 }
 .productCardBtn svg {
@@ -15294,6 +15299,14 @@ a.color-white:hover {
   border-radius: 16px;
   animation: none !important;
   -webkit-animation: none !important;
+}
+@media (max-width: 991px) {
+  .productCardBtn--fit {
+    height: 36px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 15px;
+  }
 }
 
 .productCardAddToWishlist {
@@ -15494,6 +15507,18 @@ a.color-white:hover {
   padding-top: 35px;
   padding-bottom: 35px;
 }
+@media (max-width: 1199px) {
+  .breadcrumbs {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 
 .breadcrumbs ul {
   font-size: 16px;
@@ -15653,7 +15678,7 @@ a.color-white:hover {
   right: 0;
   margin: auto;
   bottom: 10px;
-  z-index: 11;
+  z-index: 12;
 }
 @media (max-width: 575px) {
   .modal-cookie {
@@ -16628,6 +16653,8 @@ a.color-white:hover {
   background: var(--white);
   position: relative;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 0.2s linear;
 }
 @media (max-width: 1199px) {
@@ -16651,6 +16678,9 @@ a.color-white:hover {
 }
 .productCardContent {
   padding: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 1199px) {
   .productCardContent {
@@ -16698,11 +16728,17 @@ a.color-white:hover {
 .productCardImg--catalog {
   height: 306px;
 }
+@media (max-width: 575px) {
+  .productCardImg--catalog {
+    height: 160px;
+  }
+}
 .productCardImg--catalog img {
   max-width: 190px;
 }
 .productCardPriceW {
   margin-bottom: 12px;
+  margin-top: auto;
 }
 .productCardSpec {
   border-radius: 20px 20px 20px 0;
@@ -16726,6 +16762,10 @@ a.color-white:hover {
 }
 .productCardSpec.bg--orange {
   color: var(--white);
+}
+
+.catalogList .productCard {
+  height: 100%;
 }
 
 .brandsSlider {
@@ -16799,6 +16839,12 @@ a.color-white:hover {
 }
 .brandsItem.active {
   display: flex;
+}
+@media (max-width: 767px) {
+  .brandsItem.active {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 .brandsItemTitle {
   min-width: 70px;
@@ -17016,6 +17062,11 @@ a.color-white:hover {
   padding-left: 48px;
   padding-bottom: 56px;
 }
+@media (max-width: 1199px) {
+  .catCard {
+    padding-left: 38px;
+  }
+}
 .catCardContent {
   width: 100%;
   padding-top: 45px;
@@ -17061,6 +17112,12 @@ a.color-white:hover {
   object-position: center;
   flex-shrink: 0;
 }
+@media (max-width: 991px) {
+  .catCardImg {
+    height: 220px;
+    margin-top: 20px;
+  }
+}
 
 .catalogIntroImg img {
   height: 300px;
@@ -17068,6 +17125,16 @@ a.color-white:hover {
   border-radius: 20px;
   border: 1px solid #dcdcdc;
   object-fit: cover;
+}
+@media (max-width: 767px) {
+  .catalogIntroImg img {
+    height: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .catalogIntroImg img {
+    height: 120px;
+  }
 }
 
 .filterItem {
@@ -17094,6 +17161,42 @@ a.color-white:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.filterItemInner {
+  max-height: 252px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 991px) {
+  .catalog-filter {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 13;
+  }
+}
+.catalog-filter.active {
+  display: block;
+  -webkit-animation: shows 0.5s;
+  animation: shows 0.5s;
+}
+
+.catalog-filter-close {
+  width: 40px;
+  height: 40px;
+}
+.catalog-filter-close svg {
+  fill: transparent;
+  stroke: var(--black);
+  width: 20px;
+  height: 20px;
 }
 
 .productMainAction {
@@ -17511,7 +17614,7 @@ a.color-white:hover {
 
 .mobileNav {
   position: fixed;
-  z-index: 2;
+  z-index: 12;
   bottom: 0;
   left: 0;
   width: 100%;

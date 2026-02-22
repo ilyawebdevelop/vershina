@@ -8,6 +8,12 @@
         border-radius: 20px;
         border: 1px solid #dcdcdc;
         object-fit: cover;
+        @media(max-width: 767px){
+          height: 200px;
+        }
+        @media(max-width: 575px){
+          height: 120px;
+        }
       }
     }
   }

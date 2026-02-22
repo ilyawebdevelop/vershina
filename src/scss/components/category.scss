@@ -2,6 +2,9 @@
   &Card {
     padding-left: 48px;
     padding-bottom: 56px;
+    @media(max-width: 1199px){
+      padding-left: 38px;
+    }
 
     &Content {
       width: 100%;
@@ -56,6 +59,10 @@
       object-fit: contain;
       object-position: center;
       flex-shrink: 0;
+      @media(max-width: 991px){
+        height: 220px;
+        margin-top: 20px;
+      }
     }
   }
 }
