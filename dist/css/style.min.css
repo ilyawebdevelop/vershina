@@ -16828,6 +16828,11 @@ a.color-white:hover {
 }
 @media (max-width: 1500px) {
   .introCatSlideImg {
+    height: 68px;
+  }
+}
+@media (max-width: 991px) {
+  .introCatSlideImg {
     height: 50px;
   }
 }

@@ -205,6 +205,9 @@
     object-position: center;
 
     @media(max-width: 1500px) {
+      height: 68px;
+    }
+    @media(max-width: 991px){
       height: 50px;
     }
   }
