@@ -17180,6 +17180,8 @@ a.color-white:hover {
     left: 0;
     background-color: #fff;
     z-index: 13;
+    padding-bottom: 60px;
+    padding-top: 90px;
   }
 }
 .catalog-filter.active {
@@ -17192,11 +17194,50 @@ a.color-white:hover {
   width: 40px;
   height: 40px;
 }
+.catalog-filter-close:hover svg {
+  stroke: var(--orange);
+}
 .catalog-filter-close svg {
   fill: transparent;
   stroke: var(--black);
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 575px) {
+  .filterW {
+    width: 100%;
+    overflow-x: scroll;
+    margin-left: -15px;
+    padding-left: 15px;
+    margin-right: -15px;
+    padding-right: 15px;
+    width: calc(100% + 30px);
+  }
+}
+.filterW .button {
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .filterHead {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .filterFooter {
+    background-color: #fff;
+    position: fixed;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
 }
 
 .productMainAction {

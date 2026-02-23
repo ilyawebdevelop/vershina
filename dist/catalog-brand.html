@@ -834,10 +834,15 @@
       <div class="col-lg-4 col-xl-3">
         <div class="filter catalog-filter" id="catalog-filter">
 
-  <div class="filterHead">
+  <div class="filterHead d-block d-lg-none bg--light-bckg py-3 mb-3">
     <div class="container">
-      <div class="d-flex justify-content-between">
-        asd
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex gap-2">
+          <div class="fz-14 fw-bold text-uppercase">
+            фильтры
+          </div>
+          <a href="#" class="fz-14 color-orange text-uppercase fw-bold">сбросить все</a>
+        </div>
         <button class="catalog-filter-close">
           <svg>
             <use xlink:href="img/icons/icons.svg#close"></use>
@@ -847,8 +852,9 @@
     </div>
 
   </div>
+
   <div class="container">
-    <div class="mb-2 bg--light-bckg rounded-20 filterItem">
+    <div class="mb-3 mb-lg-2 bg--light-bckg rounded-20 filterItem">
       <h3 class="mb-2">Тип товара</h3>
 
       <div class="checkbox-item py-2">
@@ -898,7 +904,7 @@
 
     </div>
 
-    <div class="mb-2 bg--light-bckg rounded-20 filterItem">
+    <div class="mb-3 mb-lg-2 bg--light-bckg rounded-20 filterItem">
       <div class="d-flex justify-content-between gap-2">
         <h3 class="mb-2">Технические характеристики</h3>
         <div class="filterItemCount">
@@ -953,7 +959,7 @@
 
     </div>
 
-    <div class="mb-2 bg--light-bckg rounded-20 filterItem">
+    <div class="mb-3 mb-lg-2 bg--light-bckg rounded-20 filterItem">
       <div class="d-flex justify-content-between gap-2">
         <h3 class="mb-2">Цена</h3>
       </div>
@@ -972,7 +978,7 @@
 
     </div>
 
-    <div class="mb-2 bg--light-bckg rounded-20 filterItem">
+    <div class="mb-3 mb-lg-2 bg--light-bckg rounded-20 filterItem">
       <div class="d-flex justify-content-between gap-2">
         <h3 class="mb-2">Наличие</h3>
       </div>
@@ -987,7 +993,7 @@
 
     </div>
 
-    <div class="mb-2 bg--light-bckg rounded-20 filterItem">
+    <div class="mb-3 mb-lg-2 bg--light-bckg rounded-20 filterItem">
       <h3 class="mb-2">Бренды</h3>
 
       <div class="inputW mb-2">
@@ -1079,18 +1085,21 @@
         </div>
       </div>
 
-
     </div>
 
-    <button class="button button--orange w-100 button--sm rounded-20 fz-16 fw-bold mb-2">
-      Применить
-    </button>
-    <button class="button button--light-bckg w-100 button--sm rounded-20 fz-16 fw-bold color-grey-3">
-      Сбросить все
-    </button>
+
   </div>
 
-
+  <div class="filterFooter">
+    <div class="container">
+      <button class="button button--orange w-100 button--sm rounded-20 fz-16 fw-bold mb-0 mb-lg-2">
+        Применить
+      </button>
+      <button class="button button--light-bckg w-100 button--sm rounded-20 fz-16 fw-bold color-grey-3 d-none d-lg-flex">
+        Сбросить все
+      </button>
+    </div>
+  </div>
 
 </div>
       </div>

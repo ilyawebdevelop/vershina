@@ -469,8 +469,10 @@ let catalogFilterClose = document.querySelector('.catalog-filter-close');
 
 filterMobileAction?.addEventListener('click', () => {
   catalogFilter.classList.add('active');
+  bodyEl.classList.add('hidden');
 });
 
 catalogFilterClose?.addEventListener('click', () => {
   catalogFilter.classList.remove('active');
+  bodyEl.classList.remove('hidden');
 });
