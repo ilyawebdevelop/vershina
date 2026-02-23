@@ -16071,6 +16071,7 @@ a.color-white:hover {
 .headerC {
   padding-top: 17px;
   padding-bottom: 17px;
+  position: sticky;
 }
 @media (max-width: 1199px) {
   .headerC {

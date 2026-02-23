@@ -116,6 +116,7 @@
   &C {
     padding-top: 17px;
     padding-bottom: 17px;
+    position: sticky;
 
     @media(max-width: 1199px) {
       border-bottom: 1px solid var(--stroke);
