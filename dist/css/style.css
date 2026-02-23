@@ -14287,6 +14287,11 @@ body {
 .main-page {
   padding-top: 99px;
 }
+@media (max-width: 991px) {
+  .main-page {
+    padding-top: 145px;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -16171,7 +16176,12 @@ a.color-white:hover {
   }
 }
 .headerC.active .headerMenu {
-  top: 88px;
+  top: 89px;
+}
+@media (max-width: 1400px) {
+  .headerC.active .headerMenu {
+    top: 77px;
+  }
 }
 @media (max-width: 1199px) {
   .headerC.active .headerMenu {
@@ -16362,14 +16372,14 @@ a.color-white:hover {
   height: calc(100vh + 50px);
   overflow-y: scroll;
   background-color: #fff;
-  top: 147px;
+  top: 97px;
   border-top: 1px solid var(--stroke);
   display: none;
   z-index: 1;
 }
 @media (max-width: 1199px) {
   .headerMenu {
-    top: 74px;
+    top: 72px;
     background-color: var(--light-bckg);
     height: calc(100vh - 74px);
     padding-bottom: 50px;
@@ -16621,7 +16631,7 @@ a.color-white:hover {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 160px;
+  padding-top: 183px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16629,7 +16639,7 @@ a.color-white:hover {
 }
 @media (max-width: 1500px) {
   .intro {
-    padding-top: 120px;
+    padding-top: 150px;
   }
 }
 @media (max-width: 991px) {

@@ -36,6 +36,9 @@ main {
 }
 .main-page{
   padding-top: 99px;
+  @media(max-width: 991px){
+    padding-top: 145px;
+  }
 }
 html {
   scroll-behavior: smooth;
