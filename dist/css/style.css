@@ -14284,6 +14284,10 @@ body {
   }
 }
 
+.main-page {
+  padding-top: 99px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15980,7 +15984,7 @@ a.color-white:hover {
 
 .header {
   position: relative;
-  z-index: 12;
+  z-index: 13;
 }
 @media (max-width: 1199px) {
   .header {
@@ -16071,7 +16075,9 @@ a.color-white:hover {
 .headerC {
   padding-top: 17px;
   padding-bottom: 17px;
-  position: sticky;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .headerC {
@@ -16189,6 +16195,7 @@ a.color-white:hover {
   padding-bottom: 16px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+  margin-top: 98px;
 }
 .headerB--blur {
   backdrop-filter: blur(12px);

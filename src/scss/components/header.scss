@@ -1,7 +1,7 @@
 // Header
 .header {
   position: relative;
-  z-index: 12;
+  z-index: 13;
 
   @media(max-width: 1199px) {
     position: fixed;
@@ -116,7 +116,9 @@
   &C {
     padding-top: 17px;
     padding-bottom: 17px;
-    position: sticky;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
 
     @media(max-width: 1199px) {
       border-bottom: 1px solid var(--stroke);
@@ -260,6 +262,7 @@
     padding-bottom: 16px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
+    margin-top: 98px;
 
     &--blur {
       backdrop-filter: blur(12px);
