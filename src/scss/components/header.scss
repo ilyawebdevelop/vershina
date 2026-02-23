@@ -239,7 +239,13 @@
           height: 100vh;
         }
       }
-
+      .header-action-link-account {
+        &-text {
+          @media(max-width: 1400px){
+            display: none;
+          } 
+        }
+      }
     }
 
     @media(max-width: 1199px) {

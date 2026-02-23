@@ -1,59 +1,103 @@
-<section class="sect pt-5">
+<section class="sect pt-3 mt-1 mt-lg-0 pt-lg-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-xl-3">
         @@include('../catalog-shop/filter.html',{})
       </div>
       <div class="col-lg-8 col-xl-9">
-        <div class="d-flex align-items-center justify-content-between mb-3">
+        <div class="d-flex align-items-center justify-content-between mb-2 mb-lg-3">
           <h1 class="h1 mb-0">
             Namazu
           </h1>
           <img src="@img/admin/brand/logo.png" alt="logo" class="brand-logo">
         </div>
 
-        <div class="mb-4 pb-2 content">
-          <p>
-            Namazu – это китайский производитель качественного товара. Под брендом Namazu представлен обширный
-            ассортимент рыболовных товаров. Продукция собирается на различных заводах в Китае.
-          </p>
-          <p>
-            Само слово Намадзу (яп. 鯰 — «сом») взято из японской мифологии - это гигантский , который вызывает
-            землетрясения.
-          </p>
-          <p>
-            Компания производит приманки , удилища , оснастка , инструменты и аксессуары для рыбалки. Блесны Namazu
-            относятся к типу колебалок. Чтобы приманка своей игрой больше походила на настоящую рыбешку, металлическая
-            пластина дополнена «хвостиком», который создает колебания при проводке. Для зимней рыбалки компания
-            предлагает удилища, предназначенные для ловли на балансиры или вертикальные блесны. Надежная конструкция,
-            высокая прочность и жёсткость бланка позволяют удилищу выдержать высокие нагрузки. В том числе детали
-            фурнитуры и инструменты, без которых невозможно обойтись на рыбалке.
-          </p>
+        <div class="action-wrap-text mb-4 pb-0 pb-lg-2">
+          <div class="content action-hidden-text">
+            <p>
+              Namazu – это китайский производитель качественного товара. Под брендом Namazu представлен обширный
+              ассортимент рыболовных товаров. Продукция собирается на различных заводах в Китае.
+            </p>
+            <p>
+              Само слово Намадзу (яп. 鯰 — «сом») взято из японской мифологии - это гигантский , который вызывает
+              землетрясения.
+            </p>
+            <p>
+              Компания производит приманки , удилища , оснастка , инструменты и аксессуары для рыбалки. Блесны Namazu
+              относятся к типу колебалок. Чтобы приманка своей игрой больше походила на настоящую рыбешку, металлическая
+              пластина дополнена «хвостиком», который создает колебания при проводке. Для зимней рыбалки компания
+              предлагает удилища, предназначенные для ловли на балансиры или вертикальные блесны. Надежная конструкция,
+              высокая прочность и жёсткость бланка позволяют удилищу выдержать высокие нагрузки. В том числе детали
+              фурнитуры и инструменты, без которых невозможно обойтись на рыбалке.
+            </p>
+          </div>
+          <div class="d-block d-lg-none">
+            <button class="color-orange action-btn-text mt-2">
+              Читать полностью
+            </button>
+          </div>
         </div>
-        <div class="selectW mb-30 border-b-stroke pb-2">
-          <select name="sortSelect" id="sortSelect" class="formSelect fz-14 fw-semibold">
+
+        <div class="d-flex gap-2 flex-nowrap flex-sm-wrap mb-4 filterW">
+          <button
+            class="button button--orange button--sm fw-bold color-grey-3 rounded-20 fz-15 filterMobileAction d-flex d-lg-none">
+            <img src="@img/icons/filter.svg" alt="icon">
+            Фильтры
+          </button>
+          <button
+            class="button button--light-bckg button--sm fw-bold color-grey-3 rounded-20 fz-15 filter-item-selected text-nowrap">
+            Наименование параметра
+            <div class="remove-item">
+              <img src="@img/icons/remove.svg" alt="remove">
+            </div>
+          </button>
+          <button
+            class="button button--light-bckg button--sm fw-bold color-grey-3 rounded-20 fz-15 filter-item-selected text-nowrap">
+            Наименование параметра Наименование
+            <div class="remove-item">
+              <img src="@img/icons/remove.svg" alt="remove">
+            </div>
+          </button>
+          <button
+            class="button button--light-bckg button--sm fw-bold color-grey-3 rounded-20 fz-15 filter-item-selected text-nowrap"
+            disabled>
+            Наименование
+            <div class="remove-item">
+              <img src="@img/icons/remove.svg" alt="remove">
+            </div>
+          </button>
+          <button
+            class="button button--light-bckg button--sm fw-bold color-grey-3 rounded-20 fz-15 filter-item-selected text-nowrap">
+            Наименование параметра
+            <div class="remove-item">
+              <img src="@img/icons/remove.svg" alt="remove">
+            </div>
+          </button>
+        </div>
+        <div class="selectW mb-30 mb-lg-20 border-b-stroke pb-2">
+          <select name="sortSelect" id="sortSelect" class="formSelect formSelect--pr-24 fz-14 fw-semibold">
             <option value="1">Сначала популярные</option>
             <option value="2">Сначала дешевые</option>
             <option value="3">Сначала дорогие</option>
           </select>
         </div>
-        <div class="row mb-4">
-          <div class="col-lg-6 col-xl-4 mb-4">
+        <div class="row mb-2 mb-lg-4 catalogList">
+          <div class="col-6 col-xl-4 mb-4">
             @@include('../shop/catalog-card-1.html',{})
           </div>
-          <div class="col-lg-6 col-xl-4 mb-4">
+          <div class="col-6 col-xl-4 mb-4">
             @@include('../shop/catalog-card-2.html',{})
           </div>
-          <div class="col-lg-6 col-xl-4 mb-4">
+          <div class="col-6 col-xl-4 mb-4">
             @@include('../shop/catalog-card-1.html',{})
           </div>
-          <div class="col-lg-6 col-xl-4 mb-4">
+          <div class="col-6 col-xl-4 mb-4">
             @@include('../shop/catalog-card-2.html',{})
           </div>
-          <div class="col-lg-6 col-xl-4 mb-4">
+          <div class="col-6 col-xl-4 mb-4">
             @@include('../shop/catalog-card-1.html',{})
           </div>
-          <div class="col-lg-6 col-xl-4 mb-4">
+          <div class="col-6 col-xl-4 mb-4">
             @@include('../shop/catalog-card-2.html',{})
           </div>
         </div>

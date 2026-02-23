@@ -184,6 +184,16 @@
   &.min-w-240 {
     min-width: 240px;
   }
+  &--sm-w-100 {
+    @media(max-width: 575px){
+      width: 100%;
+    }
+  }
+  &--sm-h-26 {
+    @media(max-width: 991px){
+      height: 26px;
+    }
+  }
 }
 
 .headerTBtn {
@@ -356,13 +366,19 @@
 }
 
 .quantity {
-  min-height: 52px;
+  min-height: 50px;
+  @media(max-width: 991px){
+    min-height: 30px;
+  }
 }
 
 .quantity.border-grey-1:has(.quantity-input:focus) {
   border-color: var(--orange);
   border-width: 2px;
   padding: 7px !important;
+  @media(max-width: 991px){
+    padding: 3px!important;
+  }
 }
 
 .quantity-btn {

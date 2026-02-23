@@ -134,7 +134,8 @@
             <use xlink:href="img/icons/icons.svg#arrow-down"></use>
           </svg>
         </button>
-        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
+        <div
+          class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
           <input type="search" class="formInput" placeholder="Поиск">
           <button class="searchFieldClear" type="button">
             <img src="img/icons/clear.svg" alt="clear">
@@ -160,12 +161,29 @@
             0
           </div>
         </a>
-        <a href="#" class="header-action-link header-action-link-account">
+        <div class="header-action-link header-action-link-account has-submenu">
           <svg>
             <use xlink:href="img/icons/icons.svg#account"></use>
           </svg>
-          <span class="text-uppercase fz-14 fw-bold color-grey-3">Войти</span>
-        </a>
+          <span class="text-uppercase fz-14 fw-bold color-grey-3 header-action-link-account-text">МОЙ ПРОФИЛЬ</span>
+          <div class="sub-menu-account">
+            <div class="pb-3 mb-3 border-b-stroke">
+              Иванов Иван Ианович
+            </div>
+            <div class="pb-3 mb-3 border-b-stroke">
+              <nav class="profileNav">
+                <ul>
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Заказы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button class="button button--orange rounded-20 fw-bold fz-16">
+              Выйти
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -824,13 +842,13 @@
 			<section class="sect pt-0">
   <div class="container">
 
-    <div class="pageHead">
+    <div class="pageHead mb-4 mb-lg-5">
       <h1 class="h1 mb-0">
         Новости
       </h1>
     </div>
 
-    <div class="row mb-4">
+    <div class="row mb-0 mb-lg-4">
       <div class="col-12 mb-4">
         <div class="newsCard newsCard--archive d-flex">
   <a href="#" class="newsCardImage">
@@ -981,7 +999,7 @@
     </button>
     <div class="pagination d-flex justify-content-center align-items-center gap-3 mt-4" id="pagination">
   <!-- <a href="#" class="loadmore  btn--dark btn">Показать еще</a> -->
-  <ul class="pagination-links d-flex align-items-center gap-3">
+  <ul class="pagination-links d-flex align-items-center gap-2 gap-sm-3">
     <li class="pag-arrow pag-arrow-none">
       <a href="#">
         <span>

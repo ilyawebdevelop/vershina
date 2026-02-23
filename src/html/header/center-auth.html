@@ -1,0 +1,90 @@
+<div class="headerC">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center gap-3">
+
+      <div class="d-none align-items-center gap-3 d-xl-flex">
+        <a href="#" class="headerLogo logo headerLogo--active-hide">
+          <img src="@img/admin/logo/logo-black.svg" alt="logo">
+        </a>
+        <a href="#" class="headerLogo headerLogo--active-show logo">
+          <img src="@img/admin/logo/logo-white-header.svg" alt="logo">
+        </a>
+      </div>
+
+      <button class="fz-14 headerBtnCatalog headerBtnCatalog--mobile d-flex d-xl-none">
+        <div class="rect">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
+          </svg>
+        </div>
+      </button>
+
+      <div class="d-flex align-items-center w-xl-100">
+        <button
+          class="button button--text button--text-white fz-14 headerBtnCatalog headerBtnCatalog--active-show fw-bold">
+          <div class="rect">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#catalog-btn"></use>
+            </svg>
+          </div>
+          <span>КАТАЛОГ</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-down"></use>
+          </svg>
+        </button>
+        <div
+          class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
+          <input type="search" class="formInput" placeholder="Поиск">
+          <button class="searchFieldClear" type="button">
+            <img src="@img/icons/clear.svg" alt="clear">
+          </button>
+          <button class="button button--orange rounded-30 text-uppercase fw-bold d-none d-xl-flex">
+            искать
+          </button>
+        </div>
+      </div>
+
+      <div class="d-none d-xl-flex gap-3 align-items-center">
+        <a href="#" class="header-action-link px-2">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#star"></use>
+          </svg>
+          <div class="count bg--orange">5</div>
+        </a>
+        <a href="#" class="header-action-link px-2">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#cart"></use>
+          </svg>
+          <div class="count bg--haki">
+            0
+          </div>
+        </a>
+        <div class="header-action-link header-action-link-account has-submenu">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#account"></use>
+          </svg>
+          <span class="text-uppercase fz-14 fw-bold color-grey-3 header-action-link-account-text">МОЙ ПРОФИЛЬ</span>
+          <div class="sub-menu-account">
+            <div class="pb-3 mb-3 border-b-stroke">
+              Иванов Иван Ианович
+            </div>
+            <div class="pb-3 mb-3 border-b-stroke">
+              <nav class="profileNav">
+                <ul>
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Заказы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button class="button button--orange rounded-20 fw-bold fz-16">
+              Выйти
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  @@include('catalog-menu.html',{})
+</div>

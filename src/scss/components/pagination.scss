@@ -57,17 +57,19 @@
   border-radius: 16px;
   border-width: 1px;
 
-  &:hover {
-    svg {
-      fill: var(--orange);
+  a {
+    &:hover {
+      svg {
+        fill: var(--orange);
+      }
     }
-  }
 
-  &:active {
-    background-color: var(--orange);
+    &:active {
+      background-color: var(--orange);
 
-    svg {
-      fill: #fff;
+      svg {
+        fill: #fff;
+      }
     }
   }
 

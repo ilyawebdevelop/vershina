@@ -134,7 +134,8 @@
             <use xlink:href="img/icons/icons.svg#arrow-down"></use>
           </svg>
         </button>
-        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
+        <div
+          class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
           <input type="search" class="formInput" placeholder="Поиск">
           <button class="searchFieldClear" type="button">
             <img src="img/icons/clear.svg" alt="clear">
@@ -160,12 +161,29 @@
             0
           </div>
         </a>
-        <a href="#" class="header-action-link header-action-link-account">
+        <div class="header-action-link header-action-link-account has-submenu">
           <svg>
             <use xlink:href="img/icons/icons.svg#account"></use>
           </svg>
-          <span class="text-uppercase fz-14 fw-bold color-grey-3">Войти</span>
-        </a>
+          <span class="text-uppercase fz-14 fw-bold color-grey-3 header-action-link-account-text">МОЙ ПРОФИЛЬ</span>
+          <div class="sub-menu-account">
+            <div class="pb-3 mb-3 border-b-stroke">
+              Иванов Иван Ианович
+            </div>
+            <div class="pb-3 mb-3 border-b-stroke">
+              <nav class="profileNav">
+                <ul>
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Заказы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button class="button button--orange rounded-20 fw-bold fz-16">
+              Выйти
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -830,17 +848,17 @@
 
     <div class="row">
       <div class="col-lg-7">
-        <div class="content mb-4 pb-1">
+        <div class="content mb-0 mb-lg-3 pb-1">
           <p>
             Здесь нужен текст в&nbsp;зависимости от&nbsp;того, кто делал заказ, как оплачивал, про доставку&nbsp;&mdash;
             для оптовых про оплату по&nbsp;счету, доставка когда будет отправлена и&nbsp;тп.
           </p>
         </div>
-        <div class="d-flex gap-3">
-          <a href="#" class="button button--lg rounded-30 button--orange fz-16 fw-bold text-uppercase">
+        <div class="d-flex gap-2 gap-sm-3 flex-column flex-sm-row">
+          <a href="#" class="button button--lg rounded-30 button--orange fz-16 fw-bold text-uppercase button--sm-w-100">
             Перейти в каталог
           </a>
-          <a href="#" class="button button--lg rounded-30 button--haki fz-16 fw-bold text-uppercase">
+          <a href="#" class="button button--lg rounded-30 button--haki fz-16 fw-bold text-uppercase button--sm-w-100">
             на главную
           </a>
         </div>
@@ -851,14 +869,14 @@
 </section>
 
 
-			<section class="popular sect sliderW overflow-hidden pb-0 pt-0">
+			<section class="popular sect sliderW overflow-hidden pb-5 pb-xl-0 pt-0">
   <div class="container">
 
     <div class="sectHead d-flex align-items-center justify-content-between gap-3">
       <h2 class="h2">
         Похожие товары
       </h2>
-      <div class="navArrowW d-flex gap-2">
+      <div class="navArrowW d-none d-lg-flex gap-2">
         <button class="navArrow navArrowPrev" type="button">
           <svg>
             <use xlink:href="img/icons/icons.svg#arrow-prev"></use>

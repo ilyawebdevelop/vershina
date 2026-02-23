@@ -134,7 +134,8 @@
             <use xlink:href="img/icons/icons.svg#arrow-down"></use>
           </svg>
         </button>
-        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
+        <div
+          class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
           <input type="search" class="formInput" placeholder="Поиск">
           <button class="searchFieldClear" type="button">
             <img src="img/icons/clear.svg" alt="clear">
@@ -160,12 +161,29 @@
             0
           </div>
         </a>
-        <a href="#" class="header-action-link header-action-link-account">
+        <div class="header-action-link header-action-link-account has-submenu">
           <svg>
             <use xlink:href="img/icons/icons.svg#account"></use>
           </svg>
-          <span class="text-uppercase fz-14 fw-bold color-grey-3">Войти</span>
-        </a>
+          <span class="text-uppercase fz-14 fw-bold color-grey-3 header-action-link-account-text">МОЙ ПРОФИЛЬ</span>
+          <div class="sub-menu-account">
+            <div class="pb-3 mb-3 border-b-stroke">
+              Иванов Иван Ианович
+            </div>
+            <div class="pb-3 mb-3 border-b-stroke">
+              <nav class="profileNav">
+                <ul>
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Заказы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button class="button button--orange rounded-20 fw-bold fz-16">
+              Выйти
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -824,14 +842,14 @@
 			<section class="sect pt-0">
   <div class="container">
 
-    <div class="pageHead mb-4">
+    <div class="pageHead mb-4 d-none d-xl-block">
       <h1 class="h1 mb-0">
         Личный кабинет
       </h1>
     </div>
 
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-xl-3 d-none d-xl-block">
         <div class="sidebar">
   <ul>
     <li class="active"><a href="#">Профиль</a></li>
@@ -842,35 +860,39 @@
 </div>
 <a href="#" class="color-orange fw-bold d-flex px-3">Стать оптовым покупателем</a>
       </div>
-      <div class="col-lg-9">
+      <div class="col-xl-9">
         <div class="bg--light-bckg rounded-20 cartBlock">
-          <div class="d-flex justify-content-between align-items-center mb-3">
+          <div
+            class="d-flex flex-column flex-sm-row gap-2 gap-sm-0 justify-content-between align-items-start align-items-sm-center mb-3">
             <h2 class="mb-0">Профиль</h2>
-            <button class="button button--white pe-none fz-16 rounded-20 px-3 color-grey-3">
+            <button class="button button--white pe-none fz-16 fz-xl-13 rounded-20 px-3 color-grey-3 button--sm-h-26">
               Розничный покупатель
             </button>
           </div>
           <div class="row">
             <div class="col-lg-4 mb-3">
               <div class="inputW">
-                <div class="h5 mb-2">ФИО</div>
+                <div class="h5 mb-1 mb-lg-2">ФИО</div>
                 <input type="text" class="formInput border-grey-2" value="Иванов Иван Ианович">
               </div>
             </div>
             <div class="col-lg-4 mb-3">
               <div class="inputW">
-                <div class="h5 mb-2">Email</div>
+                <div class="h5 mb-1 mb-lg-2">Email</div>
                 <input type="email" class="formInput border-grey-2" value="ivanov@mail.ru">
               </div>
             </div>
             <div class="col-lg-4 mb-3">
               <div class="inputW">
-                <div class="h5 mb-2">Телефон</div>
+                <div class="h5 mb-1 mb-lg-2">Телефон</div>
                 <input type="tel" class="formInput border-grey-2" value="+7 (123) 456 78-90">
               </div>
             </div>
-            <div class="col-12">
-              <div class="h5 mb-2">Адрес доставки</div>
+            <div class="col">
+              <div class="border-b-stroke mt-2 d-block d-lg-none"> </div>
+            </div>
+            <div class="col-12 mt-3 mt-lg-0">
+              <div class="h5 h5--lg-16 mb-3 mb-lg-2">Адрес доставки</div>
             </div>
             <div class="col-lg-4 mb-2">
               <div class="selectW">
@@ -886,7 +908,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-lg-8 mb-2">
+            <div class="col-lg-8 mb-4 mb-lg-2">
               <div class="inputW">
                 <input type="email" class="formInput border-grey-2" value="ул. Улица, 1, 23">
               </div>
@@ -911,56 +933,59 @@
               </div>
             </div>
             <div class="col-12 mt-2 mb-4">
-              <button class="button button--text button--text-black fz-16 fw-bold add-address">
+              <button class="button button--text button--text-black fz-16 fw-bold add-address mx-auto mx-sm-0">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#plus"></use>
                 </svg>
                 <span class="color-black">Добавить ещё адрес</span>
               </button>
             </div>
-            <div class="col-12 mb-3">
+            <div class="col">
+              <div class="border-b-stroke mt-2 d-block d-lg-none"> </div>
+            </div>
+            <div class="col-12 mt-4 mt-lg-0 mb-3">
               <h3 class="mb-0 fw-semibold">Реквизиты организации</h3>
             </div>
 
             <div class="col-12 mb-2">
               <div class="inputW">
-                <div class="h5 mb-2">Правовая форма и наименование</div>
+                <div class="h5 mb-1 mb-lg-2">Правовая форма и наименование</div>
                 <input type="text" class="formInput border-grey-2">
               </div>
             </div>
             <div class="col-lg-4 mb-2">
               <div class="inputW">
-                <div class="h5 mb-2">ИНН</div>
+                <div class="h5 mb-1 mb-lg-2">ИНН</div>
                 <input type="text" class="formInput border-grey-2">
               </div>
             </div>
             <div class="col-lg-4 mb-2">
               <div class="inputW">
-                <div class="h5 mb-2">ОГРН/ОГРНИП</div>
+                <div class="h5 mb-1 mb-lg-2">ОГРН/ОГРНИП</div>
                 <input type="text" class="formInput border-grey-2">
               </div>
             </div>
             <div class="col-lg-4 mb-2">
               <div class="inputW">
-                <div class="h5 mb-2">КПП</div>
+                <div class="h5 mb-1 mb-lg-2">КПП</div>
                 <input type="text" class="formInput border-grey-2">
               </div>
             </div>
             <div class="col-12 mb-2">
               <div class="inputW">
-                <div class="h5 mb-2">Юридический адрес</div>
+                <div class="h5 mb-1 mb-lg-2">Юридический адрес</div>
                 <input type="text" class="formInput border-grey-2">
               </div>
             </div>
             <div class="col-12 mb-2">
               <div class="inputW">
-                <div class="h5 mb-2">Фактический адрес</div>
+                <div class="h5 mb-1 mb-lg-2">Фактический адрес</div>
                 <input type="text" class="formInput border-grey-2">
               </div>
             </div>
             <div class="col-12 mb-2">
               <div class="inputW">
-                <div class="h5 mb-2">Банковские реквизиты</div>
+                <div class="h5 mb-1 mb-lg-2">Банковские реквизиты</div>
                 <textarea name="optComment" id="optComment"
                   class="formText formText--h-90 border-grey-2 rounded-8 w-100"
                   placeholder="Наименование банка, Р/с, К/с, БИК"></textarea>
@@ -968,13 +993,13 @@
             </div>
             <div class="col-12 mb-2">
               <div class="inputW">
-                <div class="h5 mb-2">Комментарий</div>
+                <div class="h5 mb-1 mb-lg-2">Комментарий</div>
                 <textarea name="optComment" id="optComment"
                   class="formText formText--h-90 border-grey-2 rounded-8 w-100"></textarea>
               </div>
             </div>
             <div class="col-12 mt-3">
-              <button class="button button--orange button--h-48 fz-16 fw-bold rounded-20 px-4 ml-auto">
+              <button class="button button--orange button--h-48 fz-16 fw-bold rounded-20 px-4 ml-auto button--sm-w-100">
                 Сохранить изменения
               </button>
             </div>

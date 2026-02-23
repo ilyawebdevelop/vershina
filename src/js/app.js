@@ -476,3 +476,13 @@ catalogFilterClose?.addEventListener('click', () => {
   catalogFilter.classList.remove('active');
   bodyEl.classList.remove('hidden');
 });
+
+let actionBtnText = document.querySelectorAll('.action-btn-text');
+actionBtnText.forEach(el => {
+  el.addEventListener('click', () => {
+    let parent = el.closest('.action-wrap-text');
+    let content = parent.querySelector('.action-hidden-text');
+    content.classList.add('active');
+    el.style.display = 'none';
+  });
+});

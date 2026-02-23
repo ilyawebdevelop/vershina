@@ -134,7 +134,8 @@
             <use xlink:href="img/icons/icons.svg#arrow-down"></use>
           </svg>
         </button>
-        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
+        <div
+          class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
           <input type="search" class="formInput" placeholder="Поиск">
           <button class="searchFieldClear" type="button">
             <img src="img/icons/clear.svg" alt="clear">
@@ -160,12 +161,29 @@
             0
           </div>
         </a>
-        <a href="#" class="header-action-link header-action-link-account">
+        <div class="header-action-link header-action-link-account has-submenu">
           <svg>
             <use xlink:href="img/icons/icons.svg#account"></use>
           </svg>
-          <span class="text-uppercase fz-14 fw-bold color-grey-3">Войти</span>
-        </a>
+          <span class="text-uppercase fz-14 fw-bold color-grey-3 header-action-link-account-text">МОЙ ПРОФИЛЬ</span>
+          <div class="sub-menu-account">
+            <div class="pb-3 mb-3 border-b-stroke">
+              Иванов Иван Ианович
+            </div>
+            <div class="pb-3 mb-3 border-b-stroke">
+              <nav class="profileNav">
+                <ul>
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Заказы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button class="button button--orange rounded-20 fw-bold fz-16">
+              Выйти
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -824,7 +842,6 @@
 			<section class="sect pt-0">
   <div class="container">
 
-
     <h1 class="h1 mb-4">
       Поиск
     </h1>
@@ -850,11 +867,11 @@
         <div class="tabs__panel">
 
           <div class="mb-5">
-            <h1 class="h3 mb-4 pb-2">
+            <h1 class="h3 h3--xl-28 mb-4 pb-2">
               Товары из каталога
             </h1>
-            <div class="row mb-4">
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="row mb-2 mb-lg-4 catalogList">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-1.png" alt="image">
@@ -886,7 +903,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-2.png" alt="image">
@@ -918,7 +935,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-1.png" alt="image">
@@ -950,7 +967,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-2.png" alt="image">
@@ -982,7 +999,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-1.png" alt="image">
@@ -1014,71 +1031,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                <div class="productCard">
-  <a href="#" class="productCardImg productCardImg--catalog">
-    <img src="img/admin/shop/image-2.png" alt="image">
-  </a>
-  <div class="productCardContent">
-    <a href="#" class="productCardTitle">
-      Удочка для зимней рыбалки Сорога
-    </a>
-    <div class="available available--grey2">
-      Нет в наличии
-    </div>
-    <div class="d-flex align-items-center gap-2 productCardPriceW text-lg">
-      <span class="fw-bold">4 000 ₽</span>
-      <span class="fw-light color-grey-2 text-decoration-line-through">30 000</span>
-    </div>
-    <button class="button button--orange productCardBtn productCardBtn--fit d-flex">
-      <img src="img/icons/product-cart.svg" alt="cart">
-      <span class="fw-bold">В корзину</span>
-    </button>
-  </div>
-
-  <div class="productCardSpec bg--orange">
-    Хит
-  </div>
-  <button class="productCardAddToWishlist">
-    <svg>
-      <use xlink:href="img/icons/icons.svg#star"></use>
-    </svg>
-  </button>
-</div>
-              </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                <div class="productCard">
-  <a href="#" class="productCardImg productCardImg--catalog">
-    <img src="img/admin/shop/image-1.png" alt="image">
-  </a>
-  <div class="productCardContent">
-    <a href="#" class="productCardTitle">
-      Костюм лет. Стрелок цв.Тайгер тк.Смесовая Сорочка р.52-54/182-188
-    </a>
-    <div class="available available--green">
-      В наличии
-    </div>
-    <div class="d-flex align-items-center gap-2 productCardPriceW text-lg">
-      <span class="fw-bold">15 000 ₽</span>
-      <span class="fw-light color-grey-2 text-decoration-line-through">30 000</span>
-    </div>
-    <button class="button button--orange productCardBtn productCardBtn--fit d-flex">
-      <img src="img/icons/product-cart.svg" alt="cart">
-      <span class="fw-bold">В корзину</span>
-    </button>
-  </div>
-
-  <div class="productCardSpec bg--haki">
-    -50%
-  </div>
-  <button class="productCardAddToWishlist">
-    <svg>
-      <use xlink:href="img/icons/icons.svg#star"></use>
-    </svg>
-  </button>
-</div>
-              </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-2.png" alt="image">
@@ -1116,7 +1069,7 @@
             </button>
           </div>
           <div class="mb-5">
-            <h1 class="h3 mb-4 pb-2">
+            <h1 class="h3 h3--xl-28 mb-4 pb-2">
               Новости
             </h1>
             <div class="row mb-4">
@@ -1270,7 +1223,7 @@
             </button>
           </div>
           <div class="mb-5">
-            <h1 class="h3 mb-4 pb-2">
+            <h1 class="h3 h3--xl-28 mb-4 pb-2">
               Прочее
             </h1>
             <div class="row mb-4">
@@ -1403,8 +1356,8 @@
         </div>
         <div class="tabs__panel">
           <div class="mb-5">
-            <div class="row mb-4">
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="row mb-2 mb-lg-4 catalogList">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-1.png" alt="image">
@@ -1436,7 +1389,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-2.png" alt="image">
@@ -1468,7 +1421,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-1.png" alt="image">
@@ -1500,7 +1453,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-2.png" alt="image">
@@ -1532,7 +1485,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-1.png" alt="image">
@@ -1564,71 +1517,7 @@
   </button>
 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                <div class="productCard">
-  <a href="#" class="productCardImg productCardImg--catalog">
-    <img src="img/admin/shop/image-2.png" alt="image">
-  </a>
-  <div class="productCardContent">
-    <a href="#" class="productCardTitle">
-      Удочка для зимней рыбалки Сорога
-    </a>
-    <div class="available available--grey2">
-      Нет в наличии
-    </div>
-    <div class="d-flex align-items-center gap-2 productCardPriceW text-lg">
-      <span class="fw-bold">4 000 ₽</span>
-      <span class="fw-light color-grey-2 text-decoration-line-through">30 000</span>
-    </div>
-    <button class="button button--orange productCardBtn productCardBtn--fit d-flex">
-      <img src="img/icons/product-cart.svg" alt="cart">
-      <span class="fw-bold">В корзину</span>
-    </button>
-  </div>
-
-  <div class="productCardSpec bg--orange">
-    Хит
-  </div>
-  <button class="productCardAddToWishlist">
-    <svg>
-      <use xlink:href="img/icons/icons.svg#star"></use>
-    </svg>
-  </button>
-</div>
-              </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-                <div class="productCard">
-  <a href="#" class="productCardImg productCardImg--catalog">
-    <img src="img/admin/shop/image-1.png" alt="image">
-  </a>
-  <div class="productCardContent">
-    <a href="#" class="productCardTitle">
-      Костюм лет. Стрелок цв.Тайгер тк.Смесовая Сорочка р.52-54/182-188
-    </a>
-    <div class="available available--green">
-      В наличии
-    </div>
-    <div class="d-flex align-items-center gap-2 productCardPriceW text-lg">
-      <span class="fw-bold">15 000 ₽</span>
-      <span class="fw-light color-grey-2 text-decoration-line-through">30 000</span>
-    </div>
-    <button class="button button--orange productCardBtn productCardBtn--fit d-flex">
-      <img src="img/icons/product-cart.svg" alt="cart">
-      <span class="fw-bold">В корзину</span>
-    </button>
-  </div>
-
-  <div class="productCardSpec bg--haki">
-    -50%
-  </div>
-  <button class="productCardAddToWishlist">
-    <svg>
-      <use xlink:href="img/icons/icons.svg#star"></use>
-    </svg>
-  </button>
-</div>
-              </div>
-              <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="col-6 col-lg-4 col-xl-3 mb-4">
                 <div class="productCard">
   <a href="#" class="productCardImg productCardImg--catalog">
     <img src="img/admin/shop/image-2.png" alt="image">
@@ -1820,7 +1709,7 @@
           </div>
         </div>
         <div class="tabs__panel">
-          <div class="mb-5">     
+          <div class="mb-5">
             <div class="row mb-4">
               <div class="col-12 mb-4">
                 <div class="newsCard">

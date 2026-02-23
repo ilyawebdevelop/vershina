@@ -45,7 +45,7 @@
     left: 0;
     background-color: #fff;
     z-index: 13;
-    padding-bottom: 60px;
+    padding-bottom: 95px;
     padding-top: 90px;
   }
 
@@ -55,14 +55,17 @@
     animation: shows 0.5s;
   }
 }
+
 .catalog-filter-close {
   width: 40px;
   height: 40px;
+
   &:hover {
     svg {
       stroke: var(--orange);
     }
   }
+
   svg {
     fill: transparent;
     stroke: var(--black);
@@ -70,8 +73,9 @@
     height: 20px;
   }
 }
+
 .filterW {
-  @media(max-width: 575px){
+  @media(max-width: 575px) {
     width: 100%;
     overflow-x: scroll;
     margin-left: -15px;
@@ -80,20 +84,23 @@
     padding-right: 15px;
     width: calc(100% + 30px);
   }
+
   .button {
     flex-shrink: 0;
   }
 }
-.filterHead{
-  @media(max-width: 991px){
+
+.filterHead {
+  @media(max-width: 991px) {
     position: fixed;
     top: 0;
     width: 100%;
     left: 0;
   }
 }
+
 .filterFooter {
-  @media(max-width: 991px){
+  @media(max-width: 991px) {
     background-color: #fff;
     position: fixed;
     padding-bottom: 20px;
@@ -101,5 +108,13 @@
     bottom: 0;
     width: 100%;
     left: 0;
+    border-top: 1px solid var(--stroke);
+    box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.08);
+
+  }
+  .button {
+    @media(max-width: 991px){
+      height: 52px;
+    }
   }
 }

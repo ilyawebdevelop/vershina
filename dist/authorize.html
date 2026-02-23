@@ -134,7 +134,8 @@
             <use xlink:href="img/icons/icons.svg#arrow-down"></use>
           </svg>
         </button>
-        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
+        <div
+          class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
           <input type="search" class="formInput" placeholder="Поиск">
           <button class="searchFieldClear" type="button">
             <img src="img/icons/clear.svg" alt="clear">
@@ -160,12 +161,29 @@
             0
           </div>
         </a>
-        <a href="#" class="header-action-link header-action-link-account">
+        <div class="header-action-link header-action-link-account has-submenu">
           <svg>
             <use xlink:href="img/icons/icons.svg#account"></use>
           </svg>
-          <span class="text-uppercase fz-14 fw-bold color-grey-3">Войти</span>
-        </a>
+          <span class="text-uppercase fz-14 fw-bold color-grey-3 header-action-link-account-text">МОЙ ПРОФИЛЬ</span>
+          <div class="sub-menu-account">
+            <div class="pb-3 mb-3 border-b-stroke">
+              Иванов Иван Ианович
+            </div>
+            <div class="pb-3 mb-3 border-b-stroke">
+              <nav class="profileNav">
+                <ul>
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Заказы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button class="button button--orange rounded-20 fw-bold fz-16">
+              Выйти
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -825,12 +843,12 @@
   <div class="container">
 
     <div class="bg--light-bckg cartBlock rounded-20 max-w-480 mx-auto">
-      <h3 class="mb-4 fw-semibold">
+      <h3 class="mb-2 mb-lg-4 fw-semibold h3--xl-28">
         Вход в личный кабинет
       </h3>
-      <div class="d-flex gap-2 align-items-center mb-4 pb-3">
-        <span>Ещё не зарегистрированы?</span>
-        <a class="color-orange" href="#">Зарегистрироваться</a>
+      <div class="d-flex gap-2 align-items-center mb-4 pb-0 pb-lg-3 flex-wrap">
+        <span class="fz-xl-13">Ещё не зарегистрированы?</span>
+        <a class="color-orange fz-xl-13" href="#">Зарегистрироваться</a>
       </div>
       <div class="inputW mb-3">
         <div class="h5 mb-2">Email</div>
@@ -841,8 +859,8 @@
         <input type="password" class="formInput formInput--password border-grey-2">
         <div class="togglePasswordBtn"><img src="img/icons/eye.svg" alt="icon"></div>
       </div>
-      <a href="#" class="color-orange mb-3 d-block">Забыли пароль?</a>
-      <button class="button button--h-48 button--orange rounded-20 fz-16 fw-bold px-4 ml-auto min-w-240">
+      <a href="#" class="color-orange mb-3 d-block fz-xl-13">Забыли пароль?</a>
+      <button class="button button--h-48 button--orange rounded-20 fz-16 fw-bold px-4 ml-auto min-w-240 button--sm-w-100">
         Войти
       </button>
     </div>

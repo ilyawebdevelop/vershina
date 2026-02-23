@@ -1,45 +1,49 @@
 <section class="sect pt-0">
   <div class="container">
 
-    <div class="pageHead mb-4">
+    <div class="pageHead mb-4 d-none d-xl-block">
       <h1 class="h1 mb-0">
         Личный кабинет
       </h1>
     </div>
 
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-xl-3 d-none d-xl-block">
         @@include('sidebar.html',{})
       </div>
-      <div class="col-lg-9">
+      <div class="col-xl-9">
         <div class="bg--light-bckg rounded-20 cartBlock">
-          <div class="d-flex justify-content-between align-items-center mb-3">
+          <div
+            class="d-flex flex-column flex-sm-row gap-2 gap-sm-0 justify-content-between align-items-start align-items-sm-center mb-3">
             <h2 class="mb-0">Профиль</h2>
-            <button class="button button--white pe-none fz-16 rounded-20 px-3 color-grey-3">
+            <button class="button button--white pe-none fz-16 fz-xl-13 rounded-20 px-3 color-grey-3 button--sm-h-26">
               Розничный покупатель
             </button>
           </div>
           <div class="row">
             <div class="col-lg-4 mb-3">
               <div class="inputW">
-                <div class="h5 mb-2">ФИО</div>
+                <div class="h5 mb-1 mb-lg-2">ФИО</div>
                 <input type="text" class="formInput border-grey-2" value="Иванов Иван Ианович">
               </div>
             </div>
             <div class="col-lg-4 mb-3">
               <div class="inputW">
-                <div class="h5 mb-2">Email</div>
+                <div class="h5 mb-1 mb-lg-2">Email</div>
                 <input type="email" class="formInput border-grey-2" value="ivanov@mail.ru">
               </div>
             </div>
             <div class="col-lg-4 mb-3">
               <div class="inputW">
-                <div class="h5 mb-2">Телефон</div>
+                <div class="h5 mb-1 mb-lg-2">Телефон</div>
                 <input type="tel" class="formInput border-grey-2" value="+7 (123) 456 78-90">
               </div>
             </div>
-            <div class="col-12">
-              <div class="h5 mb-2">Адрес доставки</div>
+            <div class="col">
+              <div class="border-b-stroke mt-2 d-block d-lg-none"> </div>
+            </div>
+            <div class="col-12 mt-3 mt-lg-0">
+              <div class="h5 h5--lg-16 mb-3 mb-lg-2">Адрес доставки</div>
             </div>
             <div class="col-lg-4 mb-2">
               <div class="selectW">
@@ -55,9 +59,9 @@
                 </select>
               </div>
             </div>
-            <div class="col-lg-8 mb-2">
+            <div class="col-lg-8 mb-4 mb-lg-2">
               <div class="inputW">
-                <input type="email" class="formInput border-grey-2" value="ул. Улица, 1, 23">
+                <input type="text" class="formInput border-grey-2" value="ул. Улица, 1, 23">
               </div>
             </div>
             <div class="col-lg-4 mb-2">
@@ -76,19 +80,19 @@
             </div>
             <div class="col-lg-8 mb-2">
               <div class="inputW">
-                <input type="email" class="formInput border-grey-2" value="ул. Длинная Улица, 123, оф.456">
+                <input type="text" class="formInput border-grey-2" value="ул. Длинная Улица, 123, оф.456">
               </div>
             </div>
-            <div class="col-12 mt-2">
-              <button class="button button--text button--text-black fz-16 fw-bold add-address">
+            <div class="col-12 mt-3 mt-lg-0">
+              <button class="button button--text button--text-black fz-16 fw-bold add-address mx-auto mx-sm-0">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#plus"></use>
                 </svg>
                 <span class="color-black">Добавить ещё адрес</span>
               </button>
             </div>
-            <div class="col-12">
-              <button class="button button--orange button--h-48 fz-16 fw-bold rounded-20 px-4 ml-auto">
+            <div class="col-12 mt-4 pt-1">
+              <button class="button button--orange button--h-48 fz-16 fw-bold rounded-20 px-4 ml-auto button--sm-w-100">
                 Сохранить изменения
               </button>
             </div>
@@ -97,6 +101,9 @@
         </div>
       </div>
     </div>
+
+    <a href="#" class="color-orange fw-bold d-flex d-xl-none justify-content-center mt-4 px-3">Стать оптовым
+      покупателем</a>
 
   </div>
 </section>

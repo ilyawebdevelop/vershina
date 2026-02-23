@@ -43,10 +43,17 @@
       }
     }
     &--archive {
+      @media(max-width: 575px){
+        flex-direction: column;
+      }
       .newsCardContent{
         padding-left: 32px;
         padding-top: 0;
         padding-right: 0;
+        @media(max-width: 575px){
+          padding-left: 12px;
+          padding-top: 16px;
+        }
       }
       .newsCardImage {
         flex-shrink: 0;
@@ -54,6 +61,15 @@
           height: 120px;
           width: 160px;
           border-radius: 24px;
+          @media(max-width: 575px){
+            width: 100%;
+            height: 250px;
+          }
+        }
+      }
+      .newsCardTitle {
+        @media(max-width: 991px){
+          font-size: 18px;
         }
       }
     }
@@ -79,6 +95,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @media(max-width: 1400px){
+    min-height: 430px;
+  }
   &Title {
     margin-bottom: 14px;
     font-size: 48px;
@@ -86,6 +105,9 @@
     font-weight: 800;
     color: #fff;
     letter-spacing: 0.02em;
+    @media(max-width: 1400px){
+      font-size: 36px;
+    }
   }
 }
 .article-share {

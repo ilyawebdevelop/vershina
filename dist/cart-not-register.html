@@ -134,7 +134,8 @@
             <use xlink:href="img/icons/icons.svg#arrow-down"></use>
           </svg>
         </button>
-        <div class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
+        <div
+          class="headerSearchW searchW position-relative d-flex align-items-center bg--light-bckg rounded-30 w-xl-100">
           <input type="search" class="formInput" placeholder="Поиск">
           <button class="searchFieldClear" type="button">
             <img src="img/icons/clear.svg" alt="clear">
@@ -160,12 +161,29 @@
             0
           </div>
         </a>
-        <a href="#" class="header-action-link header-action-link-account">
+        <div class="header-action-link header-action-link-account has-submenu">
           <svg>
             <use xlink:href="img/icons/icons.svg#account"></use>
           </svg>
-          <span class="text-uppercase fz-14 fw-bold color-grey-3">Войти</span>
-        </a>
+          <span class="text-uppercase fz-14 fw-bold color-grey-3 header-action-link-account-text">МОЙ ПРОФИЛЬ</span>
+          <div class="sub-menu-account">
+            <div class="pb-3 mb-3 border-b-stroke">
+              Иванов Иван Ианович
+            </div>
+            <div class="pb-3 mb-3 border-b-stroke">
+              <nav class="profileNav">
+                <ul>
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Заказы</a></li>
+                  <li><a href="#">Избранное</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button class="button button--orange rounded-20 fw-bold fz-16">
+              Выйти
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -824,7 +842,7 @@
 			<section class="sect pt-0">
   <div class="container">
 
-    <div class="pageHead">
+    <div class="pageHead mb-4 mb-xl-5">
       <h1 class="h1 mb-0">
         Корзина
       </h1>
@@ -832,174 +850,227 @@
 
     <ul class="cartList mb-4 pb-2">
 
-      <li class="cartItem d-flex justify-content-between gap-4 py-3">
-        <div class="d-flex gap-4">
-          <a href="#" class="cartItemImg">
-            <img src="img/admin/shop/image-3.png" alt="image">
-            <div class="onsale bg--haki">1+1=3</div>
-          </a>
-          <div class="d-flex gap-1 flex-column">
-            <h4><a class="color-black" href="#">Блесна вертикальная Namazu "Skat", размер 55 мм, вес 10 г</a></h4>
-            <div class="color-grey-2 fz-13 fw-bold">
-              Артикул: N-VST10-222
-            </div>
-            <div class="color-grey-2 fz-13 fw-bold">
-              Размер: 1, Цвет: Золотой
-            </div>
-            <button
-              class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#star"></use>
-              </svg>
-              <span class="fw-semibold">В избранное</span>
-            </button>
-          </div>
-        </div>
-        <div class="d-flex gap-4">
+  <li class="cartItem d-flex justify-content-between gap-2 gap-lg-4 py-3">
+    <div class="d-flex gap-3 gap-lg-4">
+      <a href="#" class="cartItemImg">
+        <img src="img/admin/shop/image-3.png" alt="image">
+        <div class="onsale bg--haki">1+1=3</div>
+      </a>
+      <div class="d-flex gap-1 flex-column w-100">
 
-          <div class="quantity d-flex gap-2 p-2 border-grey-1 rounded-24">
-            <button class="quantity-btn quantity-minus" type="button">
-              <img src="img/icons/minus.svg" alt="minus">
-            </button>
-            <input type="number" class="quantity-input" value="1" min="1">
-            <button class="quantity-btn quantity-plus" type="button">
-              <img src="img/icons/plus.svg" alt="plus">
-            </button>
-          </div>
-
-          <div class="d-flex flex-column-reverse flex-lg-column gap-3 pt-2 mt-1">
-            <div class="cartItemPriceW d-flex justify-content-end align-items-center gap-2">
-              <span class="text-lg fw-light color-grey-2 text-decoration-line-through">30 000</span>
-              <span class="text-extra-lg fw-bold">15 000 ₽</span>
-            </div>
-            <div class="available available--green justify-content-end mb-0">В наличии</div>
-          </div>
-
-          <button class="cartItemRemove" type="button">
+        <div class="d-flex gap-2 justify-content-between">
+          <h4><a class="color-black" href="#">Блесна вертикальная Namazu "Skat", размер 55 мм, вес 10 г</a></h4>
+          <button
+            class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0 d-flex d-lg-none">
             <svg>
-              <use xlink:href="img/icons/icons.svg#trash"></use>
+              <use xlink:href="img/icons/icons.svg#star"></use>
             </svg>
           </button>
-
-
         </div>
 
-      </li>
-
-      <li class="cartItem d-flex justify-content-between gap-4 py-3">
-        <div class="d-flex gap-4">
-          <a href="#" class="cartItemImg">
-            <img src="img/admin/shop/image-1.png" alt="image">
-            <div class="onsale bg--haki">1+1=3</div>
-          </a>
-          <div class="d-flex gap-1 flex-column">
-            <h4><a class="color-black" href="#">Костюм лет. Стрелок цв.Тайгер тк.Смесовая Сорочка р.52-54/182-188</a>
-            </h4>
-            <div class="color-grey-2 fz-13 fw-bold">
-              Артикул: N-VST10-222
-            </div>
-            <div class="color-grey-2 fz-13 fw-bold">
-              Размер: 1, Цвет: Золотой
-            </div>
-            <button
-              class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#star"></use>
-              </svg>
-              <span class="fw-semibold">В избранное</span>
-            </button>
-          </div>
+        <div class="color-grey-2 fz-13 fw-bold">
+          Артикул: N-VST10-222
         </div>
-        <div class="d-flex gap-4">
+        <div class="color-grey-2 fz-13 fw-bold">
+          Размер: 1, Цвет: Золотой
+        </div>
+        <button
+          class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0 d-none d-lg-flex">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#star"></use>
+          </svg>
+          <span class="fw-semibold">В избранное</span>
+        </button>
+      </div>
+    </div>
+    <div class="d-flex gap-2 gap-lg-3 gap-lg-4 flex-column-reverse flex-lg-row pl-lg-72">
 
-          <div class="quantity d-flex gap-2 p-2 border-grey-1 rounded-24">
-            <button class="quantity-btn quantity-minus" type="button">
-              <img src="img/icons/minus.svg" alt="minus">
-            </button>
-            <input type="number" class="quantity-input" value="1" min="1">
-            <button class="quantity-btn quantity-plus" type="button">
-              <img src="img/icons/plus.svg" alt="plus">
-            </button>
-          </div>
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="quantity d-flex gap-2 p-1 p-lg-2 border-grey-1 rounded-24">
+          <button class="quantity-btn quantity-minus" type="button">
+            <img src="img/icons/minus.svg" alt="minus">
+          </button>
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="quantity-btn quantity-plus" type="button">
+            <img src="img/icons/plus.svg" alt="plus">
+          </button>
+        </div>
+        <button class="cartItemRemove d-flex d-lg-none mt-0" type="button">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#trash"></use>
+          </svg>
+        </button>
+      </div>
 
-          <div class="d-flex flex-column-reverse flex-lg-column gap-3 pt-2 mt-1">
-            <div class="cartItemPriceW d-flex justify-content-end align-items-center gap-2">
-              <span class="text-lg fw-light color-grey-2 text-decoration-line-through">30 000</span>
-              <span class="text-extra-lg fw-bold">15 000 ₽</span>
-            </div>
-            <div class="available available--green justify-content-end mb-0">В наличии</div>
-          </div>
+      <div
+        class="d-flex flex-column-reverse flex-lg-column gap-3 pt-0 pt-lg-2 mt-0 mt-lg-1 align-items-start align-items-lg-end">
+        <div
+          class="cartItemPriceW d-flex justify-content-end justify-content-lg-end align-items-center gap-2 flex-row-reverse flex-lg-row">
+          <span class="text-lg fw-light color-grey-2 text-decoration-line-through">30 000</span>
+          <span class="text-extra-lg fw-bold">15 000 ₽</span>
+        </div>
+        <div class="available available--green justify-content-end mb-0">В наличии</div>
+      </div>
 
-          <button class="cartItemRemove" type="button">
+      <button class="cartItemRemove d-none d-lg-flex" type="button">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#trash"></use>
+        </svg>
+      </button>
+
+    </div>
+
+  </li>
+
+  <li class="cartItem d-flex justify-content-between gap-2 gap-lg-4 py-3">
+    <div class="d-flex gap-3 gap-lg-4">
+      <a href="#" class="cartItemImg">
+        <img src="img/admin/shop/image-1.png" alt="image">
+        <div class="onsale bg--haki">1+1=3</div>
+      </a>
+      <div class="d-flex gap-1 flex-column w-100">
+        <div class="d-flex gap-2">
+          <h4><a class="color-black" href="#">Костюм лет. Стрелок цв.Тайгер тк.Смесовая Сорочка р.52-54/182-188</a>
+          </h4>
+          <button
+            class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0 d-flex d-lg-none">
             <svg>
-              <use xlink:href="img/icons/icons.svg#trash"></use>
+              <use xlink:href="img/icons/icons.svg#star"></use>
             </svg>
           </button>
-
-
         </div>
 
-      </li>
-
-      <li class="cartItem d-flex justify-content-between gap-4 py-3">
-        <div class="d-flex gap-4">
-          <a href="#" class="cartItemImg">
-            <img src="img/admin/shop/image-2.png" alt="image">
-            <div class="onsale bg--haki">1+1=3</div>
-          </a>
-          <div class="d-flex gap-1 flex-column">
-            <h4><a class="color-black" href="#">
-                Удочка для зимней рыбалки Сорога
-              </a></h4>
-            <div class="color-grey-2 fz-13 fw-bold">
-              Артикул: N-VST10-222
-            </div>
-            <div class="color-grey-2 fz-13 fw-bold">
-              Размер: 1, Цвет: Золотой
-            </div>
-            <button
-              class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#star"></use>
-              </svg>
-              <span class="fw-semibold">В избранное</span>
-            </button>
-          </div>
+        <div class="color-grey-2 fz-13 fw-bold">
+          Артикул: N-VST10-222
         </div>
-        <div class="d-flex gap-4">
+        <div class="color-grey-2 fz-13 fw-bold">
+          Размер: 1, Цвет: Золотой
+        </div>
+        <button
+          class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0 d-none d-lg-flex">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#star"></use>
+          </svg>
+          <span class="fw-semibold">В избранное</span>
+        </button>
+      </div>
+    </div>
+    <div class="d-flex gap-2 gap-lg-3 gap-lg-4 flex-column-reverse flex-lg-row pl-lg-72">
 
-          <div class="quantity d-flex gap-2 p-2 border-grey-1 rounded-24">
-            <button class="quantity-btn quantity-minus" type="button">
-              <img src="img/icons/minus.svg" alt="minus">
-            </button>
-            <input type="number" class="quantity-input" value="1" min="1">
-            <button class="quantity-btn quantity-plus" type="button">
-              <img src="img/icons/plus.svg" alt="plus">
-            </button>
-          </div>
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="quantity d-flex gap-2 p-1 p-lg-2 border-grey-1 rounded-24">
+          <button class="quantity-btn quantity-minus" type="button">
+            <img src="img/icons/minus.svg" alt="minus">
+          </button>
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="quantity-btn quantity-plus" type="button">
+            <img src="img/icons/plus.svg" alt="plus">
+          </button>
+        </div>
+        <button class="cartItemRemove d-flex d-lg-none mt-0" type="button">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#trash"></use>
+          </svg>
+        </button>
+      </div>
 
-          <div class="d-flex flex-column-reverse flex-lg-column gap-3 pt-2 mt-1">
-            <div class="cartItemPriceW d-flex justify-content-end align-items-center gap-2">
-              <span class="text-lg fw-light color-grey-2 text-decoration-line-through">100 000</span>
-              <span class="text-extra-lg fw-bold">155 000 ₽</span>
-            </div>
-            <div class="available available--green justify-content-end mb-0">В наличии</div>
-          </div>
+      <div
+        class="d-flex flex-column-reverse flex-lg-column gap-3 pt-0 pt-lg-2 mt-0 mt-lg-1 align-items-start align-items-lg-end">
+        <div
+          class="cartItemPriceW d-flex justify-content-end justify-content-lg-end align-items-center gap-2 flex-row-reverse flex-lg-row">
+          <span class="text-lg fw-light color-grey-2 text-decoration-line-through">30 000</span>
+          <span class="text-extra-lg fw-bold">15 000 ₽</span>
+        </div>
+        <div class="available available--green justify-content-end mb-0">В наличии</div>
+      </div>
 
-          <button class="cartItemRemove" type="button">
+      <button class="cartItemRemove d-none d-lg-flex" type="button">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#trash"></use>
+        </svg>
+      </button>
+
+    </div>
+
+  </li>
+
+  <li class="cartItem d-flex justify-content-between gap-2 gap-lg-4 py-3">
+    <div class="d-flex gap-3 gap-lg-4">
+      <a href="#" class="cartItemImg">
+        <img src="img/admin/shop/image-2.png" alt="image">
+        <div class="onsale bg--haki">1+1=3</div>
+      </a>
+      <div class="d-flex gap-1 flex-column w-100">
+        <div class="d-flex gap-2">
+          <h4><a class="color-black" href="#">
+              Удочка для зимней рыбалки Сорога
+            </a></h4>
+          <button
+            class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0 d-flex d-lg-none">
             <svg>
-              <use xlink:href="img/icons/icons.svg#trash"></use>
+              <use xlink:href="img/icons/icons.svg#star"></use>
             </svg>
           </button>
-
-
         </div>
 
-      </li>
+        <div class="color-grey-2 fz-13 fw-bold">
+          Артикул: N-VST10-222
+        </div>
+        <div class="color-grey-2 fz-13 fw-bold">
+          Размер: 1, Цвет: Золотой
+        </div>
+        <button
+          class="button button--transparent rounded-20 productMainAddToWishlist productMainAddToWishlist--h-32 fz-14 p-0 d-none d-lg-flex">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#star"></use>
+          </svg>
+          <span class="fw-semibold">В избранное</span>
+        </button>
+      </div>
+    </div>
+    <div class="d-flex gap-2 gap-lg-3 gap-lg-4 flex-column-reverse flex-lg-row pl-lg-72">
 
-    </ul>
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="quantity d-flex gap-2 p-1 p-lg-2 border-grey-1 rounded-24">
+          <button class="quantity-btn quantity-minus" type="button">
+            <img src="img/icons/minus.svg" alt="minus">
+          </button>
+          <input type="number" class="quantity-input" value="1" min="1">
+          <button class="quantity-btn quantity-plus" type="button">
+            <img src="img/icons/plus.svg" alt="plus">
+          </button>
+        </div>
+        <button class="cartItemRemove d-flex d-lg-none mt-0" type="button">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#trash"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        class="d-flex flex-column-reverse flex-lg-column gap-3 pt-0 pt-lg-2 mt-0 mt-lg-1 align-items-start align-items-lg-end">
+        <div
+          class="cartItemPriceW d-flex justify-content-end justify-content-lg-end align-items-center gap-2 flex-row-reverse flex-lg-row">
+          <span class="text-lg fw-light color-grey-2 text-decoration-line-through">100 000</span>
+          <span class="text-extra-lg fw-bold">155 000 ₽</span>
+        </div>
+        <div class="available available--green justify-content-end mb-0">В наличии</div>
+      </div>
+
+      <button class="cartItemRemove d-none d-lg-flex" type="button">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#trash"></use>
+        </svg>
+      </button>
+
+    </div>
+
+  </li>
+
+</ul>
+  
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-7 col-xl-8">
         <div class="bg--light-bckg rounded-20 cartBlock mb-4">
           <h3 class="fw-semibold mb-3">Доставка</h3>
           <div class="mb-3">
@@ -1131,15 +1202,15 @@
                 </div>
               </label>
             </div>
-          </div>         
-  
+          </div>
+
 
         </div>
 
         <div class="bg--light-bckg rounded-20 cartBlock mb-4">
           <h3 class="fw-semibold mb-3">Личные данные</h3>
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
               <div class="inputW">
                 <div class="mb-2 h5">
                   ФИО
@@ -1147,7 +1218,7 @@
                 <input type="text" class="formInput border-grey-2" placeholder="ФИО">
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
               <div class="inputW">
                 <div class="mb-2 h5">
                   Email
@@ -1155,7 +1226,7 @@
                 <input type="email" class="formInput border-grey-2" placeholder="+7(___)___ __-__">
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-3 mb-lg-0">
               <div class="inputW">
                 <div class="mb-2 h5">
                   Телефон
@@ -1164,7 +1235,7 @@
               </div>
             </div>
           </div>
-          <div class="agreement py-3">
+          <div class="agreement py-1 py-lg-3">
             <input id="personal-agree" type="checkbox">
             <label for="personal-agree">
               <div class="rect"></div>
@@ -1179,26 +1250,26 @@
 
 
       </div>
-      <div class="col-lg-4">
-        <div class="bg--light-bckg p-4 rounded-20">
+      <div class="col-lg-5 col-xl-4">
+        <div class="bg--light-bckg p-3 p-xl-4 rounded-20">
   <h3 class="fw-semibold mb-4">Стоимость заказа</h3>
-  <div class="d-flex gap-4 pb-3 border-b-stroke cartOrderRow mb-4">
-    <span class="fz-20 fw-bold cartOrderCol">Итого:</span>
-    <span class="fz-20 fw-bold cartOrderCol">180 000 ₽</span>
+  <div class="d-flex gap-2 gap-xl-4 pb-3 border-b-stroke cartOrderRow mb-3 mb-lg-4">
+    <span class="fz-20 fz-20-xl-16 fw-bold cartOrderCol">Итого:</span>
+    <span class="fz-20 fz-20-xl-16 fw-bold cartOrderCol">180 000 ₽</span>
   </div>
-  <div class="d-flex gap-4 cartOrderRow mb-4">
-    <span class="fz-20 fw-medium cartOrderCol color-grey-3">Доставка:</span>
-    <span class="fz-20 fw-medium cartOrderCol color-grey-3">1 300 ₽</span>
+  <div class="d-flex gap-2 gap-xl-4 cartOrderRow mb-3 mb-lg-4">
+    <span class="fz-20 fz-20-xl-16 fw-medium cartOrderCol color-grey-3">Доставка:</span>
+    <span class="fz-20 fz-20-xl-16 fw-medium cartOrderCol color-grey-3">1 300 ₽</span>
   </div>
-  <div class="d-flex gap-4 cartOrderRow mb-4">
-    <span class="fz-20 fw-medium cartOrderCol color-grey-3">Скидка:</span>
-    <span class="fz-20 fw-medium cartOrderCol color-grey-3">120 000 ₽</span>
+  <div class="d-flex gap-2 gap-xl-4 cartOrderRow mb-3 mb-lg-4">
+    <span class="fz-20 fz-20-xl-16 fw-medium cartOrderCol color-grey-3">Скидка:</span>
+    <span class="fz-20 fz-20-xl-16 fw-medium cartOrderCol color-grey-3">120 000 ₽</span>
   </div>
-  <div class="d-flex gap-4 cartOrderRow mb-4 pb-3 border-b-stroke">
+  <div class="d-flex gap-2 gap-xl-4 cartOrderRow mb-3 mb-lg-4 pb-3 border-b-stroke">
     <span class="text-extra-lg fw-bold cartOrderCol">Итого к оплате:</span>
     <span class="text-extra-lg fw-bold cartOrderCol">61 300 ₽</span>
   </div>
-  <div class="agreement py-2 mb-4">
+  <div class="agreement py-2 mb-3 mb-lg-4">
     <input type="checkbox" id="orderAgree">
     <label for="orderAgree" class="align-items-start">
       <div class="rect"></div>
@@ -1211,21 +1282,20 @@
   <button class="button button--orange button--h-48 w-100 rounded-20 fw-bold fz-16">
     Оформить заказ
   </button>
-
 </div>
       </div>
     </div>
 
   </div>
 </section>
-			<section class="popular sect sliderW overflow-hidden pb-0 pt-0">
+			<section class="popular sect sliderW overflow-hidden pb-5 pb-xl-0 pt-0">
   <div class="container">
 
     <div class="sectHead d-flex align-items-center justify-content-between gap-3">
       <h2 class="h2">
         Похожие товары
       </h2>
-      <div class="navArrowW d-flex gap-2">
+      <div class="navArrowW d-none d-lg-flex gap-2">
         <button class="navArrow navArrowPrev" type="button">
           <svg>
             <use xlink:href="img/icons/icons.svg#arrow-prev"></use>

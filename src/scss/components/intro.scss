@@ -156,6 +156,9 @@
   background: rgba(102, 110, 79, 0.5);
   padding: 24px 0px;
   overflow: hidden;
+  &.bg--black {
+    background-color: var(--black);
+  }
 
   @media(max-width: 1199px) {
     padding: 12px 0;
