@@ -14382,6 +14382,14 @@ section {
   border: 1px solid var(--grey2);
   background-color: #fff;
 }
+.formInput.border-grey-2:focus {
+  border-color: var(--grey-3);
+}
+.formInput.border-grey-2.error {
+  border-color: #EF4C24;
+  border-width: 2px;
+  background-color: rgba(239, 76, 36, 0.1);
+}
 
 .border-grey-1 {
   border: 1px solid var(--grey1);
