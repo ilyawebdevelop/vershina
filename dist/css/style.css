@@ -14299,12 +14299,6 @@ html {
 
 body.hidden {
   overflow: hidden;
-  padding-right: 15px;
-}
-@media (max-width: 1199px) {
-  body.hidden {
-    padding-right: 0;
-  }
 }
 
 body.hidden .headerC.active {
@@ -16406,8 +16400,6 @@ a.color-white:hover {
 }
 .headerMenu.active {
   display: block;
-  -webkit-animation: shows 0.2s;
-  animation: shows 0.2s;
 }
 .headerMenuNav ul li a {
   padding-top: 8px;

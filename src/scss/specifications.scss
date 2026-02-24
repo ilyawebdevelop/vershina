@@ -49,11 +49,6 @@ html {
 
 body.hidden {
   overflow: hidden;
-  padding-right: 15px;
-
-  @media(max-width: 1199px) {
-    padding-right: 0;
-  }
 }
 
 body.hidden .headerC.active {
