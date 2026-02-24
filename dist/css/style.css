@@ -15256,6 +15256,13 @@ a.color-white:hover {
   }
 }
 
+.socials a img {
+  transition: transform 0.2s linear;
+}
+.socials a img:hover {
+  transform: scale(1.1);
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -15652,8 +15659,12 @@ a.color-white:hover {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, box-shadow 0.2s linear, background-color 0.2s linear;
   z-index: 11;
+}
+.button-top:hover {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.22);
+  background-color: var(--grey1);
 }
 .button-top svg {
   width: 24px;
