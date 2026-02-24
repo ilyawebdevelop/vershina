@@ -43,8 +43,8 @@
 
       .productCardBtn {
         display: flex;
-        -webkit-animation: shows 0.5s;
-        animation: shows 0.5s;
+        -webkit-animation: shows 0.2s;
+        animation: shows 0.2s;
         @media(max-width: 1199px){
           animation: none;
         }

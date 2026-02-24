@@ -147,8 +147,8 @@
       width: 100%;
       z-index: 3;
       display: flex;
-      -webkit-animation: shows 0.5s;
-      animation: shows 0.5s;
+      -webkit-animation: shows 0.2s;
+      animation: shows 0.2s;
       background-color: var(--haki);
       padding-top: 12px;
       padding-bottom: 12px;
@@ -518,8 +518,8 @@
 
   &.active {
     display: block;
-    -webkit-animation: shows 0.5s;
-    animation: shows 0.5s;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
   }
 
   &Nav {
