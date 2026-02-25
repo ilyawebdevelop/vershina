@@ -14869,6 +14869,10 @@ a.color-white:hover {
   background-color: #fff;
 }
 
+.top-105 {
+  top: 105px;
+}
+
 .searchW {
   display: flex;
   padding: 6px 6px 6px 0;
@@ -16320,7 +16324,7 @@ a.color-white:hover {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
   padding: 16px;
   border-radius: 20px;
-  z-index: 1;
+  z-index: 2;
   right: -9px;
   align-items: flex-start;
   transition: opacity 0.2s linear, visibility 0.2s linear;
