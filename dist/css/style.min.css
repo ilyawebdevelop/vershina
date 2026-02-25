@@ -15605,6 +15605,10 @@ a.color-white:hover {
 .quantity-btn:hover {
   background-color: var(--grey1);
 }
+.quantity-btn.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
 
 .quantity-input {
   text-align: center;

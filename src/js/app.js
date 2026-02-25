@@ -486,3 +486,26 @@ actionBtnText.forEach(el => {
     el.style.display = 'none';
   });
 });
+
+let quantityBtnArray = document.querySelectorAll('.quantity-btn');
+
+quantityBtnArray.forEach(el => {
+  let input = el.closest('.quantity').querySelector('.quantity-input');
+  let minus = el.closest('.quantity').querySelector('.quantity-minus');
+
+  el.addEventListener('click', () => {
+    if (input.value == 1) {
+      minus.classList.add('disabled');
+    } else {
+      minus.classList.remove('disabled');
+    }
+  });
+  input.addEventListener('input', function (event) {
+    if (input.value == 1) {
+      minus.classList.add('disabled');
+    } else {
+      minus.classList.remove('disabled');
+    }
+  });
+
+});
