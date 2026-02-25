@@ -90,7 +90,7 @@
         </ul>
       </div>
 
-      <button class="button button--text button--text-white headerTBtn fw-semibold">
+      <button class="button button--text button--text-white headerTBtn fw-semibold" data-fancybox data-src="#modalOrder">
         <svg>
           <use xlink:href="img/icons/icons.svg#message"></use>
         </svg>
@@ -1748,38 +1748,52 @@
 <!-- order -->
 <div class="modal" id="modalOrder">
 
-  <div class="modalHead">
-    <h2 class="h2">Оставьте заявку</h2>
-    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24" tabindex="-1">
-        <path d="M20 20L4 4m16 0L4 20"></path>
-      </svg>
-    </button>
-  </div>
+
+  <h3 class="h3 mb-3 h3--xl-24">Заказать обратный звонок</h3>
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
 
   <div class="modalContent">
-    <p class="modalDescr">
-      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    <p class="modalDescr fz-18 fw-semibold mb-3">
+      Наш менеджер перезвонит вам в ближайшее время
     </p>
     <div class="modalForm">
-      <div class="inputW">
-        <input type="text" class="formInput" placeholder="Как вас зовут?">
+      <div class="inputW mb-3">
+        <div class="fw-semibold mb-2">Ваше имя</div>
+        <input type="text" class="formInput border-grey-2" placeholder="Имя">
       </div>
-      <div class="inputW">
-        <input type="tel" class="formInput" placeholder="+7 (___) ___-__-__" inputmode="text">
+      <div class="inputW mb-3">
+        <div class="fw-semibold mb-2">Телефон</div>
+        <input type="tel" class="formInput border-grey-2" placeholder="+7 123 (456) 78-90" inputmode="text">
       </div>
-      <button class="button button--blue formBtn">
-        Отправить заявку
-      </button>
-      <div class="agreement">
-        <p>
-          Нажимая кнопку выше, вы даёте согласие на обработку своих персональных данных.
-        </p>
+
+      <div class="agreement mb-3">
+        <input type="checkbox" id="modalOrderCheck" checked>
+        <label class="d-flex align-items-start" for="modalOrderCheck">
+          <div class="rect">
+
+          </div>
+          <div class="agreementText fz-14 fw-semibold">
+            Согласен с<a class="color-orange" href="#"> условиями обработки персональных данных</a>
+          </div>
+        </label>
+      </div>
+      <div class="d-flex align-items-center gap-3 justify-content-between flex-column-reverse flex-sm-row">
+        <a href="#" data-fancybox-close class="button button--text color-haki fw-bold text-uppercase modalOrderBtnBack"
+          title="Close">
+          отменить
+        </a>
+        <button class="button button--orange rounded-30 formBtn min-w-240 button--lg fz-16 fw-bold text-uppercase button--sm-w-100">
+          Отправить
+        </button>
       </div>
     </div>
   </div>
 </div>
-
 	</div>
 
 	<script src="js/app.min.js"></script>

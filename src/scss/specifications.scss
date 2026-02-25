@@ -362,6 +362,13 @@ h3,
       line-height: 40px;
     }
   }
+
+  &.h3--xl-24 {
+    @media(max-width: 1199px) {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
 }
 
 h4,
@@ -537,6 +544,12 @@ h6,
   color: var(--haki);
 }
 
+a.color-haki {
+  &:hover {
+    color: var(--orange);
+  }
+}
+
 a.color-haki.has-link-arrow {
   letter-spacing: 0.02em;
 
@@ -650,6 +663,7 @@ a.color-white {
 .bg--white {
   background-color: #fff;
 }
+
 .top-105 {
   top: 105px;
 }

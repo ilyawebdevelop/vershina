@@ -36,19 +36,22 @@
   margin: auto;
   bottom: 10px;
   z-index: 12;
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     width: calc(100% - 20px);
   }
 }
-.modal-cookie-close{
+
+.modal-cookie-close {
   position: absolute;
   right: 20px;
   top: 20px;
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     right: 10px;
     top: 10px;
   }
-  
+
   svg {
     width: 24px;
     height: 24px;
@@ -56,9 +59,36 @@
     stroke: #655F5C;
     stroke-width: 2px;
   }
+
   &:hover {
     svg {
       stroke: var(--black);
     }
+  }
+}
+
+#modalOrder {
+  width: 480px;
+  height: fit-content;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+  background: var(--white);
+  border: 1px solid var(--stroke);
+  border-radius: 32px;
+  padding: 32px;
+  color: var(--main-color);
+  @media(max-width: 575px){
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+}
+.fancybox__backdrop {
+  background: rgb(24 24 27 / 62%);
+}
+.f-button.is-close-btn {
+  background-color: transparent;
+  top: 8px;
+  &:hover {
+    background-color: transparent;
+    opacity: .85;
   }
 }
